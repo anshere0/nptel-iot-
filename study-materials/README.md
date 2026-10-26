@@ -23,6 +23,7 @@ The learning materials are decoupled completely from the interactive question-pr
 study-materials/
 ├── README.md                           <- You are here: System map & navigation
 ├── MASTER-STUDY-GUIDE.md               <- Complete 12-week roadmap & learning path
+├── CONCISE-MCQ-MASTERY-GUIDE.md        <- High-yield concept-to-MCQ trigger playbook & cheat sheet
 ├── SYLLABUS-COVERAGE-MATRIX.md         <- Comprehensive lecture-by-lecture syllabus matrix
 ├── QUICK-REVISION.md                   <- High-density revision notes for pre-exam review
 ├── IMPORTANT-TERMS-AND-FULL-FORMS.md   <- Complete glossary of abbreviations & standards

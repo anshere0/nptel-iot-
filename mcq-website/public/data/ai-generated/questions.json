@@ -1,0 +1,1010 @@
+[
+  {
+    "id": "ai-w1a-q1",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 1-A",
+    "weekNum": 1,
+    "questionNum": 1,
+    "question": "A retail logistics chain is upgrading its warehouse inventory tracking from manual barcodes to RFID tags linked to an enterprise cloud platform. During a system design review, a junior engineer claims: 'Because this system automates machine-to-machine data exchange, it is an M2M system and cannot be classified as IoT.' How should the lead IoT architect technically evaluate this claim?",
+    "options": [
+      {
+        "key": "a",
+        "text": "The junior engineer is correct because M2M and IoT are completely mutually exclusive paradigms."
+      },
+      {
+        "key": "b",
+        "text": "The junior engineer is incorrect because M2M is a foundational subset of IoT; IoT extends M2M by incorporating open IP networking, cloud platforms, multi-tenant analytics, and web standards."
+      },
+      {
+        "key": "c",
+        "text": "The junior engineer is correct because IoT strictly excludes any physical hardware devices from communication."
+      },
+      {
+        "key": "d",
+        "text": "The junior engineer is incorrect because M2M refers only to human social media interactions."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": ["b"],
+    "sourceAnswer": "b",
+    "explanation": "M2M (Machine-to-Machine) communication refers to closed, point-to-point, siloed communication between machines (often over proprietary or telco links). IoT is the broader umbrella paradigm that encompasses M2M as a subset and elevates it with open IP standards, cloud/fog computing, big data analytics, and multi-tenant Web of Things architectures. See Week-1_A.pdf (Introduction to IoT - Part I).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-1_A.pdf @ Slide 19 (IoT vs. M2M)"
+  },
+  {
+    "id": "ai-w1a-q2",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 1-A",
+    "weekNum": 1,
+    "questionNum": 2,
+    "question": "An agricultural research team plans to spray thousands of millimeter-scale autonomous computing motes equipped with micro-sensors, low-power radios, and self-contained micro-power harvesters across an orchard to monitor microclimates. In the IoT taxonomy presented in the course, this technology paradigm is formally designated as:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Smart Dust"
+      },
+      {
+        "key": "b",
+        "text": "Data Mule"
+      },
+      {
+        "key": "c",
+        "text": "Phasor Measurement Unit"
+      },
+      {
+        "key": "d",
+        "text": "OpenFlow Switch"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": ["a"],
+    "sourceAnswer": "a",
+    "explanation": "Smart Dust (coined by Kris Pister, UC Berkeley) refers to millimeter or sub-millimeter scale autonomous computing and sensing motes containing integrated micro-sensors, computation circuitry, bidirectional wireless transceivers, and autonomous micro-power supplies. See Week-1_A.pdf (Introduction to IoT - Part I).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-1_A.pdf @ Slide 10 (Smart Dust)"
+  },
+  {
+    "id": "ai-w1b-q1",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 1-B",
+    "weekNum": 1,
+    "questionNum": 3,
+    "question": "A smart factory deploys 5,000 low-power sensor nodes across 10 distinct assembly bays, with each bay managed by its own IoT gateway. The network architect configures the sensor nodes such that identical 16-bit local addresses (e.g., 0x00A1) are reused across different bays. What is the primary engineering motivation for this addressing strategy?",
+    "options": [
+      {
+        "key": "a",
+        "text": "It forces every device to use public IPv4 broadcast frames across the global Internet."
+      },
+      {
+        "key": "b",
+        "text": "It conserves global address space by reusing private local addresses within gateway domains, while gateways manage prefix delegation and external routing."
+      },
+      {
+        "key": "c",
+        "text": "It eliminates the need for gateways entirely by making all sensor nodes globally unroutable."
+      },
+      {
+        "key": "d",
+        "text": "It prevents sensor data from being encrypted or authenticated."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": ["b"],
+    "sourceAnswer": "b",
+    "explanation": "In large-scale IoT deployments, not every resource-constrained mote requires a globally unique IPv6 address. Assigning locally valid addresses behind intelligent gateways allows address reuse across different physical subnets, preventing global address exhaustion while gateways handle prefix delegation (DHCPv6 / SLAAC) upstream. See Week-1_B.pdf (Introduction to IoT - Part II).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-1_B.pdf @ Slide 6 (IoT Network Configurations)"
+  },
+  {
+    "id": "ai-w1b-q2",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 1-B",
+    "weekNum": 1,
+    "questionNum": 4,
+    "question": "A critical healthcare IoT gateway is provisioned with both a wired gigabit Ethernet connection and an active 5G cellular transceiver, allowing it to maintain connectivity and dynamically balance traffic across multiple IP networks. Which networking terminology correctly defines this setup?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Channel Blacklisting"
+      },
+      {
+        "key": "b",
+        "text": "Multi-homing"
+      },
+      {
+        "key": "c",
+        "text": "Quantization"
+      },
+      {
+        "key": "d",
+        "text": "Hysteresis"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": ["b"],
+    "sourceAnswer": "b",
+    "explanation": "Multi-homing refers to an IoT node or gateway configured with multiple network interfaces or assigned multiple IP addresses simultaneously. This provides redundancy, fault tolerance, and dynamic load balancing. See Week-1_B.pdf (Introduction to IoT - Part II).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-1_B.pdf @ Slide 12 (Multi-homing)"
+  },
+  {
+    "id": "ai-w1c-q1",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 1-C",
+    "weekNum": 1,
+    "questionNum": 5,
+    "question": "A technician tests a capacitive humidity sensor in an environmental chamber. When chamber humidity increases from 20% to 80%, the sensor outputs 2.40 V at 50% relative humidity. When humidity is subsequently decreased from 80% back to 20%, the sensor outputs 2.52 V at the same 50% relative humidity. What sensor metrological error explains this discrepancy?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Hysteresis error"
+      },
+      {
+        "key": "b",
+        "text": "Quantization error"
+      },
+      {
+        "key": "c",
+        "text": "High sensitivity"
+      },
+      {
+        "key": "d",
+        "text": "Temporal dumb behavior"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": ["a"],
+    "sourceAnswer": "a",
+    "explanation": "Hysteresis error occurs when the sensor output for a given input value depends on whether the physical quantity was approached from an increasing or decreasing direction, caused by internal material lag, elastic remanence, or magnetic effects. See Week-1_C.pdf (Sensing & Actuation).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-1_C.pdf @ Slide 18 (Hysteresis Error)"
+  },
+  {
+    "id": "ai-w1c-q2",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 1-C",
+    "weekNum": 1,
+    "questionNum": 6,
+    "question": "An industrial robotics team requires an actuator for an automotive press that must exert an immense, rigid holding force exceeding 50 kN without cushioning. Why does the engineering team select a hydraulic actuator rather than a pneumatic actuator?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Hydraulic actuators utilize nearly incompressible liquids (oil) to produce rigid, massive forces, whereas pneumatic actuators utilize compressible air which cushions under heavy loads."
+      },
+      {
+        "key": "b",
+        "text": "Pneumatic actuators produce larger forces than hydraulic actuators because air has higher mass density than oil."
+      },
+      {
+        "key": "c",
+        "text": "Hydraulic actuators produce zero mechanical friction and require no fluid reservoirs or valves."
+      },
+      {
+        "key": "d",
+        "text": "Pneumatic actuators are strictly prohibited in manufacturing plants due to electromagnetic radiation."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": ["a"],
+    "sourceAnswer": "a",
+    "explanation": "Hydraulic actuators rely on pressurized, nearly incompressible fluids (hydraulic oil) allowing massive, rigid mechanical force generation (F = P x A). Pneumatic actuators use compressed air, which is highly compressible, producing fast but cushioned motion with lower force density. See Week-1_C.pdf (Sensing & Actuation).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-1_C.pdf @ Slide 23 (Hydraulic Actuators)"
+  },
+  {
+    "id": "ai-w2-q1",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 2",
+    "weekNum": 2,
+    "questionNum": 7,
+    "question": "A developer attempting to transmit standard 1400-byte IPv6 packets directly over an IEEE 802.15.4 wireless link finds that the transmission fails at the radio layer. What protocol resolves this problem, and what mechanism does it employ?",
+    "options": [
+      {
+        "key": "a",
+        "text": "MQTT by converting all IPv6 headers into 2-byte TCP headers."
+      },
+      {
+        "key": "b",
+        "text": "6LoWPAN by providing header compression and fragmentation to adapt the 1280-byte minimum IPv6 MTU to the 127-byte physical frame limit of IEEE 802.15.4."
+      },
+      {
+        "key": "c",
+        "text": "Z-Wave by shifting the transmission frequency to the 5.9 GHz ITS band."
+      },
+      {
+        "key": "d",
+        "text": "CoAP by forcing the packet to travel over unslotted CSMA/CA without acknowledgments."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": ["b"],
+    "sourceAnswer": "b",
+    "explanation": "IEEE 802.15.4 has a strict maximum physical layer frame ceiling of 127 bytes. IPv6 requires every link to support a minimum Maximum Transmission Unit (MTU) of 1280 bytes. 6LoWPAN resolves this MTU mismatch by providing stateless header compression and multi-packet fragmentation at the adaptation layer. See Week-2.pdf (Connectivity Technologies - Part II).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-2.pdf @ Slide 2 (Features of 6LoWPANs)"
+  },
+  {
+    "id": "ai-w2-q2",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 2",
+    "weekNum": 2,
+    "questionNum": 8,
+    "question": "In a 6LoWPAN mesh network operating the Lightweight On-Demand Ad hoc Distance-vector Routing Protocol - Next Generation (LOADng), Node S initiates a Route Request (RREQ) to locate destination Node D. Intermediate Router R receives the RREQ and has a valid, active route to Node D in its routing table. What action is Router R required to take?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Router R must immediately send an RREP back to Node S on behalf of Node D."
+      },
+      {
+        "key": "b",
+        "text": "Router R is prohibited from replying to the RREQ; it must forward the RREQ, as only destination Node D is permitted to generate an RREP in LOADng."
+      },
+      {
+        "key": "c",
+        "text": "Router R must terminate the network and force all nodes to restart."
+      },
+      {
+        "key": "d",
+        "text": "Router R must convert the RREQ into an HTTP POST request."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": ["b"],
+    "sourceAnswer": "b",
+    "explanation": "In LOADng (a simplified derivative of AODV for constrained IoT), intermediate routers are explicitly forbidden from answering an RREQ even if they have an active route to the destination. Only the actual destination node is allowed to respond with an RREP, eliminating stale route loops and memory bloat. See Week-2.pdf (Connectivity Technologies - Part II).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-2.pdf @ Slide 12 (LOADng Routing)"
+  },
+  {
+    "id": "ai-w3-q1",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 9,
+    "question": "A hospital patient-tracking system uses Bluetooth Low Energy (BLE) beacon wristbands to announce room locations without establishing continuous connections with nurse consoles. On which specific RF channels do these BLE beacons transmit their advertisement packets, and why?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Channels 1, 6, and 11 to match standard IEEE 802.11 Wi-Fi frequencies."
+      },
+      {
+        "key": "b",
+        "text": "Channels 37, 38, and 39 because they are dedicated Advertising channels positioned in spectral gaps to minimize Wi-Fi interference."
+      },
+      {
+        "key": "c",
+        "text": "Channels 0 through 36 because higher channel numbers are reserved strictly for voice."
+      },
+      {
+        "key": "d",
+        "text": "Channels 78 and 79 to achieve 1600 frequency hops per second."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": ["b"],
+    "sourceAnswer": "b",
+    "explanation": "BLE divides the 2.4 GHz ISM band into 40 RF channels (0 to 39). Channels 37, 38, and 39 are dedicated Advertising channels placed strategically outside the main energy lobes of Wi-Fi channels 1, 6, and 11, while channels 0–36 are used for data communication. See Week-3.pdf (Industrial & Short-Range Standards).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-3.pdf @ Slide 14 (Bluetooth Low Energy)"
+  },
+  {
+    "id": "ai-w3-q2",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 10,
+    "question": "A smart home automation architect selects Z-Wave rather than Zigbee for a large stone-masonry mansion experiencing intense 2.4 GHz Wi-Fi interference. Which technical features of Z-Wave justify this architectural decision?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Z-Wave operates in the Sub-GHz band (908.42 MHz in US / 868.42 MHz in Europe), eliminating 2.4 GHz co-channel interference and providing superior wall penetration."
+      },
+      {
+        "key": "b",
+        "text": "Z-Wave uses pure acoustic waves traveling through walls at 1500 m/s."
+      },
+      {
+        "key": "c",
+        "text": "Z-Wave allows up to 65,535 hops per mesh packet."
+      },
+      {
+        "key": "d",
+        "text": "Z-Wave completely eliminates the need for power supplies or batteries."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": ["a"],
+    "sourceAnswer": "a",
+    "explanation": "Z-Wave operates in the Sub-GHz band (908.42 MHz in the US, 868.42 MHz in Europe) with GFSK modulation and Manchester encoding. Operating below 1 GHz avoids the congested 2.4 GHz ISM band and exhibits significantly lower RF attenuation through solid concrete and stone walls. See Week-3.pdf (Industrial & Short-Range Standards).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-3.pdf @ Slide 8 (Z-Wave Operating Frequencies)"
+  },
+  {
+    "id": "ai-w4-q1",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 4",
+    "weekNum": 4,
+    "questionNum": 11,
+    "question": "A sensor network topology deployment specifies that each sensor node has an omnidirectional sensing radius of Rs = 15 meters. What is the minimum radio transmission range (Rt) required to guarantee that complete sensing coverage of the region inherently ensures 100% network communication connectivity?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Rt must be at least 7.5 meters (Rt >= 0.5 * Rs)"
+      },
+      {
+        "key": "b",
+        "text": "Rt must be at least 15 meters (Rt >= Rs)"
+      },
+      {
+        "key": "c",
+        "text": "Rt must be at least 30 meters (Rt >= 2 * Rs)"
+      },
+      {
+        "key": "d",
+        "text": "Rt must be at least 150 meters (Rt >= 10 * Rs)"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": ["c"],
+    "sourceAnswer": "c",
+    "explanation": "In wireless sensor network topology theory, a foundational theorem states that sensing coverage guarantees complete network connectivity if and only if the transmission range is at least twice the sensing range: Rt >= 2 * Rs. For Rs = 15m, Rt must be at least 30m. See Week-4.pdf (Sensor Networks - Part IV).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-4.pdf @ Slide 4 (Coverage and Connectivity)"
+  },
+  {
+    "id": "ai-w4-q2",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 4",
+    "weekNum": 4,
+    "questionNum": 12,
+    "question": "An oceanographic agency deploys autonomous seabed sensors separated by 3.0 km in the ocean to detect seismic tremors. Why did the engineering team reject 2.4 GHz radio transceivers in favor of acoustic waves, and what is the one-way propagation delay across the 3.0 km link?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Water rapidly attenuates high-frequency radio waves; acoustic waves travel at ~1500 m/s in seawater, resulting in a 2.0-second one-way propagation delay."
+      },
+      {
+        "key": "b",
+        "text": "Water amplifies radio waves to dangerous levels; acoustic waves travel at the speed of light, resulting in zero latency."
+      },
+      {
+        "key": "c",
+        "text": "Acoustic waves require zero battery power; propagation delay is exactly 10 microseconds."
+      },
+      {
+        "key": "d",
+        "text": "Acoustic waves operate in the 5.9 GHz ITS band; propagation delay is 15 seconds."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": ["a"],
+    "sourceAnswer": "a",
+    "explanation": "Conductive seawater absorbs and attenuates high-frequency electromagnetic (RF) signals within centimeters. Underwater Acoustic Sensor Networks (UW-ASNs) rely on acoustic waves, which propagate at approximately 1500 m/s in water. A 3.0 km link produces t = 3000m / 1500m/s = 2.0 seconds of latency. See Week-4.pdf (Sensor Networks - Part III).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-4.pdf @ Slide 20 (Underwater Acoustic Networks)"
+  },
+  {
+    "id": "ai-w5-q1",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 5",
+    "weekNum": 5,
+    "questionNum": 13,
+    "question": "An automated irrigation system uses an Arduino Uno (ATmega328P, 5.0 V DC reference). A soil moisture sensor outputs an analog voltage of 2.50 V into pin A0. What integer value does analogRead(A0) return, and what parameter to analogWrite(9, val) produces a 50% duty-cycle PWM pump signal?",
+    "options": [
+      {
+        "key": "a",
+        "text": "analogRead returns 255; analogWrite parameter is 128"
+      },
+      {
+        "key": "b",
+        "text": "analogRead returns 512; analogWrite parameter is 128"
+      },
+      {
+        "key": "c",
+        "text": "analogRead returns 1023; analogWrite parameter is 255"
+      },
+      {
+        "key": "d",
+        "text": "analogRead returns 50; analogWrite parameter is 50"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": ["b"],
+    "sourceAnswer": "b",
+    "explanation": "Arduino Uno features a 10-bit ADC (2^10 = 1024 levels, 0 to 1023). For 2.5V (half of 5V), analogRead returns 512 (2.5 / 5.0 * 1024). PWM pins use 8-bit timers (0 to 255 duty levels). A 50% duty cycle requires analogWrite(9, 128) (50% of 255). See Week-5.pdf (Arduino Programming & Hardware).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-5.pdf @ Slide 14 (Arduino ADC and PWM)"
+  },
+  {
+    "id": "ai-w5-q2",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 5",
+    "weekNum": 5,
+    "questionNum": 14,
+    "question": "Two healthcare software systems exchange patient temperature telemetry. System A sends a JSON payload: {\"temp\": 37.0, \"scale\": \"C\"}. System B parses the JSON structure without syntax errors, but its internal logic assumes 'C' represents 'Count of fever episodes' rather than 'Degrees Celsius'. At which level of the interoperability framework has the communication failed?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Technical Interoperability"
+      },
+      {
+        "key": "b",
+        "text": "Syntactic Interoperability"
+      },
+      {
+        "key": "c",
+        "text": "Semantic Interoperability"
+      },
+      {
+        "key": "d",
+        "text": "Physical Layer Interoperability"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": ["c"],
+    "sourceAnswer": "c",
+    "explanation": "Syntactic interoperability succeeded because both systems parsed the JSON format. However, Semantic interoperability failed because both systems lacked a common ontology or shared understanding of the meaning/semantics of the data field 'C'. See Week-5.pdf (Interoperability in IoT).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-5.pdf @ Slide 5 (Levels of Interoperability)"
+  },
+  {
+    "id": "ai-w6-q1",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 15,
+    "question": "Which of the following Python data structures are MUTABLE, allowing their contents to be modified in-place during runtime without allocating a new object?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Lists ([])"
+      },
+      {
+        "key": "b",
+        "text": "Dictionaries ({})"
+      },
+      {
+        "key": "c",
+        "text": "Tuples (())"
+      },
+      {
+        "key": "d",
+        "text": "Sets (set())"
+      }
+    ],
+    "type": "mcq-multi",
+    "correctAnswer": "a, b, d",
+    "correctKeys": ["a", "b", "d"],
+    "sourceAnswer": "a, b, d",
+    "explanation": "In Python, Lists, Dictionaries, and Sets are mutable (their values can be modified in-place). Tuples, Strings, Integers, and Floats are immutable (modifying them generates a new object in memory). See Week-6.pdf (Python Programming for IoT).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-6.pdf @ Slide 8 (Python Data Structures)"
+  },
+  {
+    "id": "ai-w6-q2",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 16,
+    "question": "An IoT engineer creates a Python BSD socket server to receive incoming telemetry over TCP. The engineer executes: s = socket(AF_INET, SOCK_STREAM) and immediately calls s.listen(5). What critical operational call was omitted between socket creation and listening?",
+    "options": [
+      {
+        "key": "a",
+        "text": "s.bind((HOST, PORT))"
+      },
+      {
+        "key": "b",
+        "text": "s.connect((HOST, PORT))"
+      },
+      {
+        "key": "c",
+        "text": "s.sendto(b'data', (HOST, PORT))"
+      },
+      {
+        "key": "d",
+        "text": "s.shutdown()"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": ["a"],
+    "sourceAnswer": "a",
+    "explanation": "The standard lifecycle of a BSD TCP server socket is: socket() -> bind() -> listen() -> accept(). The server must bind its local network IP interface and port number before it can mark the socket as passive and listen for connection backlogs. See Week-6.pdf (Python Network Programming).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-6.pdf @ Slide 22 (Socket Programming Flow)"
+  },
+  {
+    "id": "ai-w7-q1",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 7",
+    "weekNum": 7,
+    "questionNum": 17,
+    "question": "An electronics hobbyist attempts to connect an analog gas sensor outputting a 0–5V signal directly to GPIO pin 18 of a Raspberry Pi 4 Model B. Which statements correctly identify why this direct connection is fundamentally flawed?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Raspberry Pi GPIO headers operate strictly at 3.3V logic level; connecting a 5V signal directly can permanently damage the Broadcom SoC."
+      },
+      {
+        "key": "b",
+        "text": "Raspberry Pi has zero onboard ADC channels; reading analog voltages requires an external ADC IC (e.g., MCP3008 via SPI)."
+      },
+      {
+        "key": "c",
+        "text": "Raspberry Pi only accepts wireless signals and has no physical GPIO pins."
+      },
+      {
+        "key": "d",
+        "text": "Raspberry Pi requires an analog current loop of 400 Amperes to register any input."
+      }
+    ],
+    "type": "mcq-multi",
+    "correctAnswer": "a, b",
+    "correctKeys": ["a", "b"],
+    "sourceAnswer": "a, b",
+    "explanation": "Raspberry Pi single-board computers have digital-only GPIO pins operating strictly at 3.3V logic (NOT 5V tolerant). Furthermore, unlike an Arduino Uno, the Raspberry Pi contains no onboard ADC, requiring an external converter chip (MCP3008, ADS1115) to read analog sensors. See Week-7.pdf (Raspberry Pi Architecture).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-7.pdf @ Slide 12 (Raspberry Pi GPIO Constraints)"
+  },
+  {
+    "id": "ai-w7-q2",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 7",
+    "weekNum": 7,
+    "questionNum": 18,
+    "question": "A weather station running on a Raspberry Pi publishes atmospheric telemetry to a free ThingSpeak cloud channel. The developer programs the script to post readings every 3 seconds, but notices that over 75% of the entries fail to record. What causes this failure?",
+    "options": [
+      {
+        "key": "a",
+        "text": "ThingSpeak free accounts enforce a strict rate limit of 1 write request every 15 seconds."
+      },
+      {
+        "key": "b",
+        "text": "ThingSpeak only accepts data on Sunday mornings."
+      },
+      {
+        "key": "c",
+        "text": "The Raspberry Pi Wi-Fi module shuts down automatically after every 2 seconds."
+      },
+      {
+        "key": "d",
+        "text": "ThingSpeak does not support HTTP POST requests."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": ["a"],
+    "sourceAnswer": "a",
+    "explanation": "ThingSpeak free accounts enforce a rate limit of 1 update per 15 seconds per channel. Updating every 3 seconds causes ThingSpeak to reject requests (HTTP 429 Too Many Requests). The firmware update interval must be set to >= 15 seconds. See Week-7.pdf (Cloud Telemetry & ThingSpeak).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-7.pdf @ Slide 28 (ThingSpeak Telemetry)"
+  },
+  {
+    "id": "ai-w8-q1",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 8",
+    "weekNum": 8,
+    "questionNum": 19,
+    "question": "A smart campus network administrator transitions from legacy hardware routers to Software-Defined Networking (SDN) to optimize IoT telemetry routes. Which architectural separation is the core principle of SDN?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Decoupling the Control Plane (centralized software controller deciding routes) from the Data Plane (forwarding switches executing packet matches and actions)."
+      },
+      {
+        "key": "b",
+        "text": "Replacing all fiber optic cables with 2.4 GHz acoustic transducers."
+      },
+      {
+        "key": "c",
+        "text": "Eliminating IP packets in favor of analog Morse code."
+      },
+      {
+        "key": "d",
+        "text": "Combining the power grid with the water supply system."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": ["a"],
+    "sourceAnswer": "a",
+    "explanation": "SDN fundamentally decouples the Control Plane (the software logic that decides how traffic is routed across the network topology) from the Data Plane (the underlying hardware forwarding switches that match packet headers against OpenFlow tables and forward packets). See Week-8.pdf (Software-Defined Networking).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-8.pdf @ Slide 6 (SDN Architecture)"
+  },
+  {
+    "id": "ai-w8-q2",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 8",
+    "weekNum": 8,
+    "questionNum": 20,
+    "question": "A cloud provider offers data scientists access to a cloud environment where Python, PyTorch, and CUDA runtime libraries are pre-configured, allowing users to deploy ML models without managing underlying operating system patches, hypervisors, or virtual hardware. According to NIST SP 800-145, which service model is this?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Infrastructure as a Service (IaaS)"
+      },
+      {
+        "key": "b",
+        "text": "Platform as a Service (PaaS)"
+      },
+      {
+        "key": "c",
+        "text": "Software as a Service (SaaS)"
+      },
+      {
+        "key": "d",
+        "text": "Sensor as a Service (SenaaS)"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": ["b"],
+    "sourceAnswer": "b",
+    "explanation": "Under NIST SP 800-145, Platform as a Service (PaaS) delivers a programming and runtime environment (APIs, runtimes, database engines) allowing customers to deploy applications without managing underlying virtual machines, OS kernels, or server hardware. See Week-8.pdf (NIST Cloud Computing Core).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-8.pdf @ Slide 18 (NIST Cloud Service Models)"
+  },
+  {
+    "id": "ai-w9-q1",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 21,
+    "question": "A cloud architect configuring an on-premises OpenStack private cloud needs to: (1) Spawn and schedule virtual machine compute instances, and (2) Attach persistent virtual block storage drives that retain data across VM reboots. Which two OpenStack services fulfill these requirements?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Nova for compute instances; Cinder for persistent block storage."
+      },
+      {
+        "key": "b",
+        "text": "Swift for compute instances; Keystone for persistent block storage."
+      },
+      {
+        "key": "c",
+        "text": "Horizon for compute instances; Glance for persistent block storage."
+      },
+      {
+        "key": "d",
+        "text": "Neutron for compute instances; Ceilometer for persistent block storage."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": ["a"],
+    "sourceAnswer": "a",
+    "explanation": "In OpenStack architecture, Nova is the core compute service that provisions and manages virtual machines. Cinder is the block storage service providing persistent virtual block volumes attachable to running VMs. Swift provides object storage (unstructured files), and Glance stores VM disk image templates. See Week-9.pdf (OpenStack & Sensor-Cloud).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-9.pdf @ Slide 7 (OpenStack Components)"
+  },
+  {
+    "id": "ai-w9-q2",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 22,
+    "question": "An autonomous haulage truck in a remote open-pit mine relies on collision avoidance sensors. The mine has a satellite Internet link to the centralized cloud with 350 ms round-trip latency. Why is Fog Computing deployed on local roadside edge gateways rather than relying on the centralized cloud?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Fog computing brings compute and storage down to local gateways, providing typical latencies of 5–20 ms and operating autonomously during satellite outages."
+      },
+      {
+        "key": "b",
+        "text": "Fog computing requires zero electrical power to run compute servers."
+      },
+      {
+        "key": "c",
+        "text": "Fog computing eliminates all sensors from the vehicle."
+      },
+      {
+        "key": "d",
+        "text": "Fog computing operates strictly in outer space."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": ["a"],
+    "sourceAnswer": "a",
+    "explanation": "Fog computing (pioneered by Cisco) extends cloud resources to the local network edge. In time-critical industrial and vehicular applications, fog computing achieves 5–20 ms latencies (vs. 100–350 ms in cloud) and operates autonomously when external WAN connections fail. See Week-9.pdf (Fog Computing).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-9.pdf @ Slide 22 (Fog Computing Architecture)"
+  },
+  {
+    "id": "ai-w10-q1",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 23,
+    "question": "A smart municipality deploys two smartphone applications: App 1 automatically monitors road roughness in the background using the smartphone's accelerometer and GPS while the driver commutes, requiring zero user intervention. App 2 requires citizens to open the app, photograph broken streetlights, enter descriptions, and tap 'Submit Report'. How are App 1 and App 2 categorized in Mobile Crowd Sensing (MCS)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "App 1 is Opportunistic Sensing; App 2 is Participatory Sensing."
+      },
+      {
+        "key": "b",
+        "text": "App 1 is Participatory Sensing; App 2 is Opportunistic Sensing."
+      },
+      {
+        "key": "c",
+        "text": "Both apps are classified as Industrial Cyber-Physical Systems."
+      },
+      {
+        "key": "d",
+        "text": "Both apps are classified as Automated Meter Reading."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": ["a"],
+    "sourceAnswer": "a",
+    "explanation": "Opportunistic sensing runs passively in the background without explicit user action or manual intervention (e.g., automatic GPS/accelerometer logging). Participatory sensing requires active, conscious user effort and engagement (e.g., photographing a streetlight and tapping submit). See Week-10.pdf (Mobile Crowd Sensing).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-10.pdf @ Slide 14 (Crowd Sensing Categories)"
+  },
+  {
+    "id": "ai-w10-q2",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 24,
+    "question": "Which of the following are recognized among the six core dimensions of a Smart City defined in the European Smart Cities framework taught by Prof. Sudip Misra?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Smart Mobility"
+      },
+      {
+        "key": "b",
+        "text": "Smart Governance"
+      },
+      {
+        "key": "c",
+        "text": "Smart Environment"
+      },
+      {
+        "key": "d",
+        "text": "Smart Interplanetary Teleportation"
+      }
+    ],
+    "type": "mcq-multi",
+    "correctAnswer": "a, b, c",
+    "correctKeys": ["a", "b", "c"],
+    "sourceAnswer": "a, b, c",
+    "explanation": "The six core dimensions of a Smart City are: Smart Economy, Smart Mobility, Smart Environment, Smart People, Smart Living, and Smart Governance. 'Smart Interplanetary Teleportation' is an absurd distractor. See Week-10.pdf (Smart Cities).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-10.pdf @ Slide 4 (Six Dimensions of Smart Cities)"
+  },
+  {
+    "id": "ai-w11-q1",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 25,
+    "question": "A municipal electrical utility upgrades from Automated Meter Reading (AMR) to an Advanced Metering Infrastructure (AMI) smart grid system. What fundamental communication capability does AMI provide that legacy AMR lacked?",
+    "options": [
+      {
+        "key": "a",
+        "text": "AMR was one-way drive-by consumption logging; AMI establishes continuous bidirectional digital communication allowing remote disconnects, dynamic tariff updates, and outage detection."
+      },
+      {
+        "key": "b",
+        "text": "AMI replaces electricity with optical laser beams."
+      },
+      {
+        "key": "c",
+        "text": "AMR was bidirectional, whereas AMI is strictly one-way analog."
+      },
+      {
+        "key": "d",
+        "text": "AMI eliminates all electrical substations and transformers."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": ["a"],
+    "sourceAnswer": "a",
+    "explanation": "AMR (Automated Meter Reading) was a unidirectional system where utility vans drove past meters to collect billing data. AMI (Advanced Metering Infrastructure) is a continuous, bidirectional communications network that enables remote meter configuration, real-time demand response, and fault alerts. See Week-11.pdf (Smart Grid & AMI).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-11.pdf @ Slide 8 (AMR vs. AMI)"
+  },
+  {
+    "id": "ai-w11-q2",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 26,
+    "question": "A transmission system operator detects sub-second inter-area power oscillations that can trigger grid-wide blackouts. Why is traditional SCADA telemetry insufficient to detect these oscillations, and what device must be deployed instead?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Traditional SCADA polls slowly (once every 2 to 4 seconds); Phasor Measurement Units (PMUs) must be deployed because they sample GPS-synchronized synchrophasors at 30 to 60 measurements per second."
+      },
+      {
+        "key": "b",
+        "text": "Traditional SCADA operates only underwater; PMUs operate only on satellites."
+      },
+      {
+        "key": "c",
+        "text": "Traditional SCADA requires manual meter readers on foot; PMUs use Z-Wave mesh."
+      },
+      {
+        "key": "d",
+        "text": "SCADA is too fast for human operators, sampling at 10 million times per second."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": ["a"],
+    "sourceAnswer": "a",
+    "explanation": "Traditional SCADA polls remote terminal units (RTUs) at low sampling rates (every 2–4 seconds) and lacks phase angle synchronization. Phasor Measurement Units (PMUs) sample synchrophasors at 30–60 samples per second, time-synchronized to microsecond precision via GPS, giving real-time visibility into dynamic grid oscillations. See Week-11.pdf (Wide Area Measurement Systems).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-11.pdf @ Slide 14 (PMUs and WAMS)"
+  },
+  {
+    "id": "ai-w12-q1",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 27,
+    "question": "An agricultural drone captures multispectral reflectance over a corn field: Near-Infrared (NIR) reflectance is 0.70 and Visible Red reflectance is 0.10. What is the calculated Normalized Difference Vegetation Index (NDVI), and what does it indicate about the crop's physiological state?",
+    "options": [
+      {
+        "key": "a",
+        "text": "NDVI = 0.75; indicates healthy, dense green vegetation with active chlorophyll."
+      },
+      {
+        "key": "b",
+        "text": "NDVI = 0.10; indicates bare soil or dead vegetation."
+      },
+      {
+        "key": "c",
+        "text": "NDVI = -0.60; indicates deep standing water."
+      },
+      {
+        "key": "d",
+        "text": "NDVI = 8.00; indicates sensor saturation and failure."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": ["a"],
+    "sourceAnswer": "a",
+    "explanation": "NDVI = (NIR - Red) / (NIR + Red) = (0.70 - 0.10) / (0.70 + 0.10) = 0.60 / 0.80 = 0.75. Active chlorophyll absorbs visible red light for photosynthesis and reflects near-infrared light. Values between 0.5 and 0.9 represent healthy, dense green foliage. See Week-12.pdf (IoT in Agriculture & NDVI).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-12.pdf @ Slide 8 (NDVI Formulation)"
+  },
+  {
+    "id": "ai-w12-q2",
+    "bank": "ai-generated-bank",
+    "setId": "ai-generated",
+    "term": "AI Generated Conceptual Practice",
+    "shortTerm": "AI Practice",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 28,
+    "question": "Two autonomous connected vehicles approaching a blind intersection transmit emergency brake warnings directly to each other without routing through any cellular tower or cloud server. Which wireless communication technology and frequency band support this ad-hoc, sub-5 ms latency vehicle-to-vehicle (V2V) link?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Dedicated Short-Range Communications (DSRC) based on IEEE 802.11p in the 5.9 GHz ITS band."
+      },
+      {
+        "key": "b",
+        "text": "NFC based on 13.56 MHz magnetic induction."
+      },
+      {
+        "key": "c",
+        "text": "Z-Wave based on 868.42 MHz Manchester encoding."
+      },
+      {
+        "key": "d",
+        "text": "Classic Bluetooth based on 1 Master and 7 active Slaves."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": ["a"],
+    "sourceAnswer": "a",
+    "explanation": "DSRC (Dedicated Short-Range Communications) is an ad-hoc V2X protocol based on IEEE 802.11p operating in the dedicated 5.9 GHz Intelligent Transportation Systems (ITS) band. It delivers direct vehicle-to-vehicle communication with sub-5 ms latency without requiring cellular base station infrastructure. See Week-12.pdf (Vehicular IoT & V2X).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "Week-12.pdf @ Slide 24 (Connected Vehicles & DSRC)"
+  }
+]

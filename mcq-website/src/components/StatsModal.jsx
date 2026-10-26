@@ -13,7 +13,12 @@ export default function StatsModal({
   const [confirmReset, setConfirmReset] = useState(false);
 
   const is2026 = currentBank === 'current-session-2026';
-  const bankData = is2026 ? manifest?.currentSession : manifest?.practiceBank;
+  const isAI = currentBank === 'ai-generated-bank';
+  const bankData = is2026 
+    ? manifest?.currentSession 
+    : isAI 
+      ? manifest?.aiGenerated 
+      : manifest?.practiceBank;
   const totalQuestions = bankData?.total || 0;
   const weeksData = bankData?.weeks || {};
 
@@ -45,7 +50,7 @@ export default function StatsModal({
         </div>
 
         <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem' }}>
-          Active Bank: <strong>{is2026 ? '2026 Exam-Session MCQs' : 'Historical Practice Bank'}</strong>
+          Active Bank: <strong>{is2026 ? '2026 Exam-Session MCQs' : isAI ? 'AI Generated MCQs (Weeks 1 to 12)' : 'Historical Practice Bank'}</strong>
         </p>
 
         {/* Top 4 Stat Boxes */}

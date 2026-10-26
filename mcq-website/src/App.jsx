@@ -25,16 +25,18 @@ export default function App() {
     setTheme(prev => prev === 'light' ? 'dark' : 'light');
   };
 
-  // Active Question Bank: 'current-session-2026' or 'practice-bank-904'
+  // Active Question Bank: 'current-session-2026', 'ai-generated-bank', or 'practice-bank-904'
   const [currentBank, setCurrentBank] = useState('current-session-2026');
 
   // Loaded Data Repositories
   const [manifest, setManifest] = useState(null);
   const [allQuestions2026, setAllQuestions2026] = useState([]);
   const [allQuestionsPractice, setAllQuestionsPractice] = useState([]);
+  const [allQuestionsAI, setAllQuestionsAI] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // User Progress Storage in LocalStorage (Strictly decoupled per bank)
+  // User Progress Storage in LocalStorage (Decoupled per bank)
+  // 1. 2026 Current Session
   const [userAnswers2026, setUserAnswers2026] = useState(() => {
     try {
       return JSON.parse(localStorage.getItem('nptel_iot_answers_2026')) || {};
@@ -53,6 +55,26 @@ export default function App() {
     } catch { return []; }
   });
 
+  // 2. AI Generated Bank
+  const [userAnswersAI, setUserAnswersAI] = useState(() => {
+    try {
+      return JSON.parse(localStorage.getItem('nptel_iot_answers_ai')) || {};
+    } catch { return {}; }
+  });
+
+  const [userHistoryAI, setUserHistoryAI] = useState(() => {
+    try {
+      return JSON.parse(localStorage.getItem('nptel_iot_history_ai')) || {};
+    } catch { return {}; }
+  });
+
+  const [bookmarksAI, setBookmarksAI] = useState(() => {
+    try {
+      return JSON.parse(localStorage.getItem('nptel_iot_bookmarks_ai')) || [];
+    } catch { return []; }
+  });
+
+  // 3. Historical Practice Bank
   const [userAnswersPractice, setUserAnswersPractice] = useState(() => {
     try {
       return JSON.parse(localStorage.getItem('nptel_iot_answers_practice')) || {};
@@ -85,6 +107,18 @@ export default function App() {
   }, [bookmarks2026]);
 
   useEffect(() => {
+    localStorage.setItem('nptel_iot_answers_ai', JSON.stringify(userAnswersAI));
+  }, [userAnswersAI]);
+
+  useEffect(() => {
+    localStorage.setItem('nptel_iot_history_ai', JSON.stringify(userHistoryAI));
+  }, [userHistoryAI]);
+
+  useEffect(() => {
+    localStorage.setItem('nptel_iot_bookmarks_ai', JSON.stringify(bookmarksAI));
+  }, [bookmarksAI]);
+
+  useEffect(() => {
     localStorage.setItem('nptel_iot_answers_practice', JSON.stringify(userAnswersPractice));
   }, [userAnswersPractice]);
 
@@ -101,14 +135,14 @@ export default function App() {
     async function loadData() {
       setLoading(true);
       try {
-        // Fetch manifest
+        // 1. Fetch manifest
         const manifestRes = await fetch('/data/manifest.json');
         if (manifestRes.ok) {
           const m = await manifestRes.json();
           setManifest(m);
         }
 
-        // Fetch all 12 weeks of 2026 current session
+        // 2. Fetch all 12 weeks of 2026 current session
         const wPromises = Array.from({ length: 12 }, (_, i) => 
           fetch(`/data/current-session-2026/W${i + 1}.json`).then(r => r.json())
         );
@@ -116,7 +150,14 @@ export default function App() {
         const merged2026 = wResults.flat();
         setAllQuestions2026(merged2026);
 
-        // Fetch practice bank
+        // 3. Fetch AI Generated bank
+        const aiRes = await fetch('/data/ai-generated/questions.json');
+        if (aiRes.ok) {
+          const aiData = await aiRes.json();
+          setAllQuestionsAI(aiData);
+        }
+
+        // 4. Fetch practice bank
         const pracRes = await fetch('/data/practice-bank-904/questions.json');
         if (pracRes.ok) {
           const pracData = await pracRes.json();
@@ -154,18 +195,53 @@ export default function App() {
 
   // Active data references based on current bank
   const is2026 = currentBank === 'current-session-2026';
-  const rawQuestions = is2026 ? allQuestions2026 : allQuestionsPractice;
-  const activeAnswers = is2026 ? userAnswers2026 : userAnswersPractice;
-  const activeHistory = is2026 ? userHistory2026 : userHistoryPractice;
-  const activeBookmarks = is2026 ? bookmarks2026 : bookmarksPractice;
+  const isAI = currentBank === 'ai-generated-bank';
 
-  const setActiveAnswers = is2026 ? setUserAnswers2026 : setUserAnswersPractice;
-  const setActiveHistory = is2026 ? setUserHistory2026 : setUserHistoryPractice;
-  const setActiveBookmarks = is2026 ? setBookmarks2026 : setBookmarksPractice;
+  const rawQuestions = is2026 
+    ? allQuestions2026 
+    : isAI 
+      ? allQuestionsAI 
+      : allQuestionsPractice;
+
+  const activeAnswers = is2026 
+    ? userAnswers2026 
+    : isAI 
+      ? userAnswersAI 
+      : userAnswersPractice;
+
+  const activeHistory = is2026 
+    ? userHistory2026 
+    : isAI 
+      ? userHistoryAI 
+      : userHistoryPractice;
+
+  const activeBookmarks = is2026 
+    ? bookmarks2026 
+    : isAI 
+      ? bookmarksAI 
+      : bookmarksPractice;
+
+  const setActiveAnswers = is2026 
+    ? setUserAnswers2026 
+    : isAI 
+      ? setUserAnswersAI 
+      : setUserAnswersPractice;
+
+  const setActiveHistory = is2026 
+    ? setUserHistory2026 
+    : isAI 
+      ? setUserHistoryAI 
+      : setUserHistoryPractice;
+
+  const setActiveBookmarks = is2026 
+    ? setBookmarks2026 
+    : isAI 
+      ? setBookmarksAI 
+      : setBookmarksPractice;
 
   // Available Terms in Practice Bank
   const availableTerms = useMemo(() => {
-    if (is2026) return [];
+    if (is2026 || isAI) return [];
     const termMap = {};
     allQuestionsPractice.forEach(q => {
       const termId = q.setId;
@@ -175,7 +251,7 @@ export default function App() {
       termMap[termId].count++;
     });
     return Object.values(termMap);
-  }, [is2026, allQuestionsPractice]);
+  }, [is2026, isAI, allQuestionsPractice]);
 
   // Compute Week Progress Stats for FilterBar badges
   const weekStats = useMemo(() => {
@@ -204,8 +280,8 @@ export default function App() {
         return false;
       }
 
-      // 2. Term Filter (for practice bank)
-      if (!is2026 && selectedTerm !== 'ALL' && q.setId !== selectedTerm) {
+      // 2. Term Filter (for historical practice bank only)
+      if (!is2026 && !isAI && selectedTerm !== 'ALL' && q.setId !== selectedTerm) {
         return false;
       }
 
@@ -226,7 +302,7 @@ export default function App() {
 
       return true;
     });
-  }, [rawQuestions, selectedWeek, selectedTerm, selectedType, selectedMode, is2026, activeHistory, activeBookmarks]);
+  }, [rawQuestions, selectedWeek, selectedTerm, selectedType, selectedMode, is2026, isAI, activeHistory, activeBookmarks]);
 
   // Answer Evaluation Handler (Allows reselecting & re-answering)
   const handleAnswer = useCallback((questionId, selectedOptions) => {
@@ -247,13 +323,14 @@ export default function App() {
     setActiveHistory(prev => ({
       ...prev,
       [questionId]: {
-        isCorrect: isCorrect,
-        attemptedAt: new Date().toISOString()
+        isCorrect,
+        answeredAt: new Date().toISOString(),
+        selected: selectedOptions
       }
     }));
   }, [rawQuestions, setActiveAnswers, setActiveHistory]);
 
-  // Reset / Clear Answer Handler (Allows user to clear selection and re-try freshly)
+  // Reset answer handler (allows student to clear choice)
   const handleResetAnswer = useCallback((questionId) => {
     setActiveAnswers(prev => {
       const next = { ...prev };
@@ -267,7 +344,7 @@ export default function App() {
     });
   }, [setActiveAnswers, setActiveHistory]);
 
-  // Bookmark Toggle Handler
+  // Bookmark toggle handler
   const handleToggleBookmark = useCallback((questionId) => {
     setActiveBookmarks(prev => {
       if (prev.includes(questionId)) {
@@ -293,15 +370,28 @@ export default function App() {
     Object.values(activeHistory).forEach(h => {
       if (h.isCorrect) correct++;
     });
-    return { total, attempted, correct };
-  }, [rawQuestions.length, activeHistory]);
+    return {
+      total,
+      attempted,
+      correct,
+      accuracy: attempted > 0 ? Math.round((correct / attempted) * 100) : 0
+    };
+  }, [rawQuestions, activeHistory]);
 
+  // Bank stats for BankSelector badges
   const stats2026 = useMemo(() => {
     const attempted = Object.keys(userHistory2026).length;
     let correct = 0;
     Object.values(userHistory2026).forEach(h => { if (h.isCorrect) correct++; });
     return { attempted, correct };
   }, [userHistory2026]);
+
+  const statsAI = useMemo(() => {
+    const attempted = Object.keys(userHistoryAI).length;
+    let correct = 0;
+    Object.values(userHistoryAI).forEach(h => { if (h.isCorrect) correct++; });
+    return { attempted, correct };
+  }, [userHistoryAI]);
 
   const statsPractice = useMemo(() => {
     const attempted = Object.keys(userHistoryPractice).length;
@@ -358,12 +448,13 @@ export default function App() {
         />
       ) : (
         <>
-          {/* Two Primary Question Banks Selector */}
+          {/* Question Banks Selector (2026 Session, AI Generated, and Practice Bank) */}
           <BankSelector
             currentBank={currentBank}
             onSelectBank={handleBankChange}
             manifest={manifest}
             userStats2026={stats2026}
+            userStatsAI={statsAI}
             userStatsPractice={statsPractice}
             onOpenMockTest={() => setIsMockModalOpen(true)}
           />

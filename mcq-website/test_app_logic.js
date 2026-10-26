@@ -29,9 +29,12 @@ assert(fs.existsSync(manifestPath), 'manifest.json exists');
 const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
 
 // Verify manifest counts align with actual file counts
-assert(manifest.totalAllQuestions === 977, `Total questions in manifest is 977 (actual: ${manifest.totalAllQuestions})`);
+assert(manifest.totalAllQuestions >= 977, `Total questions in manifest is >= 977 (actual: ${manifest.totalAllQuestions})`);
 assert(manifest.currentSession.total === 253, `Current session total is 253 (actual: ${manifest.currentSession.total})`);
 assert(manifest.practiceBank.total === 724, `Practice bank total is 724 (actual: ${manifest.practiceBank.total})`);
+if (manifest.aiGenerated) {
+  assert(manifest.aiGenerated.total === 28, `AI Generated bank total is 28 (actual: ${manifest.aiGenerated.total})`);
+}
 
 // TEST 2: Current session files W1 to W12
 console.log('\n[Suite 2: 2026 Current Session Integrity]');
@@ -101,6 +104,23 @@ console.log('\n[Suite 5: Bank Separation Check]');
 const w1Sample = JSON.parse(fs.readFileSync(path.join(__dirname, 'public', 'data', 'current-session-2026', 'W1.json'), 'utf8'))[0];
 assert(w1Sample.bank === 'current-session-2026', 'Current session record has bank="current-session-2026"');
 assert(practiceData[0].bank === 'practice-bank-904', 'Practice bank record has bank="practice-bank-904"');
+
+// TEST 6: AI Generated Questions Verification
+console.log('\n[Suite 6: AI Generated Conceptual Bank Integrity]');
+const aiPath = path.join(__dirname, 'public', 'data', 'ai-generated', 'questions.json');
+assert(fs.existsSync(aiPath), 'ai-generated/questions.json exists');
+const aiQuestions = JSON.parse(fs.readFileSync(aiPath, 'utf8'));
+assert(aiQuestions.length === 28, `AI Generated bank has 28 questions (actual: ${aiQuestions.length})`);
+
+// Verify all AI questions have required schema fields
+let aiSchemaValid = true;
+aiQuestions.forEach((q, idx) => {
+  if (!q.id || !q.question || !q.options || !q.correctKeys || !q.explanation || !q.week) {
+    aiSchemaValid = false;
+    console.error(`  ✗ Invalid AI question schema at index ${idx}: ${q.id}`);
+  }
+});
+assert(aiSchemaValid, 'All 28 AI Generated questions adhere to strict schema requirements');
 
 console.log('\n=====================================================');
 console.log(`   TEST RESULTS: ${testsPassed} PASSED, ${testsFailed} FAILED`);

@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-24T14:00:16.954Z",
-  "totalAllQuestions": 977,
+  "updatedAt": "2026-10-27T00:09:00.000Z",
+  "totalAllQuestions": 1005,
   "currentSession": {
     "bankId": "current-session-2026",
     "title": "Current 2026 Exam-Session MCQs (W1–W12)",
@@ -163,6 +163,25 @@
         "multi": 4,
         "tf": 12
       }
+    }
+  },
+  "aiGenerated": {
+    "bankId": "ai-generated-bank",
+    "title": "AI Generated MCQs (Weeks 1 to 12)",
+    "total": 28,
+    "weeks": {
+      "W1": { "count": 6, "single": 6, "multi": 0, "tf": 0 },
+      "W2": { "count": 2, "single": 2, "multi": 0, "tf": 0 },
+      "W3": { "count": 2, "single": 2, "multi": 0, "tf": 0 },
+      "W4": { "count": 2, "single": 2, "multi": 0, "tf": 0 },
+      "W5": { "count": 2, "single": 2, "multi": 0, "tf": 0 },
+      "W6": { "count": 2, "single": 1, "multi": 1, "tf": 0 },
+      "W7": { "count": 2, "single": 1, "multi": 1, "tf": 0 },
+      "W8": { "count": 2, "single": 2, "multi": 0, "tf": 0 },
+      "W9": { "count": 2, "single": 2, "multi": 0, "tf": 0 },
+      "W10": { "count": 2, "single": 1, "multi": 1, "tf": 0 },
+      "W11": { "count": 2, "single": 2, "multi": 0, "tf": 0 },
+      "W12": { "count": 2, "single": 2, "multi": 0, "tf": 0 }
     }
   }
 }

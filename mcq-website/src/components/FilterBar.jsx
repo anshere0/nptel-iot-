@@ -10,13 +10,18 @@ export default function FilterBar({
   onSelectMode,
   selectedTerm,
   onSelectTerm,
-  availableTerms,
-  weekStats
+  availableTerms = [],
+  weekStats = {}
 }) {
   const is2026 = currentBank === 'current-session-2026';
-  const weeksList = is2026 
+  const isAI = currentBank === 'ai-generated-bank';
+  const weeksList = (is2026 || isAI)
     ? [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] 
     : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+  let sectionTitle = 'Select Week (Practice Bank)';
+  if (is2026) sectionTitle = 'Select Course Week (2026 Current Session)';
+  else if (isAI) sectionTitle = 'Select Course Week (AI Generated Conceptual MCQs)';
 
   return (
     <div className="filter-bar">
@@ -24,10 +29,10 @@ export default function FilterBar({
       <div>
         <div className="filter-section-title">
           <span>📅</span>
-          <span>{is2026 ? 'Select Course Week (2026 Current Session)' : 'Select Week (Practice Bank)'}</span>
+          <span>{sectionTitle}</span>
         </div>
         <div className="weeks-grid">
-          {!is2026 && (
+          {(!is2026 || isAI) && (
             <button
               className={`week-btn ${selectedWeek === 'ALL' ? 'active' : ''}`}
               onClick={() => onSelectWeek('ALL')}
@@ -40,7 +45,7 @@ export default function FilterBar({
             const wKey = `W${w}`;
             const st = weekStats[wKey];
             const attempted = st?.attempted || 0;
-            const total = st?.count || 15;
+            const total = st?.count || (isAI ? (w === 1 ? 6 : 2) : 15);
 
             return (
               <button
@@ -115,8 +120,8 @@ export default function FilterBar({
           </button>
         </div>
 
-        {/* Term Filter (for Practice Bank only) */}
-        {!is2026 && (
+        {/* Term Filter (for Historical Practice Bank only) */}
+        {!is2026 && !isAI && availableTerms.length > 0 && (
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
             <span style={{ fontSize: '0.8125rem', color: 'var(--text-muted)', fontWeight: 600 }}>
               Term:

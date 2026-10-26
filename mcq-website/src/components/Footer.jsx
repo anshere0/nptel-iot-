@@ -1,6 +1,16 @@
 import React from 'react';
 
 export default function Footer({ onOpenCurator, onOpenStats, currentBank, onSelectBank }) {
+  const handleCycleBank = () => {
+    if (currentBank === 'current-session-2026') {
+      onSelectBank('ai-generated-bank');
+    } else if (currentBank === 'ai-generated-bank') {
+      onSelectBank('practice-bank-904');
+    } else {
+      onSelectBank('current-session-2026');
+    }
+  };
+
   return (
     <footer style={{
       marginTop: '3.5rem',
@@ -59,7 +69,8 @@ export default function Footer({ onOpenCurator, onOpenStats, currentBank, onSele
           </button>
           <button 
             className="pill-btn"
-            onClick={() => onSelectBank(currentBank === 'current-session-2026' ? 'practice-bank-904' : 'current-session-2026')}
+            onClick={handleCycleBank}
+            title="Cycle between 2026 Session, AI Generated, and Practice banks"
           >
             🔄 Switch Bank
           </button>
