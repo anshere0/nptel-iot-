@@ -1,0 +1,556 @@
+[
+  {
+    "id": "2026-w5-q1",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 5",
+    "weekNum": 5,
+    "questionNum": 1,
+    "question": "What does interoperability allow IoT devices to do?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Communicate and exchange data"
+      },
+      {
+        "key": "b",
+        "text": "Work only offline"
+      },
+      {
+        "key": "c",
+        "text": "Use only one protocol"
+      },
+      {
+        "key": "d",
+        "text": "Disable other devices"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Interoperability enables different IoT devices and systems to c ommunicate and exchange data. See Lecture 21 (Interoperability in Internet of Things) @ 03:30",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_5_Assignment.pdf"
+  },
+  {
+    "id": "2026-w5-q2",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 5",
+    "weekNum": 5,
+    "questionNum": 2,
+    "question": "Syntactic interoperability deals with:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Message format"
+      },
+      {
+        "key": "b",
+        "text": "Battery size"
+      },
+      {
+        "key": "c",
+        "text": "Device colour"
+      },
+      {
+        "key": "d",
+        "text": "Sensor weight"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Syntactic interoperability concerns the format of messages exchanged between devices and users. See Lecture 21 (Interoperability in Internet of Things) @ 17:01 NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_5_Assignment.pdf"
+  },
+  {
+    "id": "2026-w5-q3",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 5",
+    "weekNum": 5,
+    "questionNum": 3,
+    "question": "What does UMB stand for?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Universal Middleware Bridge"
+      },
+      {
+        "key": "b",
+        "text": "Unified Mobile Board"
+      },
+      {
+        "key": "c",
+        "text": "Universal Memory Block"
+      },
+      {
+        "key": "d",
+        "text": "User Management Bridge"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "UMB stands for Universal Middleware Bridge. It helps different middleware-based devices work together. See Lecture 21 (Interoperability in Internet of Things) @ 25:42",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_5_Assignment.pdf"
+  },
+  {
+    "id": "2026-w5-q4",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 5",
+    "weekNum": 5,
+    "questionNum": 4,
+    "question": "What is the operating voltage of the Arduino UNO?",
+    "options": [
+      {
+        "key": "a",
+        "text": "3.3 V"
+      },
+      {
+        "key": "b",
+        "text": "5 V"
+      },
+      {
+        "key": "c",
+        "text": "9 V"
+      },
+      {
+        "key": "d",
+        "text": "12 V"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "The Arduino UNO operates at 5 volts. See Lecture 22: Introduction to Arduino Programming : Part I @ 06:57. NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_5_Assignment.pdf"
+  },
+  {
+    "id": "2026-w5-q5",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 5",
+    "weekNum": 5,
+    "questionNum": 5,
+    "question": "What is a program written in the Arduino IDE called?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Packet"
+      },
+      {
+        "key": "b",
+        "text": "Sketch"
+      },
+      {
+        "key": "c",
+        "text": "Frame"
+      },
+      {
+        "key": "d",
+        "text": "Query"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "A program created and uploaded using the Arduino IDE is called a sketch. See Lecture 22 (Introduction to Arduino Programming - Part I) @ 12:12",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_5_Assignment.pdf"
+  },
+  {
+    "id": "2026-w5-q6",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 5",
+    "weekNum": 5,
+    "questionNum": 6,
+    "question": "Which interface is mainly used to connect an Arduino UNO to a computer?",
+    "options": [
+      {
+        "key": "a",
+        "text": "HDMI"
+      },
+      {
+        "key": "b",
+        "text": "USB"
+      },
+      {
+        "key": "c",
+        "text": "VGA"
+      },
+      {
+        "key": "d",
+        "text": "Ethernet"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "The Arduino UNO uses a USB interface to connect to a computer. The USB connection can be used to upload programs to the board and also provide power during development. See Lecture 22: Introduction to Arduino Programming : Part I @ 07:26 NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_5_Assignment.pdf"
+  },
+  {
+    "id": "2026-w5-q7",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 5",
+    "weekNum": 5,
+    "questionNum": 7,
+    "question": "What is the conventional starting index of an array in Arduino programming?",
+    "options": [
+      {
+        "key": "a",
+        "text": "-1"
+      },
+      {
+        "key": "b",
+        "text": "0"
+      },
+      {
+        "key": "c",
+        "text": "1"
+      },
+      {
+        "key": "d",
+        "text": "2"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "As in C and C++, Arduino arrays use zero-based indexing. Theref ore, the first element is stored at index 0. See Lecture 23 (Introduction to Arduino Programming - Part II) @ 04:08",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_5_Assignment.pdf"
+  },
+  {
+    "id": "2026-w5-q8",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 5",
+    "weekNum": 5,
+    "questionNum": 8,
+    "question": "Which Arduino function is used to generate a pseudo-random number within a specified range?",
+    "options": [
+      {
+        "key": "a",
+        "text": "random()"
+      },
+      {
+        "key": "b",
+        "text": "pinMode()"
+      },
+      {
+        "key": "c",
+        "text": "digitalWrite()"
+      },
+      {
+        "key": "d",
+        "text": "attachInterrupt()"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "The random() function generates a pseudo-random number in a spe cified range. For example, random(max) produces a value within the range defined by max. See Lecture 23 (Introduction to Arduino Programming - Part II) @ 09:19 NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_5_Assignment.pdf"
+  },
+  {
+    "id": "2026-w5-q9",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 5",
+    "weekNum": 5,
+    "questionNum": 9,
+    "question": "In the traffic-control example, which LED is switched ON first to represent the GO signal?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Red LED"
+      },
+      {
+        "key": "b",
+        "text": "Yellow LED"
+      },
+      {
+        "key": "c",
+        "text": "Green LED"
+      },
+      {
+        "key": "d",
+        "text": "All three LEDs simultaneously"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "The traffic() function first sets the green LED HIGH and displays the GO message. After a delay, it switches to yellow and then red. See Lecture 23 (Introduction to Arduino Programming - Part II) @ 14:34",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_5_Assignment.pdf"
+  },
+  {
+    "id": "2026-w5-q10",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 5",
+    "weekNum": 5,
+    "questionNum": 10,
+    "question": "Which quantities are measured by a DHT sensor?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Temperature and humidity"
+      },
+      {
+        "key": "b",
+        "text": "Distance and speed"
+      },
+      {
+        "key": "c",
+        "text": "Light and sound"
+      },
+      {
+        "key": "d",
+        "text": "Pressure and altitude"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "A DHT sensor measures the temperature and humidity of its surroundings. See Lecture 24: Integration of Sensors and Actuators with Arduino : Part I @ 04:37. NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_5_Assignment.pdf"
+  },
+  {
+    "id": "2026-w5-q11",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 5",
+    "weekNum": 5,
+    "questionNum": 11,
+    "question": "What does a sensor convert a physical quantity into?",
+    "options": [
+      {
+        "key": "a",
+        "text": "A software program"
+      },
+      {
+        "key": "b",
+        "text": "Mechanical motion"
+      },
+      {
+        "key": "c",
+        "text": "A network address"
+      },
+      {
+        "key": "d",
+        "text": "An electrical signal"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "A sensor is an electronic element that converts a physical quantity or measurement into an electrical signal. See Lecture 24: Integration of Sensors and Actuators with Arduino : Part I, Sensors section.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_5_Assignment.pdf"
+  },
+  {
+    "id": "2026-w5-q12",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 5",
+    "weekNum": 5,
+    "questionNum": 12,
+    "question": "In the DHT sensor sketch, delay(2000) causes successive readings to be printed after approximately how much time?",
+    "options": [
+      {
+        "key": "a",
+        "text": "0.2 seconds"
+      },
+      {
+        "key": "b",
+        "text": "1 second"
+      },
+      {
+        "key": "c",
+        "text": "2 seconds"
+      },
+      {
+        "key": "d",
+        "text": "20 seconds"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "The delay() function takes time in milliseconds. Therefore, delay(2000) introduces a delay of 2000 milliseconds, which equals 2 seconds. See Lecture 24 (Integration of Sensors and Actuators with Arduino - Part I) @ 13:34 NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_5_Assignment.pdf"
+  },
+  {
+    "id": "2026-w5-q13",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 5",
+    "weekNum": 5,
+    "questionNum": 13,
+    "question": "State whether the following statement is True or False. Statement: A servo motor is a low-precision motor used only for linear motion.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "type": "true-false",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "A servo motor is a high-precision motor that provides controlled rotary motion. See Lecture 25: Integration of Sensors and Actuators with Arduino : Part II @ 04:30.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_5_Assignment.pdf"
+  },
+  {
+    "id": "2026-w5-q14",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 5",
+    "weekNum": 5,
+    "questionNum": 14,
+    "question": "Which device provides controlled rotary motion?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ultrasonic sensor"
+      },
+      {
+        "key": "b",
+        "text": "DHT sensor"
+      },
+      {
+        "key": "c",
+        "text": "PIR sensor"
+      },
+      {
+        "key": "d",
+        "text": "Servo motor"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "A servo motor is an actuator that provides precise and controlled rotary motion. See Lecture 25: Integration of Sensors and Actuators with Arduino : Part II @ 04:30. NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_5_Assignment.pdf"
+  },
+  {
+    "id": "2026-w5-q15",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 5",
+    "weekNum": 5,
+    "questionNum": 15,
+    "question": "State whether the following statement is True or False. Statement: A stepper motor is a type of actuator.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "type": "true-false",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "A stepper motor is one of the motor actuators discussed in the lecture. Other examples include servo motors, hydraulic motors, solenoids, relays, and AC motors. See Lecture 25: Integration of Sensors and Actuators with Arduino : Part II @ 03:20. ************END************",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_5_Assignment.pdf"
+  }
+]

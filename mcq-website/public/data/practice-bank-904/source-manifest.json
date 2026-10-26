@@ -1,0 +1,66 @@
+{
+  "source": "https://nptel-iot.vercel.app/",
+  "sourceRepo": "https://github.com/Harshith1702/nptel-iot",
+  "extractedAt": "2026-10-24T13:29:53.943Z",
+  "totalQuestions": 904,
+  "currentSessionCount": 180,
+  "practiceCount": 724,
+  "sets": [
+    {
+      "setId": "2026-current",
+      "count": 180,
+      "term": "2026 (Current Session: noc26_cs161)"
+    },
+    {
+      "setId": "2024-jan-apr",
+      "count": 190,
+      "term": "Jan-Apr 2024"
+    },
+    {
+      "setId": "2023-july-dec",
+      "count": 190,
+      "term": "July-Dec 2023"
+    },
+    {
+      "setId": "2023-jan-apr",
+      "count": 180,
+      "term": "Jan-Apr 2023"
+    },
+    {
+      "setId": "2022-july-dec",
+      "count": 164,
+      "term": "July-Dec 2022"
+    }
+  ],
+  "weekBreakdown": {
+    "currentSession": {
+      "W1": 15,
+      "W2": 15,
+      "W3": 15,
+      "W4": 15,
+      "W5": 15,
+      "W6": 15,
+      "W7": 15,
+      "W8": 15,
+      "W9": 15,
+      "W10": 15,
+      "W11": 15,
+      "W12": 15
+    },
+    "practiceBank": {
+      "W0": 20,
+      "W1": 60,
+      "W2": 60,
+      "W3": 60,
+      "W4": 60,
+      "W5": 60,
+      "W6": 60,
+      "W7": 60,
+      "W8": 60,
+      "W9": 59,
+      "W10": 45,
+      "W11": 60,
+      "W12": 60
+    }
+  }
+}

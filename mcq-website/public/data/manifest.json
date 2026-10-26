@@ -1,0 +1,168 @@
+{
+  "updatedAt": "2026-10-24T14:00:16.954Z",
+  "totalAllQuestions": 977,
+  "currentSession": {
+    "bankId": "current-session-2026",
+    "title": "Current 2026 Exam-Session MCQs (W1–W12)",
+    "total": 253,
+    "weeks": {
+      "W1": {
+        "count": 15,
+        "single": 5,
+        "multi": 6,
+        "tf": 4
+      },
+      "W2": {
+        "count": 15,
+        "single": 6,
+        "multi": 7,
+        "tf": 2
+      },
+      "W3": {
+        "count": 30,
+        "single": 17,
+        "multi": 6,
+        "tf": 7
+      },
+      "W4": {
+        "count": 15,
+        "single": 12,
+        "multi": 1,
+        "tf": 2
+      },
+      "W5": {
+        "count": 15,
+        "single": 13,
+        "multi": 0,
+        "tf": 2
+      },
+      "W6": {
+        "count": 28,
+        "single": 23,
+        "multi": 0,
+        "tf": 5
+      },
+      "W7": {
+        "count": 15,
+        "single": 14,
+        "multi": 0,
+        "tf": 1
+      },
+      "W8": {
+        "count": 15,
+        "single": 14,
+        "multi": 1,
+        "tf": 0
+      },
+      "W9": {
+        "count": 26,
+        "single": 24,
+        "multi": 0,
+        "tf": 2
+      },
+      "W10": {
+        "count": 25,
+        "single": 24,
+        "multi": 0,
+        "tf": 1
+      },
+      "W11": {
+        "count": 29,
+        "single": 28,
+        "multi": 0,
+        "tf": 1
+      },
+      "W12": {
+        "count": 25,
+        "single": 22,
+        "multi": 1,
+        "tf": 2
+      }
+    }
+  },
+  "practiceBank": {
+    "bankId": "practice-bank-904",
+    "title": "Complete Public Practice Bank (904 Total)",
+    "total": 724,
+    "weeks": {
+      "W0": {
+        "count": 20,
+        "single": 16,
+        "multi": 0,
+        "tf": 4
+      },
+      "W1": {
+        "count": 60,
+        "single": 51,
+        "multi": 2,
+        "tf": 7
+      },
+      "W2": {
+        "count": 60,
+        "single": 52,
+        "multi": 2,
+        "tf": 6
+      },
+      "W3": {
+        "count": 60,
+        "single": 49,
+        "multi": 2,
+        "tf": 9
+      },
+      "W4": {
+        "count": 60,
+        "single": 46,
+        "multi": 4,
+        "tf": 10
+      },
+      "W5": {
+        "count": 60,
+        "single": 50,
+        "multi": 4,
+        "tf": 6
+      },
+      "W6": {
+        "count": 60,
+        "single": 38,
+        "multi": 0,
+        "tf": 22
+      },
+      "W7": {
+        "count": 60,
+        "single": 41,
+        "multi": 0,
+        "tf": 19
+      },
+      "W8": {
+        "count": 60,
+        "single": 47,
+        "multi": 2,
+        "tf": 11
+      },
+      "W9": {
+        "count": 59,
+        "single": 46,
+        "multi": 1,
+        "tf": 12
+      },
+      "W10": {
+        "count": 45,
+        "single": 36,
+        "multi": 0,
+        "tf": 9
+      },
+      "W11": {
+        "count": 60,
+        "single": 49,
+        "multi": 1,
+        "tf": 10
+      },
+      "W12": {
+        "count": 60,
+        "single": 44,
+        "multi": 4,
+        "tf": 12
+      }
+    }
+  }
+}

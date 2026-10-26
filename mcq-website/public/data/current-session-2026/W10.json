@@ -1,0 +1,944 @@
+[
+  {
+    "id": "2026-w10-q1",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 1,
+    "question": "In the analogy comparing humans to smart cities presented in the lecture, what do 'Sensors and Tags' correspond to?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Skeleton"
+      },
+      {
+        "key": "b",
+        "text": "Nerves"
+      },
+      {
+        "key": "c",
+        "text": "Sensory Organs"
+      },
+      {
+        "key": "d",
+        "text": "Brain"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "In the biological analogy presented in the lecture, Sensors and RFID tags correspond to sensory organs (eyes, ears, skin), communication networks correspond to nerves, and data center analytics correspond to the brain.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W10.pdf"
+  },
+  {
+    "id": "2026-w10-q2",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 2,
+    "question": "Which of the following is listed as one of the six 'Application Focus Areas' of a smart city?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Smart Economy"
+      },
+      {
+        "key": "b",
+        "text": "Smart Bandwidth"
+      },
+      {
+        "key": "c",
+        "text": "Smart Voltage"
+      },
+      {
+        "key": "d",
+        "text": "Smart Currency"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "The six standardized smart city focus dimensions are: Smart Economy, Smart Mobility, Smart Environment, Smart People, Smart Living, and Smart Governance.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W10.pdf"
+  },
+  {
+    "id": "2026-w10-q3",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 3,
+    "question": "Under 'Current Focus Areas' of smart cities, which application area specifically deals with the auto routing of vehicles to empty slots and detecting vacant slots?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Smart Homes"
+      },
+      {
+        "key": "b",
+        "text": "Smart Energy"
+      },
+      {
+        "key": "c",
+        "text": "Smart Health"
+      },
+      {
+        "key": "d",
+        "text": "Smart Parking Lots"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "Smart Parking Lots utilize vehicle presence sensors, wireless gateways, and mobile apps to detect real-time vacant slots and dynamically route drivers to empty spaces.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W10.pdf"
+  },
+  {
+    "id": "2026-w10-q4",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 4,
+    "question": "Which IoT challenge in smart cities relates to the risk of data leakage arising from multiple tenants sharing the same infrastructure?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Reliability"
+      },
+      {
+        "key": "b",
+        "text": "Heterogeneity"
+      },
+      {
+        "key": "c",
+        "text": "Security and Privacy"
+      },
+      {
+        "key": "d",
+        "text": "Legal and Social aspects"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "Reliability, Large scale and Big data are some of the challenges of iot in smart cities. (Please refer Lecture 46@32:57) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W10.pdf"
+  },
+  {
+    "id": "2026-w10-q5",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 5,
+    "question": "What is the primary purpose of data fusion in IoT-enabled smart city environments, as described in the lecture?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To delete redundant sensors from the network"
+      },
+      {
+        "key": "b",
+        "text": "To make the large incoming data volume precise and accurate for better decision making"
+      },
+      {
+        "key": "c",
+        "text": "To replace the need for any sensors"
+      },
+      {
+        "key": "d",
+        "text": "To increase network latency intentionally"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "Data fusion combines heterogeneous, noisy data from multiple distributed sensors to yield a more accurate, reliable, and consolidated view of urban phenomena for decision support.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W10.pdf"
+  },
+  {
+    "id": "2026-w10-q6",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 6,
+    "question": "Which data fusion challenge refers to the situation where the same type of sensor reports different data for the same location?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Imperfection"
+      },
+      {
+        "key": "b",
+        "text": "Ambiguity"
+      },
+      {
+        "key": "c",
+        "text": "Conflicts"
+      },
+      {
+        "key": "d",
+        "text": "Alignment"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "The 'Conflicts' challenge occurs when multiple sensors observing the same event or location output contradictory or mutually exclusive readings.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W10.pdf"
+  },
+  {
+    "id": "2026-w10-q7",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 7,
+    "question": "In the stages of data fusion, at which level does the fusion of information happen at the sensor node or within the local network itself?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Decision level"
+      },
+      {
+        "key": "b",
+        "text": "Feature level"
+      },
+      {
+        "key": "c",
+        "text": "Pixel level"
+      },
+      {
+        "key": "d",
+        "text": "Signal level"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "Signal-level (raw data) fusion is performed directly at the sensor node or local cluster level to filter noise before transmitting extracted features up the network hierarchy.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W10.pdf"
+  },
+  {
+    "id": "2026-w10-q8",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 8,
+    "question": "Which of the following is listed as one of the three functional layers of a smart parking system?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Information Collection"
+      },
+      {
+        "key": "b",
+        "text": "Fuel Refilling"
+      },
+      {
+        "key": "c",
+        "text": "Vehicle Manufacturing"
+      },
+      {
+        "key": "d",
+        "text": "Traffic Signal Coloring"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Information Collection, System Deployment and Service Dissemination are all the functional layers in smart parking. (Please refer Lecture 47@17:24) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W10.pdf"
+  },
+  {
+    "id": "2026-w10-q9",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 9,
+    "question": "In the classification of energy harvesting solutions for smart cities, which type involves energy sources intentionally deployed near IoT devices?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ambient energy harvesting"
+      },
+      {
+        "key": "b",
+        "text": "Passive harvesting"
+      },
+      {
+        "key": "c",
+        "text": "Grid-tied harvesting"
+      },
+      {
+        "key": "d",
+        "text": "Dedicated energy harvesting"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "Reliability, Large scale and Big data are some of the challenges of iot in smart cities. (Please refer Lecture 46@32:57) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W10.pdf"
+  },
+  {
+    "id": "2026-w10-q10",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 10,
+    "question": "Which Home Area Network (HAN) standard is defined by IEEE 802.15.4 at the physical and MAC layers, and aims at low-cost, low-energy devices?",
+    "options": [
+      {
+        "key": "a",
+        "text": "UPnP"
+      },
+      {
+        "key": "b",
+        "text": "DLNA"
+      },
+      {
+        "key": "c",
+        "text": "Zigbee"
+      },
+      {
+        "key": "d",
+        "text": "X-10"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "Zigbee is built upon IEEE 802.15.4 for physical radio and MAC layers, providing low-data-rate, ultra-low-power mesh connectivity for smart home automation.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W10.pdf"
+  },
+  {
+    "id": "2026-w10-q11",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 11,
+    "question": "Which HAN standard enables remote control of compliant devices over existing power lines and electrical wiring in a house, and is mainly used for lighting and appliance control?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Konnex (KNX)"
+      },
+      {
+        "key": "b",
+        "text": "UPnP"
+      },
+      {
+        "key": "c",
+        "text": "LonWorks"
+      },
+      {
+        "key": "d",
+        "text": "X-10"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "X-10 is a legacy home automation communication protocol that superimposes 120 kHz radio-frequency digital signals directly over existing residential AC power line wiring.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W10.pdf"
+  },
+  {
+    "id": "2026-w10-q12",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 12,
+    "question": "According to the lecture, why does traditional TCP/IP fail to work well for Vehicle-to-Everything (V2X) communication?",
+    "options": [
+      {
+        "key": "a",
+        "text": "TCP/IP was designed mainly for single-pair information exchange dependent on data location"
+      },
+      {
+        "key": "b",
+        "text": "TCP/IP cannot be used with any wireless devices"
+      },
+      {
+        "key": "c",
+        "text": "TCP/IP requires no IP addresses at all"
+      },
+      {
+        "key": "d",
+        "text": "TCP/IP works only in stationary networks with no scalability limits"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "TCP/IP establishes point-to-point connections tied to static IP host locations, whereas vehicular ad-hoc networks require content-centric, geographic broadcast to high-speed dynamic vehicles.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W10.pdf"
+  },
+  {
+    "id": "2026-w10-q13",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 13,
+    "question": "Which frequency spectrum did the US Department of Transport and FCC allocate for Intelligent Connected Vehicles (ICVs)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "2.4 GHz ISM band"
+      },
+      {
+        "key": "b",
+        "text": "75 MHz (5850-5925 MHz)"
+      },
+      {
+        "key": "c",
+        "text": "900 MHz band"
+      },
+      {
+        "key": "d",
+        "text": "60 GHz mmWave band"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "In 1999, the FCC allocated a 75 MHz band of spectrum in the 5.850 to 5.925 GHz range for Dedicated Short Range Communications (DSRC) in Intelligent Transportation Systems.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W10.pdf"
+  },
+  {
+    "id": "2026-w10-q14",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 14,
+    "question": "In the phases of ICV development described in the lecture, which phase is based on 4G LTE or DSRC and focuses on intelligent transportation services?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Phase-1"
+      },
+      {
+        "key": "b",
+        "text": "Phase-2"
+      },
+      {
+        "key": "c",
+        "text": "Phase-3"
+      },
+      {
+        "key": "d",
+        "text": "Phase-0"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "The phases of ICV development: Phase 1: Based on 2G, Phase 2: Based on 4G LTE, Phase 3: Vehicles connected to cloud (Please refer Lecture 50@12:28) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W10.pdf"
+  },
+  {
+    "id": "2026-w10-q15",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 15,
+    "question": "In the VANET domain classification, which domain consists of vehicles (mobile) and Road-Side Units (RSUs, static), communicating via V2V or V2I using the DSRC stack?",
+    "options": [
+      {
+        "key": "a",
+        "text": "In-Vehicle Domain"
+      },
+      {
+        "key": "b",
+        "text": "Cloud Domain"
+      },
+      {
+        "key": "c",
+        "text": "Infrastructure Domain"
+      },
+      {
+        "key": "d",
+        "text": "Ad-hoc Domain"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "The Ad-hoc Domain in VANET architecture consists of moving vehicles (On-Board Units) and stationary Road-Side Units (RSUs) communicating wirelessly via peer-to-peer V2V and V2I links.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W10.pdf"
+  },
+  {
+    "id": "2026-w10-q16",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 16,
+    "question": "Smart homes can be used for _____________.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Home monitoring"
+      },
+      {
+        "key": "b",
+        "text": "Conservation of resources like electricity"
+      },
+      {
+        "key": "c",
+        "text": "Security and safety"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "Smart homes can be used for home monitoring, conservation of resources, security and safety. (Please refer Lecture 46@25:02) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_10.pdf"
+  },
+  {
+    "id": "2026-w10-q17",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 17,
+    "question": "Select the statement(s) that are true for smart parking. Statement I: Smart parking reduces traffic congestion Statement II: Smart parking increases urban mobility Statement III: Smart parking reduces fuel consumption",
+    "options": [
+      {
+        "key": "a",
+        "text": "Statement I"
+      },
+      {
+        "key": "b",
+        "text": "Statement II"
+      },
+      {
+        "key": "c",
+        "text": "Statements I, II, and III"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "Smart parking reduces traffic congestion and fuel consumption, and increases urban mobility (Please refer Lecture 47@16:46) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_10.pdf"
+  },
+  {
+    "id": "2026-w10-q18",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 18,
+    "question": "The mobile sensing in smart parking collects the information __________.",
+    "options": [
+      {
+        "key": "a",
+        "text": "in-place"
+      },
+      {
+        "key": "b",
+        "text": "along the route"
+      },
+      {
+        "key": "c",
+        "text": "None of these"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "The mobile sensing in smart parking collects the information along the route. (Please refer Lecture 47@19:47) ______________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_10.pdf"
+  },
+  {
+    "id": "2026-w10-q19",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 19,
+    "question": "The network which provides amalgamation of various systems within a home is known as __________.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Local Area Network"
+      },
+      {
+        "key": "b",
+        "text": "Metropolitan Area Network"
+      },
+      {
+        "key": "c",
+        "text": "Global Area Network"
+      },
+      {
+        "key": "d",
+        "text": "Home Area Network"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "The network which provides amalgamation of various systems within a home is known as Home Area Network. (Please refer Lecture 48@8:24) ______________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_10.pdf"
+  },
+  {
+    "id": "2026-w10-q20",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 20,
+    "question": "Which of the following is the correct full form of DLNA Standards for HAN?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Digital Lifestyle Network Alliance"
+      },
+      {
+        "key": "b",
+        "text": "Digital Living Network Alliance"
+      },
+      {
+        "key": "c",
+        "text": "Digital Lifestyle Network Algorithm"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "DLNA stands for Digital Living Network Alliance standards. (Please refer Lecture 48@13:49) ____________________________________________________________________ _____",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_10.pdf"
+  },
+  {
+    "id": "2026-w10-q21",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 21,
+    "question": "Which of the following is a part of ZigBee Alliance?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Mitsubishi"
+      },
+      {
+        "key": "b",
+        "text": "Honeywell"
+      },
+      {
+        "key": "c",
+        "text": "All of these"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "The Zigbee Alliance is composed of Mitsubishi, Honeywell, Invensys, Motorola and Philips. (Please refer Lecture 48@15:46) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_10.pdf"
+  },
+  {
+    "id": "2026-w10-q22",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 22,
+    "question": "Network and Application layers are defined by IEEE 802.15.4 in Zigbee.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "type": "true-false",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "Network and Application layers are defined by Zigbee in Zigbee. (Please refer Lecture 48@16:42) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_10.pdf"
+  },
+  {
+    "id": "2026-w10-q23",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 23,
+    "question": "Which of the following is a feature of Content Centric Networking?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Hierarchically named data"
+      },
+      {
+        "key": "b",
+        "text": "Scalable data dissemination"
+      },
+      {
+        "key": "c",
+        "text": "In-network caching"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "Hierarchically named data, Scalable data dissemination and In-network caching are all the features of CCN. (Please refer Lecture 49@15:17) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_10.pdf"
+  },
+  {
+    "id": "2026-w10-q24",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 24,
+    "question": "Which of the following is a domain of VANET?",
+    "options": [
+      {
+        "key": "a",
+        "text": "In-vehicle"
+      },
+      {
+        "key": "b",
+        "text": "Ad-hoc"
+      },
+      {
+        "key": "c",
+        "text": "All of these"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "Both of the In-vehicle and Ad-hoc are the two domains of VANETs. (Please refer Lecture 50@14:36) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_10.pdf"
+  },
+  {
+    "id": "2026-w10-q25",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 25,
+    "question": "Fill in the blank. ICV is based on ________.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Dedicated Short Range Communication"
+      },
+      {
+        "key": "b",
+        "text": "Directed Short Range Communication"
+      },
+      {
+        "key": "c",
+        "text": "Dedicated Small Range Communication"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "ICV is based on Dedicated Short Range Communication. (Please refer Lecture 50@7:22) ___________________________________________________________________ Introduction to Internet of Things",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_10.pdf"
+  }
+]

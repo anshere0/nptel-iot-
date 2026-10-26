@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production build outputs
+dist/
+build/
+
+# Ignore all large course lecture PDFs (50+ MB)
+*.pdf
+Week-*.pdf
+
+# Ignore raw scanned assignment PDFs folder
+mcqs/
+
+# Ignore temporary extraction & scrap scripts
+*.ps1
+*.log
+portal_questions_raw.json
+raw_questions.json
+user_prompt.txt
+prompt_extracted.txt
+MASTER_PROMPT.txt
+course_syllabus_extracted.json
+normalize_data.js
+
+# OS & IDE metadata
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo

@@ -1,0 +1,974 @@
+[
+  {
+    "id": "2026-w9-q1",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 1,
+    "question": "OpenStack was launched in 2010 as a joint project between Rackspace Hosting and which other organization?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Google"
+      },
+      {
+        "key": "b",
+        "text": "Microsoft"
+      },
+      {
+        "key": "c",
+        "text": "NASA"
+      },
+      {
+        "key": "d",
+        "text": "IBM"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "OpenStack began in 2010 as an open-source cloud computing initiative jointly launched by Rackspace Hosting and NASA, merging Rackspace's Cloud Files code with NASA's Nebula platform.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W9.pdf"
+  },
+  {
+    "id": "2026-w9-q2",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 2,
+    "question": "Which OpenStack component provides the dashboard (GUI) that gives an overview of the other components?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Nova"
+      },
+      {
+        "key": "b",
+        "text": "Keystone"
+      },
+      {
+        "key": "c",
+        "text": "Horizon"
+      },
+      {
+        "key": "d",
+        "text": "Swift"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "Horizon is the canonical web-based dashboard and graphical user interface for OpenStack services, enabling administrators and tenants to access and provision cloud resources.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W9.pdf"
+  },
+  {
+    "id": "2026-w9-q3",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 3,
+    "question": "Which OpenStack component is the compute service where instances are launched?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Nova"
+      },
+      {
+        "key": "b",
+        "text": "Glance"
+      },
+      {
+        "key": "c",
+        "text": "Cinder"
+      },
+      {
+        "key": "d",
+        "text": "Neutron"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Nova and Swift are two of the many components of OpenStack (Please refer Lecture 41@3:18) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W9.pdf"
+  },
+  {
+    "id": "2026-w9-q4",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 4,
+    "question": "Which script/tool is used in the lecture to install OpenStack, requiring the local.conf file to be configured with passwords and host IP before running?",
+    "options": [
+      {
+        "key": "a",
+        "text": "stack.sh via DevStack"
+      },
+      {
+        "key": "b",
+        "text": "docker-compose"
+      },
+      {
+        "key": "c",
+        "text": "kubeadm"
+      },
+      {
+        "key": "d",
+        "text": "ansible-playbook"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "DevStack is the automated installation tool demonstrated in the course where users configure local.conf and run stack.sh to bring up a complete OpenStack testbed.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W9.pdf"
+  },
+  {
+    "id": "2026-w9-q5",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 5,
+    "question": "According to the lecture, what does sensor-cloud fundamentally provide, beyond merely integrating sensors with cloud computing?",
+    "options": [
+      {
+        "key": "a",
+        "text": "A physical replacement for all sensor hardware"
+      },
+      {
+        "key": "b",
+        "text": "Virtualization of sensor nodes, offered on a pay-per-use basis"
+      },
+      {
+        "key": "c",
+        "text": "A way to eliminate the need for a sink node"
+      },
+      {
+        "key": "d",
+        "text": "Free unlimited sensor deployment"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "Sensor-cloud decouples physical sensing hardware through virtualization, creating virtual sensors that multiple users can provision dynamically on a flexible pay-per-use model.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W9.pdf"
+  },
+  {
+    "id": "2026-w9-q6",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 6,
+    "question": "In a traditional Wireless Sensor Network (WSN), who is typically responsible for redeployment of the sensor nodes?",
+    "options": [
+      {
+        "key": "a",
+        "text": "The Sensor-Cloud Service Provider (SCSP)"
+      },
+      {
+        "key": "b",
+        "text": "The end-user of the sensor-cloud"
+      },
+      {
+        "key": "c",
+        "text": "The WSN-user"
+      },
+      {
+        "key": "d",
+        "text": "A third-party auditor"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "In traditional standalone WSNs, the network owner/user is directly responsible for deploying, maintaining, and physically redeploying nodes when requirements or node batteries change.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W9.pdf"
+  },
+  {
+    "id": "2026-w9-q7",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 7,
+    "question": "In the sensor-cloud model, which actor purchases physical sensor devices and lends them to the sensor-cloud, playing a role from a business perspective?",
+    "options": [
+      {
+        "key": "a",
+        "text": "End-user"
+      },
+      {
+        "key": "b",
+        "text": "Sensor-owner"
+      },
+      {
+        "key": "c",
+        "text": "Sensor-Cloud Service Provider (SCSP)"
+      },
+      {
+        "key": "d",
+        "text": "WSN-user"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "The sensor-owner buys and deploys physical sensor networks and registers/leases them to the Sensor-Cloud Service Provider (SCSP) to monetize hardware sensing capability.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W9.pdf"
+  },
+  {
+    "id": "2026-w9-q8",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 8,
+    "question": "Which of the following is listed as a major limitation of traditional WSNs that motivates the sensor-cloud model?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Unlimited scalability at zero cost"
+      },
+      {
+        "key": "b",
+        "text": "Difficulty adapting to a change of requirement (e.g., moving from agriculture to smart home use)"
+      },
+      {
+        "key": "c",
+        "text": "Excessive availability of skilled vendors"
+      },
+      {
+        "key": "d",
+        "text": "No need for maintenance"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "Traditional WSNs are application-specific and rigid; re-purposing an existing agricultural sensor deployment for another domain without physical overhaul is extremely difficult, a problem solved by sensor-cloud virtualization.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W9.pdf"
+  },
+  {
+    "id": "2026-w9-q9",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 9,
+    "question": "In the Optimal Composition of Virtual Sensors, what does COV-I refer to?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Composition of virtual sensors spanning multiple geographic regions"
+      },
+      {
+        "key": "b",
+        "text": "Composition of virtual sensors using only homogeneous nodes within the same geographic region"
+      },
+      {
+        "key": "c",
+        "text": "A pricing model for sensor-cloud"
+      },
+      {
+        "key": "d",
+        "text": "A caching mechanism for sensor data"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "COV-I represents the baseline case of Optimal Composition of Virtual Sensors where homogeneous physical nodes within a single geographical region are aggregated to form virtual sensors.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W9.pdf"
+  },
+  {
+    "id": "2026-w9-q10",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 10,
+    "question": "In the sensor-cloud caching mechanism, which cache handles requests directly from the end-user and decides whether to serve data directly or recache from another source?",
+    "options": [
+      {
+        "key": "a",
+        "text": "External Cache (EC)"
+      },
+      {
+        "key": "b",
+        "text": "Sensor Cache (SC)"
+      },
+      {
+        "key": "c",
+        "text": "Distributed Cache (DC)"
+      },
+      {
+        "key": "d",
+        "text": "Internal Cache (IC)"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "In the multi-tier sensor-cloud caching scheme, the Internal Cache (IC) interfaces with user requests and evaluates cache freshness before requesting data from the external tier or physical sensors.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W9.pdf"
+  },
+  {
+    "id": "2026-w9-q11",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 11,
+    "question": "Why is dynamic and adaptive data caching useful in sensor-cloud, according to the lecture?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Because environmental conditions always change extremely fast"
+      },
+      {
+        "key": "b",
+        "text": "Because it removes the need for a sensor-owner"
+      },
+      {
+        "key": "c",
+        "text": "Because caching eliminates the need for virtualization"
+      },
+      {
+        "key": "d",
+        "text": "Because unnecessary sensing during slow environmental change wastes energy"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "When environmental parameters remain relatively constant, continuously triggering physical sensor nodes consumes unnecessary battery power; adaptive caching serves recent valid data and saves device energy.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W9.pdf"
+  },
+  {
+    "id": "2026-w9-q12",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 12,
+    "question": "Which company is credited with coining the term 'fog computing'?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Google"
+      },
+      {
+        "key": "b",
+        "text": "Amazon"
+      },
+      {
+        "key": "c",
+        "text": "Cisco"
+      },
+      {
+        "key": "d",
+        "text": "IBM"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "Cisco Systems coined the term 'Fog Computing' in 2012 to describe extending cloud computing capabilities to the network edge, closer to end devices.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W9.pdf"
+  },
+  {
+    "id": "2026-w9-q13",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 13,
+    "question": "Which of the following is listed as a key issue with the traditional cloud model that motivates fog computing?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Excess bandwidth availability"
+      },
+      {
+        "key": "b",
+        "text": "Volume, latency, and bandwidth limitations of the cloud"
+      },
+      {
+        "key": "c",
+        "text": "Too much local processing power at the device level"
+      },
+      {
+        "key": "d",
+        "text": "Absence of any IoT devices"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "The advantages of Fog includes quick decision making, nodes can be mobile and Fog reduces the risk of latency . (Please refer Lecture 45@20:57) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W9.pdf"
+  },
+  {
+    "id": "2026-w9-q14",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 14,
+    "question": "Where is the fog layer positioned in the fog computing architecture?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Above the cloud layer"
+      },
+      {
+        "key": "b",
+        "text": "Between the cloud and the IoT devices"
+      },
+      {
+        "key": "c",
+        "text": "Inside each IoT device only"
+      },
+      {
+        "key": "d",
+        "text": "There is no fixed position; it replaces the cloud entirely"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "Fog nodes reside in an intermediate layer situated between edge IoT smart devices and the centralized remote cloud data centers.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W9.pdf"
+  },
+  {
+    "id": "2026-w9-q15",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 15,
+    "question": "Which of the following is NOT listed as a required characteristic of a fog node?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Storage (transient)"
+      },
+      {
+        "key": "b",
+        "text": "Computing facility for quick decisions"
+      },
+      {
+        "key": "c",
+        "text": "Network connectivity"
+      },
+      {
+        "key": "d",
+        "text": "Permanent, unlimited archival storage"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "Fog nodes are resource-constrained intermediate edge computers providing localized processing and transient caching; permanent, unlimited archival storage belongs to the core cloud.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W9.pdf"
+  },
+  {
+    "id": "2026-w9-q16",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 16,
+    "question": "Where is the sensed data sent for further processing in WSNs?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Client node"
+      },
+      {
+        "key": "b",
+        "text": "Central node"
+      },
+      {
+        "key": "c",
+        "text": "Collect node"
+      },
+      {
+        "key": "d",
+        "text": "Sink node"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "The sensed data is sent to sink node for further processing in WSNs (Please refer Lecture 42@4:04) ______________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_9.pdf"
+  },
+  {
+    "id": "2026-w9-q17",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 17,
+    "question": "Select the statement(s) that denote the advantages of cloud computing. Statement I: Elasticity Statement II: Pay-per-use Statement III: Self Service",
+    "options": [
+      {
+        "key": "a",
+        "text": "Statement I"
+      },
+      {
+        "key": "b",
+        "text": "Statement II"
+      },
+      {
+        "key": "c",
+        "text": "Statements I, II, and III"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "The advantages of cloud computing are Elasticity, pay-per-use and self service (Please refer Lecture 42@5:58) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_9.pdf"
+  },
+  {
+    "id": "2026-w9-q18",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 18,
+    "question": "The managerial role is played by __________ in sensor-cloud architecture.",
+    "options": [
+      {
+        "key": "a",
+        "text": "End-users"
+      },
+      {
+        "key": "b",
+        "text": "Sensor-Cloud Service Provider"
+      },
+      {
+        "key": "c",
+        "text": "None of these"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "Sensor-Cloud Service Provider plays the managerial role in sensor-cloud architecture. (Please refer Lecture 42@14:29) ______________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_9.pdf"
+  },
+  {
+    "id": "2026-w9-q19",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 19,
+    "question": "The optimal composition of __________ is a management issue in sensor-cloud.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Logistics"
+      },
+      {
+        "key": "b",
+        "text": "Pricing"
+      },
+      {
+        "key": "c",
+        "text": "Caching"
+      },
+      {
+        "key": "d",
+        "text": "Virtual sensor nodes"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "The optimal composition of Virtual sensor nodes is a management issue in sensor-cloud. (Please refer Lecture 43@4:39) ______________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_9.pdf"
+  },
+  {
+    "id": "2026-w9-q20",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 20,
+    "question": "What are the issues related to the current cloud model?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Volume"
+      },
+      {
+        "key": "b",
+        "text": "Latency"
+      },
+      {
+        "key": "c",
+        "text": "All of these"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "Volume, bandwidth and latency are some of the issues related to the current cloud model. (Please refer Lecture 44@10:30) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_9.pdf"
+  },
+  {
+    "id": "2026-w9-q21",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 21,
+    "question": "Sensor data is processed in the cloud before it is sent to the fog.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "type": "true-false",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "Sensor data is processed in the fog before it is sent to the cloud. (Please refer Lecture 45@6:11) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_9.pdf"
+  },
+  {
+    "id": "2026-w9-q22",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 22,
+    "question": "What is the type of received data according to which Fog nodes work?.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Non-time sensitive data"
+      },
+      {
+        "key": "b",
+        "text": "Very time-sensitive data"
+      },
+      {
+        "key": "c",
+        "text": "Less time-sensitive data"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "Fog nodes work according to the type of data which are very time-sensitive, less time-sensitive and non-time sensitive data. (Please refer Lecture 45@11:39) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_9.pdf"
+  },
+  {
+    "id": "2026-w9-q23",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 23,
+    "question": "Which of the following requires the analysis at the nearest node?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Non-time sensitive data"
+      },
+      {
+        "key": "b",
+        "text": "Most time-sensitive data"
+      },
+      {
+        "key": "c",
+        "text": "Less time-sensitive data"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "Most time-sensitive data requires the analysis at the nearest node. (Please refer Lecture 45@15:46) ____________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_9.pdf"
+  },
+  {
+    "id": "2026-w9-q24",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 24,
+    "question": "Fog nodes cannot connect and leave the network when necessary.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "type": "true-false",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "Fog nodes can connect and leave the network when necessary. (Please refer Lecture 45@25:27) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_9.pdf"
+  },
+  {
+    "id": "2026-w9-q25",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 25,
+    "question": "Which of the following is used by the fog applications to increase the speed of service accessibility?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Low power"
+      },
+      {
+        "key": "b",
+        "text": "Good network connection"
+      },
+      {
+        "key": "c",
+        "text": "Accelerators"
+      },
+      {
+        "key": "d",
+        "text": "Analytics"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "Accelerators increase the speed of service accessibility. (Please refer to Page 260, Chapter 11, Introduction to IoT. S. Misra, A. Mukherjee, and A. Roy, 2020. Cambridge University Press.) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_9.pdf"
+  },
+  {
+    "id": "2026-w9-q26",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 26,
+    "question": "Fill in the blank. The concept of ________ enables physical hardware to be shared among multiple entities.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Hardware virtualization"
+      },
+      {
+        "key": "b",
+        "text": "Software virtualization"
+      },
+      {
+        "key": "c",
+        "text": "Module virtualization"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "The concept of hardware virtualization enables physical hardware to be shared among multiple entities. (Please refer to Page 262, Chapter 11, Introduction to IoT. S. Misra, A. Mukherjee, and A. Roy, 2020. Cambridge University Press.) ___________________________________________________________________ Introduction to Internet of Things",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_9.pdf"
+  }
+]

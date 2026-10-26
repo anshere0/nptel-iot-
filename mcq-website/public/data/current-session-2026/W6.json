@@ -1,0 +1,1010 @@
+[
+  {
+    "id": "2026-w6-q1",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 1,
+    "question": "What are the five basic data types available in Python, as introduced in the lecture?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Numbers, Strings, List, Tuple, Dictionary"
+      },
+      {
+        "key": "b",
+        "text": "Integer, Float, Boolean, Char, Byte"
+      },
+      {
+        "key": "c",
+        "text": "Array, Struct, Class, Object, Set"
+      },
+      {
+        "key": "d",
+        "text": "Numbers, Strings, Queue, Stack, Graph"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "The Python language introduction in Week 6 classifies standard Python data types into five primary categories: Numbers, Strings, Lists, Tuples, and Dictionaries.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W6.pdf"
+  },
+  {
+    "id": "2026-w6-q2",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 2,
+    "question": "Which keyword is used to define a function in Python?",
+    "options": [
+      {
+        "key": "a",
+        "text": "func"
+      },
+      {
+        "key": "b",
+        "text": "def"
+      },
+      {
+        "key": "c",
+        "text": "define"
+      },
+      {
+        "key": "d",
+        "text": "function"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "In Python, functions are declared and defined using the standard 'def' keyword followed by the function name and argument list.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W6.pdf"
+  },
+  {
+    "id": "2026-w6-q3",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 3,
+    "question": "In Python's exception handling, which keyword is used to handle an exception raised inside the try block?",
+    "options": [
+      {
+        "key": "a",
+        "text": "catch"
+      },
+      {
+        "key": "b",
+        "text": "except"
+      },
+      {
+        "key": "c",
+        "text": "handle"
+      },
+      {
+        "key": "d",
+        "text": "rescue"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "Python uses 'try...except' blocks for exception handling. When an error is raised in the try block, the corresponding 'except' block catches and processes it.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W6.pdf"
+  },
+  {
+    "id": "2026-w6-q4",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 4,
+    "question": "Which mode of Python's open() function is used to add data to the end of an existing file without erasing its existing content?",
+    "options": [
+      {
+        "key": "a",
+        "text": "r (read mode)"
+      },
+      {
+        "key": "b",
+        "text": "w (write mode)"
+      },
+      {
+        "key": "c",
+        "text": "a (append mode)"
+      },
+      {
+        "key": "d",
+        "text": "r+ (read and write mode)"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "The four basic modes to open a file in python are : a. Read mode b. Write mode c. Append mode d. Both read and write mode (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- II @ 03:00)",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W6.pdf"
+  },
+  {
+    "id": "2026-w6-q5",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 5,
+    "question": "Which Python library, installable via pip, is used for image read/write operations as covered in the lecture?",
+    "options": [
+      {
+        "key": "a",
+        "text": "NumPy"
+      },
+      {
+        "key": "b",
+        "text": "PIL / Pillow"
+      },
+      {
+        "key": "c",
+        "text": "OpenCV"
+      },
+      {
+        "key": "d",
+        "text": "Matplotlib"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "Pillow (PIL Fork) is the standard lightweight Python imaging library demonstrated in the course for opening, manipulating, and saving various image file formats.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W6.pdf"
+  },
+  {
+    "id": "2026-w6-q6",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 6,
+    "question": "Which socket_type value is used while creating a TCP/IP socket in Python's socket module?",
+    "options": [
+      {
+        "key": "a",
+        "text": "SOCK_DGRAM"
+      },
+      {
+        "key": "b",
+        "text": "SOCK_STREAM"
+      },
+      {
+        "key": "c",
+        "text": "SOCK_RAW"
+      },
+      {
+        "key": "d",
+        "text": "SOCK_SEQPACKET"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "In Python socket programming, socket.SOCK_STREAM designates connection-oriented byte streams (TCP), while socket.SOCK_DGRAM designates datagrams (UDP).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W6.pdf"
+  },
+  {
+    "id": "2026-w6-q7",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 7,
+    "question": "How many GPIO pins does the Raspberry Pi 3 Model B have, as shown in the specifications table?",
+    "options": [
+      {
+        "key": "a",
+        "text": "26"
+      },
+      {
+        "key": "b",
+        "text": "32"
+      },
+      {
+        "key": "c",
+        "text": "40"
+      },
+      {
+        "key": "d",
+        "text": "48"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "The Raspberry Pi 3 Model B features a 40-pin GPIO expansion header providing power, ground, digital I/O, I2C, SPI, and UART lines.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W6.pdf"
+  },
+  {
+    "id": "2026-w6-q8",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 8,
+    "question": "Which of the following is an officially supported operating system for Raspberry Pi mentioned in the lecture?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Raspbian"
+      },
+      {
+        "key": "b",
+        "text": "Windows XP"
+      },
+      {
+        "key": "c",
+        "text": "macOS"
+      },
+      {
+        "key": "d",
+        "text": "Solaris"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Raspbian (now Raspberry Pi OS), a Debian-based Linux distribution optimized for the Raspberry Pi hardware, is the primary official operating system covered in the lectures.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W6.pdf"
+  },
+  {
+    "id": "2026-w6-q9",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 9,
+    "question": "Raspberry Pi is best described as a:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Printer"
+      },
+      {
+        "key": "b",
+        "text": "Smartphone"
+      },
+      {
+        "key": "c",
+        "text": "Wi-Fi router"
+      },
+      {
+        "key": "d",
+        "text": "Single-board computer"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "The Raspberry Pi is a low-cost, credit-card sized single-board computer (SBC) that plugs into a computer monitor or TV, and uses a standard keyboard and mouse.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W6.pdf"
+  },
+  {
+    "id": "2026-w6-q10",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 10,
+    "question": "Which command is used to install the GPIO library on Raspberry Pi before programming the blinking LED example?",
+    "options": [
+      {
+        "key": "a",
+        "text": "sudo apt-get install python-rpi.gpio"
+      },
+      {
+        "key": "b",
+        "text": "pip install gpio"
+      },
+      {
+        "key": "c",
+        "text": "sudo apt-get install led-lib"
+      },
+      {
+        "key": "d",
+        "text": "npm install rpi-gpio"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "To interact with physical GPIO pins from Python scripts on Raspbian, the package is installed using 'sudo apt-get install python-rpi.gpio'.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W6.pdf"
+  },
+  {
+    "id": "2026-w6-q11",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 11,
+    "question": "Where is the CSI camera connector slot located on the Raspberry Pi board?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Between the USB ports"
+      },
+      {
+        "key": "b",
+        "text": "Between the Ethernet port and the HDMI port"
+      },
+      {
+        "key": "c",
+        "text": "Next to the power supply pin"
+      },
+      {
+        "key": "d",
+        "text": "On the underside of the board"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "On the Raspberry Pi 3 board layout, the Camera Serial Interface (CSI) ribbon cable port is located between the Ethernet jack and the HDMI port.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W6.pdf"
+  },
+  {
+    "id": "2026-w6-q12",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 12,
+    "question": "Which terminal command captures a still image using the Raspberry Pi camera?",
+    "options": [
+      {
+        "key": "a",
+        "text": "raspistill -o image.jpg"
+      },
+      {
+        "key": "b",
+        "text": "raspicam capture"
+      },
+      {
+        "key": "c",
+        "text": "pi-camera snap"
+      },
+      {
+        "key": "d",
+        "text": "capture-py --img"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "'raspistill -o image.jpg' is the built-in command-line tool on Raspberry Pi for capturing still photographs using the camera module.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W6.pdf"
+  },
+  {
+    "id": "2026-w6-q13",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 13,
+    "question": "What does DHT stand for in the DHT sensor used with Raspberry Pi in the auto-cooling system?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Digital Heat Transfer"
+      },
+      {
+        "key": "b",
+        "text": "Digital Humidity and Temperature"
+      },
+      {
+        "key": "c",
+        "text": "Direct Hardware Trigger"
+      },
+      {
+        "key": "d",
+        "text": "Dual Humidity Thermostat"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "DHT stands for Digital Humidity and Temperature (e.g., DHT11, DHT22), which outputs calibrated digital signals containing both ambient temperature and relative humidity values.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W6.pdf"
+  },
+  {
+    "id": "2026-w6-q14",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 14,
+    "question": "How many output terminals does the relay used in the temperature-dependent auto-cooling system have, as shown in the lecture?",
+    "options": [
+      {
+        "key": "a",
+        "text": "1"
+      },
+      {
+        "key": "b",
+        "text": "3"
+      },
+      {
+        "key": "c",
+        "text": "5"
+      },
+      {
+        "key": "d",
+        "text": "8"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "A standard SPDT electromagnetic relay module used for switching loads has 3 output terminals: Common (COM), Normally Open (NO), and Normally Closed (NC).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W6.pdf"
+  },
+  {
+    "id": "2026-w6-q15",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 15,
+    "question": "State whether the following statement is True or False. Statement: In the temperature-dependent auto-cooling system, the fan operates when the surrounding temperature rises above the threshold value specified in the code.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "type": "true-false",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "In the auto-cooling case study, the microcontroller compares real-time temperature from the DHT sensor against a predefined setpoint; when temperature exceeds the threshold, the relay triggers to power on the cooling fan.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W6.pdf"
+  },
+  {
+    "id": "2026-w6-q16",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 16,
+    "question": "Python can only be used to build small applications.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "type": "true-false",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "With open-source nature, python forms a strong backbone to build large applications. (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- I @ 3:46)",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_6.pdf"
+  },
+  {
+    "id": "2026-w6-q17",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 17,
+    "question": "Which of the following is NOT a Python IDE?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Spyder"
+      },
+      {
+        "key": "b",
+        "text": "PyCharm"
+      },
+      {
+        "key": "c",
+        "text": "Both (a) and (b)"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "Spyder and PyCharm are examples of Python IDE. (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- I @ 05:12)",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_6.pdf"
+  },
+  {
+    "id": "2026-w6-q18",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 18,
+    "question": "State whether the following statement is true or false. Statement: To indicate different blocks of code, python follows rigid indention.",
+    "options": [
+      {
+        "key": "a",
+        "text": "False"
+      },
+      {
+        "key": "b",
+        "text": "True"
+      }
+    ],
+    "type": "true-false",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "To indicate different blocks of code, python follows rigid indention (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- I @ 07:25).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_6.pdf"
+  },
+  {
+    "id": "2026-w6-q19",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 19,
+    "question": "Which of the following is not a data-type in Python?",
+    "options": [
+      {
+        "key": "a",
+        "text": "List"
+      },
+      {
+        "key": "b",
+        "text": "Branch"
+      },
+      {
+        "key": "c",
+        "text": "Tuple"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "The data-types in python are : a. List b. Tuple c. Dictionary (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- I @ 15:20).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_6.pdf"
+  },
+  {
+    "id": "2026-w6-q20",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 20,
+    "question": "State whether the following statement is true or false. Statement: Python allows us to read and write files.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "type": "true-false",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Python allows us to read and write files. (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- II @ 01:17)",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_6.pdf"
+  },
+  {
+    "id": "2026-w6-q21",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 21,
+    "question": "State whether the following command to install the PIL library in Linux is correct or not. sudo pip install pillow",
+    "options": [
+      {
+        "key": "a",
+        "text": "Correct"
+      },
+      {
+        "key": "b",
+        "text": "Incorrect"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "The command to install the PIL library is sudo pip install pillow. (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- II @ 17:40 )",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_6.pdf"
+  },
+  {
+    "id": "2026-w6-q22",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 22,
+    "question": "State whether the following statement is correct for creating a socket 's' in python. s = socket.socket(socket_family, socket_type, protocol=0)",
+    "options": [
+      {
+        "key": "a",
+        "text": "Correct"
+      },
+      {
+        "key": "b",
+        "text": "Incorrect"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "The statement s = socket.socket(socket_family, socket_type, protocol=0) creates a socket in python. (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- II @24:27).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_6.pdf"
+  },
+  {
+    "id": "2026-w6-q23",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 23,
+    "question": "Which of the following are required for a basic set up of Raspberry Pi?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Monitor"
+      },
+      {
+        "key": "b",
+        "text": "Keyboard"
+      },
+      {
+        "key": "c",
+        "text": "Mouse"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "The following are required for a basic set up of Raspberry Pi : a. Monitor b. Keyboard c. Mouse See lecture INTRODUCTION TO RASPBERRY PI-I @ 11:33",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_6.pdf"
+  },
+  {
+    "id": "2026-w6-q24",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 24,
+    "question": "Which of the following keyboard key combination writes (i.e saves) the code to the file in nano editor ?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ctrl+O"
+      },
+      {
+        "key": "b",
+        "text": "Ctrl+X"
+      },
+      {
+        "key": "c",
+        "text": "Both (a) and (b)"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Ctrl+O writes the code to the file in nano editor. See lecture INTRODUCTION TO RASPBERRY PI-II @ 10:44",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_6.pdf"
+  },
+  {
+    "id": "2026-w6-q25",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 25,
+    "question": "A relay module for Raspberry Pi has how many terminals ?",
+    "options": [
+      {
+        "key": "a",
+        "text": "3"
+      },
+      {
+        "key": "b",
+        "text": "2"
+      },
+      {
+        "key": "c",
+        "text": "4"
+      },
+      {
+        "key": "d",
+        "text": "5"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "A relay module for Raspberry Pi has 3 terminals. See lecture IMPLEMENTATION OF IOT WITH RASPBERRY PI-I @ 06:01.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_6.pdf"
+  },
+  {
+    "id": "2026-w6-q26",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 26,
+    "question": "State whether the following statement is true or false. Statement: Adafruit provides a library to work with the DHT22 sensor.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "type": "true-false",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Adafruit provides a library to work with the DHT22 sensor. See lecture IMPLEMENTATION OF IOT WITH RASPBERRY PI-I @ 09:19",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_6.pdf"
+  },
+  {
+    "id": "2026-w6-q27",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 27,
+    "question": "What is the function of the close() function in python programming while handling files.",
+    "options": [
+      {
+        "key": "a",
+        "text": "This function does not exist in python"
+      },
+      {
+        "key": "b",
+        "text": "It closes the current connection to the file and ensures that the file is free to use for other resources"
+      },
+      {
+        "key": "c",
+        "text": "None of these"
+      },
+      {
+        "key": "d",
+        "text": "Both (a) and (b)"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "The close() function in python ensures that the file is free to use for other resources. (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- II @ 4:44)",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_6.pdf"
+  },
+  {
+    "id": "2026-w6-q28",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 28,
+    "question": "Where is the Raspbian image found?",
+    "options": [
+      {
+        "key": "a",
+        "text": "It is not available on the Internet"
+      },
+      {
+        "key": "b",
+        "text": "It is available as image file from the Raspberry Pi official website"
+      },
+      {
+        "key": "c",
+        "text": "It can only be purchased from offline vendor"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "Raspbian image can be downloaded from the Raspberry Pi official website. (Please refer to lecture INTRODUCTION TO RASPBERYY PI-I @ 12:32) Introduction to Internet of Things",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_6.pdf"
+  }
+]

@@ -1,0 +1,573 @@
+[
+  {
+    "id": "2026-w8-q1",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 8",
+    "weekNum": 8,
+    "questionNum": 1,
+    "question": "Which of the following is listed as a problem in traditional (non-SDN) mobile networks?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Too flexible hardware architecture"
+      },
+      {
+        "key": "b",
+        "text": "Excess centralized control"
+      },
+      {
+        "key": "c",
+        "text": "Very low operational cost"
+      },
+      {
+        "key": "d",
+        "text": "Difficult to scale due to static, over-provisioned networks"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "Traditional mobile networks are difficult to scale because static, over-provisioned networks are inflexible to manage high-demand mobile traffic; they are also difficult to manage, inflexible, and cost-expensive. See Lecture 36 (Software-Defined IoT Networking : Part II, slide 3)",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_8.pdf"
+  },
+  {
+    "id": "2026-w8-q2",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 8",
+    "weekNum": 8,
+    "questionNum": 2,
+    "question": "In the ODIN architecture for software-defined wireless networks, what does the 'Odin agent' do?",
+    "options": [
+      {
+        "key": "a",
+        "text": "It is placed at the controller end to manage policies"
+      },
+      {
+        "key": "b",
+        "text": "It replaces the OpenFlow protocol entirely"
+      },
+      {
+        "key": "c",
+        "text": "It is placed with the physical devices to communicate with the controller"
+      },
+      {
+        "key": "d",
+        "text": "It performs billing for cloud resources"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "In ODIN, an agent is placed at access points (with the physical devices) to communicate with the controller, while the Odin master resides at the controller end. NPTEL Online Certification Courses Indian Institute of Technology Kharagpur See Lecture 36 (Software-Defined IoT Networking : Part II, slide 11)",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_8.pdf"
+  },
+  {
+    "id": "2026-w8-q3",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 8",
+    "weekNum": 8,
+    "questionNum": 3,
+    "question": "What is the primary goal of Mobi-Flow's proactive rule placement approach in Software-Defined IoT?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To place flow-rules randomly across all access points"
+      },
+      {
+        "key": "b",
+        "text": "To predict users' future location and place flow-rules at APs accordingly"
+      },
+      {
+        "key": "c",
+        "text": "To eliminate the need for a controller"
+      },
+      {
+        "key": "d",
+        "text": "To increase the number of PACKET-IN messages"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "Mobi-Flow predicts the location of end-users at time (t+1) while they are at time (t), and places flow-rules at the access points that can be associated with the users based on their predicted locations, using an order-K Markov predictor. See Lecture 36 (Software-Defined IoT Networking : Part II, slides 15: 16)",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_8.pdf"
+  },
+  {
+    "id": "2026-w8-q4",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 8",
+    "weekNum": 8,
+    "questionNum": 4,
+    "question": "Which simulation tool is mentioned in the lecture for experimenting with wireless software-defined networks, supporting both wired and wireless (IEEE 802.11) protocols?",
+    "options": [
+      {
+        "key": "a",
+        "text": "CloudSim"
+      },
+      {
+        "key": "b",
+        "text": "NS2"
+      },
+      {
+        "key": "c",
+        "text": "GreenCloud"
+      },
+      {
+        "key": "d",
+        "text": "Mininet-WiFi"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "Mininet-WiFi can be used to deploy a network supporting both wired (Ethernet) and wireless (WiFi, IEEE 802.11) protocols, while ONOS can be used to place the controllers. See Lecture 36 (Software-Defined IoT Networking : Part II, slide 21) NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_8.pdf"
+  },
+  {
+    "id": "2026-w8-q5",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 8",
+    "weekNum": 8,
+    "questionNum": 5,
+    "question": "According to the NIST definition quoted in the lecture, cloud computing enables on-demand network access to a shared pool of what?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Fixed, dedicated hardware resources"
+      },
+      {
+        "key": "b",
+        "text": "Configurable computing resources"
+      },
+      {
+        "key": "c",
+        "text": "Only storage resources"
+      },
+      {
+        "key": "d",
+        "text": "Only networking resources"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "NIST defines cloud computing as a model for enabling convenient, on-demand network access to a shared pool of configurable computing resources such as networks, servers, storage, and applications. See Lecture 37 (Cloud Computing : Fundamentals, slide 4)",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_8.pdf"
+  },
+  {
+    "id": "2026-w8-q6",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 8",
+    "weekNum": 8,
+    "questionNum": 6,
+    "question": "Which of the following is one of the essential characteristics of cloud computing as defined by NIST?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Rapid elasticity"
+      },
+      {
+        "key": "b",
+        "text": "Manual resource allocation"
+      },
+      {
+        "key": "c",
+        "text": "Single-tenant only access"
+      },
+      {
+        "key": "d",
+        "text": "Fixed billing regardless of usage"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "NIST lists rapid elasticity as an essential characteristic, meaning cloud resource allocation and release should be rapid, elastic, and automatic, giving consumers the impression of infinite resources. See Lecture 37 (Cloud Computing : Fundamentals, slide 9) NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_8.pdf"
+  },
+  {
+    "id": "2026-w8-q7",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 8",
+    "weekNum": 8,
+    "questionNum": 7,
+    "question": "Which cloud deployment model is set up for the exclusive use of a single organization, typically managed on-premises or by a third party off-premises?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Public cloud"
+      },
+      {
+        "key": "b",
+        "text": "Private cloud"
+      },
+      {
+        "key": "c",
+        "text": "Community cloud"
+      },
+      {
+        "key": "d",
+        "text": "Multi-cloud"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "A private cloud is a cloud set-up functioned only for a single organization, typically managed by the organization itself (on-premises) or by a third party (off-premises). See Lecture 37 (Cloud Computing : Fundamentals, slide 20)",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_8.pdf"
+  },
+  {
+    "id": "2026-w8-q8",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 8",
+    "weekNum": 8,
+    "questionNum": 8,
+    "question": "Which of the following is given as an example of a public cloud provider in the lecture?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Amazon Web Services (AWS)"
+      },
+      {
+        "key": "b",
+        "text": "A company's internal private data center"
+      },
+      {
+        "key": "c",
+        "text": "A single organization's dedicated server room"
+      },
+      {
+        "key": "d",
+        "text": "A community-only cloud shared by hospitals"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Public cloud examples given include Amazon Web Services (AWS), Google Compute Engine, and Microsoft Azure : cloud set-ups available for the use of any person or industry. See Lecture 37 (Cloud Computing : Fundamentals, slide 19)",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_8.pdf"
+  },
+  {
+    "id": "2026-w8-q9",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 8",
+    "weekNum": 8,
+    "questionNum": 9,
+    "question": "Which cloud service model provides on-demand delivery of computing infrastructure such as servers, storage, network, and operating system? NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "options": [
+      {
+        "key": "a",
+        "text": "SaaS"
+      },
+      {
+        "key": "b",
+        "text": "PaaS"
+      },
+      {
+        "key": "c",
+        "text": "IaaS"
+      },
+      {
+        "key": "d",
+        "text": "DBaaS"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "Infrastructure-as-a-Service (IaaS) contains the basic building blocks for cloud IT, providing access to networking features, computers (virtual or dedicated hardware), storage, and operating systems. See Lecture 38 (Cloud Computing : Service Models, slide 4)",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_8.pdf"
+  },
+  {
+    "id": "2026-w8-q10",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 8",
+    "weekNum": 8,
+    "questionNum": 10,
+    "question": "In the IaaS working methodology, which component allows multiple virtual machines to share the same physical hardware?",
+    "options": [
+      {
+        "key": "a",
+        "text": "DNS server"
+      },
+      {
+        "key": "b",
+        "text": "Load balancer"
+      },
+      {
+        "key": "c",
+        "text": "Firewall"
+      },
+      {
+        "key": "d",
+        "text": "Hypervisor"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "In IaaS, the hypervisor sits above the physical hardware and manages multiple virtual machines (VMs), each running its own operating system, on a virtualized server. See Lecture 38 (Cloud Computing : Service Models, slide 5)",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_8.pdf"
+  },
+  {
+    "id": "2026-w8-q11",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 8",
+    "weekNum": 8,
+    "questionNum": 11,
+    "question": "Which cloud service model is described as 'application middleware offered as a service to developers', removing the need to manage underlying hardware and operating systems?",
+    "options": [
+      {
+        "key": "a",
+        "text": "IaaS NPTEL Online Certification Courses Indian Institute of Technology Kharagpur"
+      },
+      {
+        "key": "b",
+        "text": "SaaS"
+      },
+      {
+        "key": "c",
+        "text": "PaaS"
+      },
+      {
+        "key": "d",
+        "text": "Community Cloud"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "Platform-as-a-Service (PaaS) removes the need for organizations to manage underlying infrastructure (hardware and OS) and lets developers focus on deploying and managing their applications; it is described as application middleware offered as a service. See Lecture 38 (Cloud Computing : Service Models, slide 15)",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_8.pdf"
+  },
+  {
+    "id": "2026-w8-q12",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 8",
+    "weekNum": 8,
+    "questionNum": 12,
+    "question": "What is the primary purpose of a Service Level Agreement (SLA) in cloud service management?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To define the physical location of the data center"
+      },
+      {
+        "key": "b",
+        "text": "To define the non-functional requirements expected from the service provider"
+      },
+      {
+        "key": "c",
+        "text": "To specify the programming language used by the cloud provider"
+      },
+      {
+        "key": "d",
+        "text": "To list the hardware vendors used by the provider"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "An SLA defines the non-functional requirements expected from the service provider and provides a roadmap with clearly defined deliverables, describing the quality, utility, and warranty of services expected by the customer. See Lecture 39 (Cloud Computing : Service Management and Security, slide 4)",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_8.pdf"
+  },
+  {
+    "id": "2026-w8-q13",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 8",
+    "weekNum": 8,
+    "questionNum": 13,
+    "question": "In cloud service accounting and billing, what does 'service accounting' primarily aim to obtain?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Resource usage information, typically in the form of records"
+      },
+      {
+        "key": "b",
+        "text": "The physical address of end-users"
+      },
+      {
+        "key": "c",
+        "text": "The source code of hosted applications"
+      },
+      {
+        "key": "d",
+        "text": "The marketing budget of the provider NPTEL Online Certification Courses Indian Institute of Technology Kharagpur"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Service accounting aims to obtain resource usage information, typically in the form of records, depending on infrastructure and service monitoring where usage information is obtained from metric measurements. See Lecture 39 (Cloud Computing : Service Management and Security, slide 5)",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_8.pdf"
+  },
+  {
+    "id": "2026-w8-q14",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 8",
+    "weekNum": 8,
+    "questionNum": 14,
+    "question": "What is the main purpose of using cloud simulators such as CloudSim before actual deployment?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To permanently replace the need for real cloud infrastructure"
+      },
+      {
+        "key": "b",
+        "text": "To physically manufacture cloud hardware"
+      },
+      {
+        "key": "c",
+        "text": "To increase the billing cost of cloud services"
+      },
+      {
+        "key": "d",
+        "text": "To provide a reliable, scalable, and repeatable environment for pre-deployment performance evaluation"
+      }
+    ],
+    "type": "mcq-multi",
+    "correctAnswer": "d, a",
+    "correctKeys": [
+      "d",
+      "a"
+    ],
+    "sourceAnswer": "d, a",
+    "explanation": "Simulation tools provide a reliable, scalable, and repeatable environment for performance evaluation, facilitating pre-deployment tests of services at no cost and enabling repeatable evaluation. See Lecture 40 (Cloud Computing : Case Studies, slides 2: 3)",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_8.pdf"
+  },
+  {
+    "id": "2026-w8-q15",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 8",
+    "weekNum": 8,
+    "questionNum": 15,
+    "question": "CloudSim, a widely used cloud simulation framework, was developed at which institution and is based on which programming language?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Stanford University, based on Python"
+      },
+      {
+        "key": "b",
+        "text": "CLOUDS Lab, University of Melbourne, based on Java"
+      },
+      {
+        "key": "c",
+        "text": "MIT, based on C++"
+      },
+      {
+        "key": "d",
+        "text": "IIT Kharagpur, based on JavaScript"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "CloudSim is a simulation framework that models cloud computing environments (data centers, VMs, applications, users, and network topology), written in a Java-based environment, and developed at the CLOUDS Lab of the University of Melbourne. See Lecture 40 (Cloud Computing : Case Studies, slide 5) NPTEL Online Certification Courses Indian Institute of Technology Kharagpur ************END************",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_8.pdf"
+  }
+]

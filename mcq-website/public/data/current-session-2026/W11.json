@@ -1,0 +1,1096 @@
+[
+  {
+    "id": "2026-w11-q1",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 1,
+    "question": "According to the lecture, which feature distinguishes a smart grid from a traditional electrical grid?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Energy distribution is only one directional."
+      },
+      {
+        "key": "b",
+        "text": "Monitoring and restoration are always performed manually."
+      },
+      {
+        "key": "c",
+        "text": "It enables bidirectional flows of energy with two-way communication and control."
+      },
+      {
+        "key": "d",
+        "text": "Energy generation must occur only at centralized power plants."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "A smart grid integrates two-way digital communication with bidirectional electrical power flow, allowing distributed generation, demand response, and self-healing automation.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W11.pdf"
+  },
+  {
+    "id": "2026-w11-q2",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 2,
+    "question": "What is the role of a smart meter in a smart home?",
+    "options": [
+      {
+        "key": "a",
+        "text": "It generates electricity from renewable energy sources."
+      },
+      {
+        "key": "b",
+        "text": "It provides the Smart Grid interface between the consumer and the energy service provider."
+      },
+      {
+        "key": "c",
+        "text": "It replaces the home energy management system."
+      },
+      {
+        "key": "d",
+        "text": "It operates only as a one-way energy meter without information exchange"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "The smart meter serves as the intelligent gateway and communication interface connecting home area networks (HAN) with utility service providers for automated metering and dynamic pricing.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W11.pdf"
+  },
+  {
+    "id": "2026-w11-q3",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 3,
+    "question": "Under Time-of-Use pricing, when are consumers encouraged to operate smart appliances to reduce their energy cost?",
+    "options": [
+      {
+        "key": "a",
+        "text": "During off-peak hours."
+      },
+      {
+        "key": "b",
+        "text": "Only during on-peak hours."
+      },
+      {
+        "key": "c",
+        "text": "Only when the grid has a blackout."
+      },
+      {
+        "key": "d",
+        "text": "At a fixed time independent of the grid load."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Time-of-Use (TOU) tariffs charge lower rates during off-peak hours (e.g. night) to incentivize consumers to shift flexible energy consumption away from peak demand intervals.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W11.pdf"
+  },
+  {
+    "id": "2026-w11-q4",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 4,
+    "question": "In net metering, the consumer's final bill depends on which two energy flows?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Reactive power and communication traffic."
+      },
+      {
+        "key": "b",
+        "text": "Only the energy generated at centralized power plants."
+      },
+      {
+        "key": "c",
+        "text": "Only the energy stored in the consumer's battery."
+      },
+      {
+        "key": "d",
+        "text": "Energy inflow from the grid and energy outflow from the consumer to the grid."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "Net metering credits residential renewable producers (such as solar rooftop owners) by billing only for the net difference between energy imported from the grid and surplus energy exported back to the grid.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W11.pdf"
+  },
+  {
+    "id": "2026-w11-q5",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 5,
+    "question": "Which device is used in a smart grid operation center to sample voltage and current for monitoring the transmission system?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Phasor Measurement Unit (PMU)."
+      },
+      {
+        "key": "b",
+        "text": "Data Aggregator Unit (DAU)."
+      },
+      {
+        "key": "c",
+        "text": "Smart appliance controller."
+      },
+      {
+        "key": "d",
+        "text": "Universal Power Line Bus."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Phasor Measurement Units (PMUs), synchronized via GPS timestamps, measure electrical waveforms with microsecond precision across high-voltage wide-area transmission grids.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W11.pdf"
+  },
+  {
+    "id": "2026-w11-q6",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 6,
+    "question": "Which of the following is a function of distribution intelligence in the smart grid?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Preventing all use of smart meters."
+      },
+      {
+        "key": "b",
+        "text": "Identifying the source of a power outage and supporting automatic power-flow restoration."
+      },
+      {
+        "key": "c",
+        "text": "Restricting the grid to one-way communication."
+      },
+      {
+        "key": "d",
+        "text": "Removing protection and control from feeder lines."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "Distribution intelligence (FLISR) automatically detects, isolates line faults, and reconfigures switches to restore electrical power to un-faulted segments without human intervention.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W11.pdf"
+  },
+  {
+    "id": "2026-w11-q7",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 7,
+    "question": "In smart grid communication, what does a gateway connect?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Closely located smart meters to Data Aggregator Units"
+      },
+      {
+        "key": "b",
+        "text": "Only power plants directly to home appliances."
+      },
+      {
+        "key": "c",
+        "text": "PMUs directly to plug-in electric vehicles."
+      },
+      {
+        "key": "d",
+        "text": "Renewable generators directly to SCADA without intermediate communication."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Neighborhood area network (NAN) gateways bridge local clusters of residential smart meters and relay aggregated telemetry to central Data Aggregator Units (DAUs).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W11.pdf"
+  },
+  {
+    "id": "2026-w11-q8",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 8,
+    "question": "Which type of attack compromises the availability of smart grid components or information by making them inaccessible when needed?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Net metering attack."
+      },
+      {
+        "key": "b",
+        "text": "Time synchronization attack."
+      },
+      {
+        "key": "c",
+        "text": "Data visualization attack."
+      },
+      {
+        "key": "d",
+        "text": "Denial of Service (DoS) attack."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "Denial of Service (DoS) attacks flood communication channels and controllers, preventing grid operators from receiving critical sensor feedback or executing control commands.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W11.pdf"
+  },
+  {
+    "id": "2026-w11-q9",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 9,
+    "question": "How is the Industrial Internet of Things (IIoT) described in the lecture?",
+    "options": [
+      {
+        "key": "a",
+        "text": "An application of IoT in industries that links automation systems with enterprise, planning, and product lifecycle."
+      },
+      {
+        "key": "b",
+        "text": "A consumer-only network for home entertainment devices."
+      },
+      {
+        "key": "c",
+        "text": "A replacement for all industrial automation without networking."
+      },
+      {
+        "key": "d",
+        "text": "A system used only for storing data without machine communication."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "IIoT interconnects operational technology (OT) sensors, actuators, and robotic controllers with enterprise information technology (IT) systems for predictive maintenance and optimization.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W11.pdf"
+  },
+  {
+    "id": "2026-w11-q10",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 10,
+    "question": "Which approach does the lecture associate with IIoT for adapting existing industrial systems?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Disconnect and isolate."
+      },
+      {
+        "key": "b",
+        "text": "Rip and replace."
+      },
+      {
+        "key": "c",
+        "text": "Wrap and re-use."
+      },
+      {
+        "key": "d",
+        "text": "Remove and discard."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "Industrial machinery represents massive capital expenditure; rather than expensive 'rip and replace', IIoT uses the 'wrap and re-use' paradigm by outfitting legacy machines with retrofitted IoT sensors.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W11.pdf"
+  },
+  {
+    "id": "2026-w11-q11",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 11,
+    "question": "According to the lecture, which technology is identified as the key enabling technology for vehicle-to-vehicle and vehicle-to-road communications in Intelligent Transportation Systems?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Universal Power Line Bus."
+      },
+      {
+        "key": "b",
+        "text": "Hadoop Distributed File System (HDFS)."
+      },
+      {
+        "key": "c",
+        "text": "Supervisory Control and Data Acquisition (SCADA)."
+      },
+      {
+        "key": "d",
+        "text": "Dedicated Short-Range Communications (DSRC)."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "Dedicated Short-Range Communications (DSRC) based on IEEE 802.11p provides the low latency and high reliability essential for active vehicular safety applications.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W11.pdf"
+  },
+  {
+    "id": "2026-w11-q12",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 12,
+    "question": "In IIoT-based mining applications, which environmental parameters can be monitored using wireless sensor networks?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Air quality, poisonous gases, and oxygen level inside mines."
+      },
+      {
+        "key": "b",
+        "text": "Only the billing amount of mine workers."
+      },
+      {
+        "key": "c",
+        "text": "Only the color of mining equipment."
+      },
+      {
+        "key": "d",
+        "text": "Only the internet browsing history of operators."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Underground mining sensor networks monitor toxic gas concentrations (methane, carbon monoxide), ambient temperature, humidity, and oxygen depletion to ensure worker safety.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W11.pdf"
+  },
+  {
+    "id": "2026-w11-q13",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 13,
+    "question": "Which Big Data characteristic refers to biases, noise, and abnormality in data?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Value"
+      },
+      {
+        "key": "b",
+        "text": "Variability."
+      },
+      {
+        "key": "c",
+        "text": "Veracity."
+      },
+      {
+        "key": "d",
+        "text": "Volume."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "Big data is characterized by 7 Vs. (Please refer Lecture 55@10:36) ____________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W11.pdf"
+  },
+  {
+    "id": "2026-w11-q14",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 14,
+    "question": "During data pre-processing, what is the purpose of redundancy mitigation?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To prevent data from being collected."
+      },
+      {
+        "key": "b",
+        "text": "To intentionally duplicate every data item."
+      },
+      {
+        "key": "c",
+        "text": "To convert all structured data into images."
+      },
+      {
+        "key": "d",
+        "text": "To eliminate repeated data through detection, filtering, and compression."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "High-frequency periodic IoT sampling generates massive duplicate readings; redundancy mitigation filters, aggregates, and compresses data to reduce storage and transmission overhead.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W11.pdf"
+  },
+  {
+    "id": "2026-w11-q15",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 15,
+    "question": "In Hadoop Distributed File System (HDFS), which node stores the actual data blocks?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Datanode."
+      },
+      {
+        "key": "b",
+        "text": "Namenode."
+      },
+      {
+        "key": "c",
+        "text": "Job Tracker"
+      },
+      {
+        "key": "d",
+        "text": "YARN Resource Negotiator only."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "In HDFS master-slave architecture, the Namenode manages file system namespace metadata, while slave Datanodes store the physical replicated file blocks on disk.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W11.pdf"
+  },
+  {
+    "id": "2026-w11-q16",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 16,
+    "question": "What are some of the other names of the smart grids?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Electricity with a brain"
+      },
+      {
+        "key": "b",
+        "text": "Energybar"
+      },
+      {
+        "key": "c",
+        "text": "Electrolyte"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Smart grids are also known as Electricity with a brain, Energy internet, and Electronet. (Please refer Lecture 51@8:33) ____________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_11.pdf"
+  },
+  {
+    "id": "2026-w11-q17",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 17,
+    "question": "Traditional Grid follows which type of flow of energy?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Unidirectional"
+      },
+      {
+        "key": "b",
+        "text": "Bidirectional"
+      },
+      {
+        "key": "c",
+        "text": "Both a and b"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Traditional grid follows unidirectional flow of energy. (Please refer Lecture 51@5:41) ____________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_11.pdf"
+  },
+  {
+    "id": "2026-w11-q18",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 18,
+    "question": "Which of the following is a benefit associated with smart grids?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Efficient transmission of electricity"
+      },
+      {
+        "key": "b",
+        "text": "Lower electricity rates"
+      },
+      {
+        "key": "c",
+        "text": "Improved security"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "Smart Grids provide efficient transmission of electricity, lower electricity rates and Improved security. (Please refer Lecture 51@11:26) ____________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_11.pdf"
+  },
+  {
+    "id": "2026-w11-q19",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 19,
+    "question": "Which of the following is a way of consumer engagement?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Net metering"
+      },
+      {
+        "key": "b",
+        "text": "Time-of-Use pricing"
+      },
+      {
+        "key": "c",
+        "text": "Financial incentives"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "Net metering, Time-of-Use pricing and Financial incentives are ways of consumer engagements. (Please refer Lecture 51 @32:31) ____________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_11.pdf"
+  },
+  {
+    "id": "2026-w11-q20",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 20,
+    "question": "Fill in the blank. In ___________, a home can have power from distributed resources.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Peaking"
+      },
+      {
+        "key": "b",
+        "text": "Islanding"
+      },
+      {
+        "key": "c",
+        "text": "Neither a nor b"
+      },
+      {
+        "key": "d",
+        "text": "Both a and b"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "In islanding, a home can have power from distributed resources.(Please refer Lecture 51 @31:20) ____________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_11.pdf"
+  },
+  {
+    "id": "2026-w11-q21",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 21,
+    "question": "Which of the following aggregates energy consumption of a certain geographical area?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Data Aggregator Units"
+      },
+      {
+        "key": "b",
+        "text": "Meter Data Management System"
+      },
+      {
+        "key": "c",
+        "text": "Buffer"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Data Aggregator Units aggregates energy consumption of a certain geographical area (Please refer Lecture 52@15:03) ____________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_11.pdf"
+  },
+  {
+    "id": "2026-w11-q22",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 22,
+    "question": "Which of the following statements are true about Dynamic System Attacks? Statement I: Replay attacks compromises sensors and monitors their outputs. Statement II: D-DIA can lead to a system collapse. Statement III: Covert attack is a closed loop version of replay attacks.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Statements I and II"
+      },
+      {
+        "key": "b",
+        "text": "Statements I and III"
+      },
+      {
+        "key": "c",
+        "text": "Statements II and III"
+      },
+      {
+        "key": "d",
+        "text": "Statement I, II and III"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "Replay attacks compromises sensors and monitors their outputs. D-DIA can lead to a system collapse. Covert attack is a closed loop version of replay attacks. (Please refer Lecture 52@20:03) ____________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_11.pdf"
+  },
+  {
+    "id": "2026-w11-q23",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 23,
+    "question": "Fill in the blank. ____________ is a centralized coordinator for smart grid communication.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Gateway"
+      },
+      {
+        "key": "b",
+        "text": "Meter"
+      },
+      {
+        "key": "c",
+        "text": "AMH"
+      },
+      {
+        "key": "d",
+        "text": "MDMS"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "MDMS is a centralized coordinator for smart grid communication. (Please refer Lecture 52@15:32) _______________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_11.pdf"
+  },
+  {
+    "id": "2026-w11-q24",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 24,
+    "question": "Fill in the blank. ____________ are available protocols for smart home appliances.",
+    "options": [
+      {
+        "key": "a",
+        "text": "C-Bus"
+      },
+      {
+        "key": "b",
+        "text": "DECT"
+      },
+      {
+        "key": "c",
+        "text": "EnOcean"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "C-Bus, DECT, EnOcean and Universal Powerline Bus are available protocols for smart home appliances. (Please refer Lecture 52@12:35) ____________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_11.pdf"
+  },
+  {
+    "id": "2026-w11-q25",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 25,
+    "question": "Fill in the blank. ____________ is the time required to transmit the data.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Scalability"
+      },
+      {
+        "key": "b",
+        "text": "Topology"
+      },
+      {
+        "key": "c",
+        "text": "Throughput"
+      },
+      {
+        "key": "d",
+        "text": "Latency"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "Latency is the time required to transmit the data. (Please refer Lecture 53@21:20) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_11.pdf"
+  },
+  {
+    "id": "2026-w11-q26",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 26,
+    "question": "IIoT is based on Wrap & Replace approach.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "type": "true-false",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "IIoT is based on wrap & re-use approach. (Please refer Lecture 53@9:53) ____________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_11.pdf"
+  },
+  {
+    "id": "2026-w11-q27",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 27,
+    "question": "Which of the following happened in the 3rd Revolution?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Mass production"
+      },
+      {
+        "key": "b",
+        "text": "IIoT"
+      },
+      {
+        "key": "c",
+        "text": "Mechanized production"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "Internet evolution and automation happened in the 3rd Revolution.(Please refer Lecture 53@10:06) ____________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_11.pdf"
+  },
+  {
+    "id": "2026-w11-q28",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 28,
+    "question": "Which of the following is used to improve the interoperability of different systems?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Standardization"
+      },
+      {
+        "key": "b",
+        "text": "Optimization"
+      },
+      {
+        "key": "c",
+        "text": "Monitoring"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Standardization improves the interoperability of different systems. (Please refer Lecture 54@16:09) ____________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_11.pdf"
+  },
+  {
+    "id": "2026-w11-q29",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 29,
+    "question": "What is Hadoop used in?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Distributed processing of large datasets"
+      },
+      {
+        "key": "b",
+        "text": "Small clusters of computers"
+      },
+      {
+        "key": "c",
+        "text": "Both a and b"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Hadoop is used for distributed processing of large datasets across Large clusters of computers (Please refer Lecture 55@23:18) ____________________________________________________________________________ Introduction to Internet of Things",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_11.pdf"
+  }
+]

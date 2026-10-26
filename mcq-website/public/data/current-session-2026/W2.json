@@ -1,0 +1,571 @@
+[
+  {
+    "id": "2026-w2-q1",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 2",
+    "weekNum": 2,
+    "questionNum": 1,
+    "question": "In MQTT, which field of a published message is used by the broker as routing information?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Topic"
+      },
+      {
+        "key": "b",
+        "text": "Client identifier"
+      },
+      {
+        "key": "c",
+        "text": "Payload length"
+      },
+      {
+        "key": "d",
+        "text": "Session timer"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "The MQTT broker dispatches messages between senders and receivers. The topic included in a published message provides the routing information that the broker uses to deliver the message to clients subscribed to the matching topic. Answer Location: Week 2, Module 6 (Basics of IoT Networking - Part II) @ 08:27",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL_Week_2.pdf"
+  },
+  {
+    "id": "2026-w2-q2",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 2",
+    "weekNum": 2,
+    "questionNum": 2,
+    "question": "Which of the following statements about MQTT topic wildcards are correct?",
+    "options": [
+      {
+        "key": "a",
+        "text": "The plus sign (+) matches an arbitrary value at exactly one hierarchy level."
+      },
+      {
+        "key": "b",
+        "text": "The hash sign (#) can be used to subscribe to all underlying hierarchy levels."
+      },
+      {
+        "key": "c",
+        "text": "The subscription house/# matches only the exact topic house."
+      },
+      {
+        "key": "d",
+        "text": "The subscription house/+/temperature can match house/kitchen/temperature."
+      }
+    ],
+    "type": "mcq-multi",
+    "correctAnswer": "a, b, d",
+    "correctKeys": [
+      "a",
+      "b",
+      "d"
+    ],
+    "sourceAnswer": "a, b, d",
+    "explanation": "The plus sign (+) is a single-level wildcard, whereas the hash sign (#) is a multilevel wildcard. Thus, house/+/temperature can match house/kitchen/temperature, and house/# matches all topics whose hierarchy begins with house, not only the exact topic house. Answer Location: Week 2, Module 6 (Basics of IoT Networking - Part II) @ 12:01 NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL_Week_2.pdf"
+  },
+  {
+    "id": "2026-w2-q3",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 2",
+    "weekNum": 2,
+    "questionNum": 3,
+    "question": "Which of the following are main stages of Secure MQTT (SMQTT)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Setup"
+      },
+      {
+        "key": "b",
+        "text": "Publish"
+      },
+      {
+        "key": "c",
+        "text": "Decryption"
+      },
+      {
+        "key": "d",
+        "text": "Route discovery"
+      }
+    ],
+    "type": "mcq-multi",
+    "correctAnswer": "a, b, c",
+    "correctKeys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "sourceAnswer": "a, b, c",
+    "explanation": "SMQTT consists of four main stages: setup, encryption, publish, and decryption. Route discovery is not one of the SMQTT stages. Answer Location: Week 2, Module 6 (Basics of IoT Networking - Part II) @ 13:45",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL_Week_2.pdf"
+  },
+  {
+    "id": "2026-w2-q4",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 2",
+    "weekNum": 2,
+    "questionNum": 4,
+    "question": "At the transport layer, CoAP (Constrained Application Protocol) operates over which protocol?",
+    "options": [
+      {
+        "key": "a",
+        "text": "TCP"
+      },
+      {
+        "key": "b",
+        "text": "UDP"
+      },
+      {
+        "key": "c",
+        "text": "SCTP"
+      },
+      {
+        "key": "d",
+        "text": "FTP"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "CoAP is designed for constrained environments and operates over UDP at the transport layer. Its lightweight design helps reduce communication overhead for resource-constrained IoT devices. Answer Location: Week 2, Module 7 (Basics of IoT Networking - Part III) @ 05:41 NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL_Week_2.pdf"
+  },
+  {
+    "id": "2026-w2-q5",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 2",
+    "weekNum": 2,
+    "questionNum": 5,
+    "question": "State True or False. In CoAP, a piggyback response is carried with the acknowledgment, whereas in the separate mode, the server response is sent in a message separate from the acknowledgment.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "type": "true-false",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "In the piggyback mode, the server places its response in the acknowledgment message. In the separate mode, the acknowledgment is sent first and the response is transmitted later as a separate message. Answer Location: Week 2, Module 7 (Basics of IoT Networking - Part III) @ 07:48",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL_Week_2.pdf"
+  },
+  {
+    "id": "2026-w2-q6",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 2",
+    "weekNum": 2,
+    "questionNum": 6,
+    "question": "Which of the following CoAP request-method mappings are correct?",
+    "options": [
+      {
+        "key": "a",
+        "text": "GET - retrieve data"
+      },
+      {
+        "key": "b",
+        "text": "PUT - create data"
+      },
+      {
+        "key": "c",
+        "text": "PUSH - update data"
+      },
+      {
+        "key": "d",
+        "text": "DELETE - delete data"
+      }
+    ],
+    "type": "mcq-multi",
+    "correctAnswer": "a, b, c, d",
+    "correctKeys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "sourceAnswer": "a, b, c, d",
+    "explanation": "As presented in the lecture, CoAP uses GET, PUT, PUSH, and DELETE requests to retrieve, create, update, and delete data, respectively. Answer Location: Week 2, Module 7 (Basics of IoT Networking - Part III) @ 07:48 NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL_Week_2.pdf"
+  },
+  {
+    "id": "2026-w2-q7",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 2",
+    "weekNum": 2,
+    "questionNum": 7,
+    "question": "Which AMQP frame type is used to control the message-flow rate?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Transfer"
+      },
+      {
+        "key": "b",
+        "text": "Detach"
+      },
+      {
+        "key": "c",
+        "text": "Disposition"
+      },
+      {
+        "key": "d",
+        "text": "Flow"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "The Flow frame controls the rate of message flow between AMQP peers. By comparison, Transfer carries messages, Disposition communicates a change in transfer state, and Detach terminates a link. Answer Location: Week 2, Module 8 (Basics of IoT Networking - Part IV) @ 06:21",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL_Week_2.pdf"
+  },
+  {
+    "id": "2026-w2-q8",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 2",
+    "weekNum": 2,
+    "questionNum": 8,
+    "question": "Which of the following statements about AMQP components are correct?",
+    "options": [
+      {
+        "key": "a",
+        "text": "An exchange receives messages and routes them to queues."
+      },
+      {
+        "key": "b",
+        "text": "A queue stores messages for business processes or consumers."
+      },
+      {
+        "key": "c",
+        "text": "A binding specifies message-distribution rules between an exchange and queues."
+      },
+      {
+        "key": "d",
+        "text": "A consumer must route every producer message before it reaches an exchange."
+      }
+    ],
+    "type": "mcq-multi",
+    "correctAnswer": "a, b, c",
+    "correctKeys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "sourceAnswer": "a, b, c",
+    "explanation": "The main AMQP components discussed in the lecture are exchanges, queues, and bindings. An exchange receives and routes messages, a queue stores messages for consumers or business processes, and a binding defines the distribution rules connecting exchanges to queues. Answer Location: Week 2, Module 8 (Basics of IoT Networking - Part IV) @ 08:03 NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL_Week_2.pdf"
+  },
+  {
+    "id": "2026-w2-q9",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 2",
+    "weekNum": 2,
+    "questionNum": 9,
+    "question": "Which of the following IEEE 802.15.4 variant-application pairs are correct?",
+    "options": [
+      {
+        "key": "a",
+        "text": "IEEE 802.15.4c - China"
+      },
+      {
+        "key": "b",
+        "text": "IEEE 802.15.4e - Industrial applications"
+      },
+      {
+        "key": "c",
+        "text": "IEEE 802.15.4f - Active RFID"
+      },
+      {
+        "key": "d",
+        "text": "IEEE 802.15.4g - Smart utility networks"
+      }
+    ],
+    "type": "mcq-multi",
+    "correctAnswer": "a, b, c, d",
+    "correctKeys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "sourceAnswer": "a, b, c, d",
+    "explanation": "The lecture associates IEEE 802.15.4c with China, 802.15.4d with Japan, 802.15.4e with industrial applications, 802.15.4f with active RFID, and 802.15.4g with smart utility networks. Answer Location: Week 2, Module 9 (Connectivity Technologies - Part I) @ 09:03",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL_Week_2.pdf"
+  },
+  {
+    "id": "2026-w2-q10",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 2",
+    "weekNum": 2,
+    "questionNum": 10,
+    "question": "In a non-beacon-enabled IEEE 802.15.4 network, data frames are transmitted using:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Slotted CSMA/CA"
+      },
+      {
+        "key": "b",
+        "text": "Unslotted CSMA/CA"
+      },
+      {
+        "key": "c",
+        "text": "Token passing"
+      },
+      {
+        "key": "d",
+        "text": "Pure TDMA only"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "Non-beacon-enabled IEEE 802.15.4 networks transmit data frames using unslotted CSMA/CA. In contrast, beacon-enabled networks use slotted CSMA/CA with a superframe structure managed by the PAN coordinator. Answer Location: Week 2, Module 9 (Connectivity Technologies - Part I) @ 14:11 NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL_Week_2.pdf"
+  },
+  {
+    "id": "2026-w2-q11",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 2",
+    "weekNum": 2,
+    "questionNum": 11,
+    "question": "Which statement correctly describes the relationship between IEEE 802.15.4 and ZigBee?",
+    "options": [
+      {
+        "key": "a",
+        "text": "IEEE 802.15.4 provides layers 1 and 2, while ZigBee extends the functionality to layer 3 and above."
+      },
+      {
+        "key": "b",
+        "text": "ZigBee provides only the physical layer, while IEEE 802.15.4 provides all higher layers."
+      },
+      {
+        "key": "c",
+        "text": "Both standards operate only at the application layer."
+      },
+      {
+        "key": "d",
+        "text": "ZigBee and IEEE 802.15.4 are identical standards with no functional distinction."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "IEEE 802.15.4 primarily specifies the physical and MAC layers. ZigBee operates on top of these layers and adds higher-layer functions, including authentication, encryption, routing, forwarding, and support for mesh networking. Answer Location: Week 2, Module 9 (Connectivity Technologies - Part I) @ 16:08",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL_Week_2.pdf"
+  },
+  {
+    "id": "2026-w2-q12",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 2",
+    "weekNum": 2,
+    "questionNum": 12,
+    "question": "Which of the following statements characterizes a ZigBee end device?",
+    "options": [
+      {
+        "key": "a",
+        "text": "It communicates with its parent node."
+      },
+      {
+        "key": "b",
+        "text": "It cannot relay data for other devices."
+      },
+      {
+        "key": "c",
+        "text": "It is a reduced-functionality device."
+      },
+      {
+        "key": "d",
+        "text": "It forms the network root and acts as the trust center."
+      }
+    ],
+    "type": "mcq-multi",
+    "correctAnswer": "a, b, c",
+    "correctKeys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "sourceAnswer": "a, b, c",
+    "explanation": "A ZigBee end device has sufficient functionality to communicate with its parent, but it cannot relay data for other devices. It is therefore a reduced-functionality device. The coordinator, not an end device, forms the network root and may act as the trust center. Answer Location: Week 2, Module 9 (Connectivity Technologies - Part I) @ 23:54 NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL_Week_2.pdf"
+  },
+  {
+    "id": "2026-w2-q13",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 2",
+    "weekNum": 2,
+    "questionNum": 13,
+    "question": "Which option correctly describes addressing in 6LoWPAN?",
+    "options": [
+      {
+        "key": "a",
+        "text": "A 16-bit address is globally unique, while a 64-bit address is PAN-specific."
+      },
+      {
+        "key": "b",
+        "text": "A 16-bit short address is PAN-specific and assigned by the PAN coordinator, while a 64-bit extended address is globally unique."
+      },
+      {
+        "key": "c",
+        "text": "Both 16-bit and 64-bit addresses are globally unique and assigned by an Internet router."
+      },
+      {
+        "key": "d",
+        "text": "Both address types are used only for multicast communication."
+      }
+    ],
+    "type": "mcq-multi",
+    "correctAnswer": "b, a",
+    "correctKeys": [
+      "b",
+      "a"
+    ],
+    "sourceAnswer": "b, a",
+    "explanation": "6LoWPAN supports 16-bit short addresses for PAN-specific communication; these are assigned by the PAN coordinator. It also supports 64-bit extended addresses, which are globally unique. Answer Location: Week 2, Module 10 (Connectivity Technologies - Part II) @ 04:58",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL_Week_2.pdf"
+  },
+  {
+    "id": "2026-w2-q14",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 2",
+    "weekNum": 2,
+    "questionNum": 14,
+    "question": "State True or False. In LOADng routing, an intermediate router may respond to a Route Request (RREQ) whenever it already has an active route to the requested destination.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "type": "true-false",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "In LOADng, only the destination is permitted to respond to an RREQ. Intermediate LOADng routers are explicitly prohibited from responding, even when they have an active route to the requested destination. Answer Location: Week 2, Module 10 (Connectivity Technologies - Part II) @ 12:48 NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL_Week_2.pdf"
+  },
+  {
+    "id": "2026-w2-q15",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 2",
+    "weekNum": 2,
+    "questionNum": 15,
+    "question": "How does a passive RFID tag obtain the power required to transmit information?",
+    "options": [
+      {
+        "key": "a",
+        "text": "It uses its own internal battery."
+      },
+      {
+        "key": "b",
+        "text": "It is powered inductively by an RFID reader."
+      },
+      {
+        "key": "c",
+        "text": "It receives power through a wired AIDC connection."
+      },
+      {
+        "key": "d",
+        "text": "It does not require any source of power."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "Passive RFID tags do not have their own power supply. They must first be powered inductively by an RFID reader before they can transmit information. Active RFID tags, in contrast, have their own power supply. Answer Location: Week 2, Module 10 (Connectivity Technologies - Part II) @ 19:30 ************END***********",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL_Week_2.pdf"
+  }
+]

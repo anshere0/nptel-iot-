@@ -1,0 +1,1097 @@
+[
+  {
+    "id": "2026-w3-q1",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 1,
+    "question": "Which WirelessHART data-link mechanism provides reliable, collision-free, and deterministic communication?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Superframes divided into 10-millisecond TDMA time slots"
+      },
+      {
+        "key": "b",
+        "text": "Pure ALOHA without time-slot allocation"
+      },
+      {
+        "key": "c",
+        "text": "CSMA/CD over a wired Ethernet bus"
+      },
+      {
+        "key": "d",
+        "text": "Token-ring circulation among field devices"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "WirelessHART data link layer divides time into fixed 10-millisecond TDMA time slots organized into recurring superframes, enabling collision-free, deterministic real-time communication for industrial wireless networks.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W3.pdf"
+  },
+  {
+    "id": "2026-w3-q2",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 2,
+    "question": "In WirelessHART, which entity supervises network nodes and guides them regarding when and where packets should be transmitted?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Network manager"
+      },
+      {
+        "key": "b",
+        "text": "NFC reader"
+      },
+      {
+        "key": "c",
+        "text": "Z-Wave end device"
+      },
+      {
+        "key": "d",
+        "text": "Bluetooth inquiry agent"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "The Network Manager in WirelessHART is the centralized supervisory entity that manages routing tables, schedule configurations, and guides nodes on exact transmission slots.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W3.pdf"
+  },
+  {
+    "id": "2026-w3-q3",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 3,
+    "question": "Which of the following are operating modes of NFC?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Peer-to-peer mode"
+      },
+      {
+        "key": "b",
+        "text": "Read/write mode"
+      },
+      {
+        "key": "c",
+        "text": "Card-emulation mode"
+      },
+      {
+        "key": "d",
+        "text": "Frequency-hopping mode"
+      }
+    ],
+    "type": "mcq-multi",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "sourceAnswer": "a, b, c",
+    "explanation": "NFC defines three standardized operating modes: Peer-to-peer mode (device-to-device data exchange), Read/write mode (reading/writing to passive NFC tags), and Card-emulation mode (acting as a contactless smart card).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W3.pdf"
+  },
+  {
+    "id": "2026-w3-q4",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 4,
+    "question": "Which of the following are phases of Bluetooth connection establishment?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Inquiry or discovery phase"
+      },
+      {
+        "key": "b",
+        "text": "Paging phase"
+      },
+      {
+        "key": "c",
+        "text": "Connection phase"
+      },
+      {
+        "key": "d",
+        "text": "Channel-blacklisting phase"
+      }
+    ],
+    "type": "mcq-multi",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "sourceAnswer": "a, b, c",
+    "explanation": "Bluetooth connection establishment follows three sequential phases: Inquiry/discovery phase (detecting surrounding devices), Paging phase (synchronizing clock and forming piconet), and Connected phase (data transmission).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W3.pdf"
+  },
+  {
+    "id": "2026-w3-q5",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 5,
+    "question": "In which Bluetooth operating mode does a slave remain inactive until the master instructs it to wake up?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Active mode"
+      },
+      {
+        "key": "b",
+        "text": "Sniff mode"
+      },
+      {
+        "key": "c",
+        "text": "Hold mode"
+      },
+      {
+        "key": "d",
+        "text": "Park mode"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "In Bluetooth Park mode, a slave gives up its active MAC address, sleeps to conserve power, and remains inactive until the master instructs it to unpark and wake up.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W3.pdf"
+  },
+  {
+    "id": "2026-w3-q6",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 6,
+    "question": "Which of the following functions are provided by the Bluetooth L2CAP layer?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Connection-oriented and connectionless data services"
+      },
+      {
+        "key": "b",
+        "text": "Protocol multiplexing"
+      },
+      {
+        "key": "c",
+        "text": "Segmentation and reassembly"
+      },
+      {
+        "key": "d",
+        "text": "Generation of the magnetic field used by NFC tags"
+      }
+    ],
+    "type": "mcq-multi",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "sourceAnswer": "a, b, c",
+    "explanation": "L2CAP (Logical Link Control and Adaptation Protocol) provides protocol multiplexing, segmentation and reassembly (SAR) of large packets, and both connection-oriented and connectionless data services for higher-layer protocols.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W3.pdf"
+  },
+  {
+    "id": "2026-w3-q7",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 7,
+    "question": "A single Z-Wave network can contain up to approximately how many nodes?",
+    "options": [
+      {
+        "key": "a",
+        "text": "32"
+      },
+      {
+        "key": "b",
+        "text": "64"
+      },
+      {
+        "key": "c",
+        "text": "128"
+      },
+      {
+        "key": "d",
+        "text": "232"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "Z-Wave specifies that a single network mesh can address up to 232 nodes using its 8-bit Node ID addressing scheme.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W3.pdf"
+  },
+  {
+    "id": "2026-w3-q8",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 8,
+    "question": "Which of the following statements about Z-Wave addressing are correct?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Each logical Z-Wave network has one Home ID."
+      },
+      {
+        "key": "b",
+        "text": "A Z-Wave Node ID has a length of one byte."
+      },
+      {
+        "key": "c",
+        "text": "A Z-Wave Home ID has a length of four bytes."
+      },
+      {
+        "key": "d",
+        "text": "Nodes having different Home IDs can communicate directly with one another."
+      }
+    ],
+    "type": "mcq-multi",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "sourceAnswer": "a, b, c",
+    "explanation": "In Z-Wave, Home ID is a 4-byte (32-bit) unique identifier shared by all devices in the same network, while Node ID is a 1-byte (8-bit) device address. Devices with different Home IDs cannot directly communicate without an inter-network gateway.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W3.pdf"
+  },
+  {
+    "id": "2026-w3-q9",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 9,
+    "question": "Which of the following statements about ISA 100.11a are correct?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Its network and transport layers are based on TCP, UDP, or IPv6."
+      },
+      {
+        "key": "b",
+        "text": "Its data-link layer supports mesh networking with frequency hopping."
+      },
+      {
+        "key": "c",
+        "text": "Its radio is based on IEEE 802.15.4."
+      },
+      {
+        "key": "d",
+        "text": "It supports only a ring topology."
+      }
+    ],
+    "type": "mcq-multi",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "sourceAnswer": "a, b, c",
+    "explanation": "ISA 100.11a uses IEEE 802.15.4 physical radio, an advanced data link layer supporting mesh routing with channel hopping, and standard IPv6/UDP/TCP network and transport protocols.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W3.pdf"
+  },
+  {
+    "id": "2026-w3-q10",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 10,
+    "question": "Why is multi-hop communication commonly used in a wireless sensor network?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Sensor nodes have short transmission ranges, so intermediate nodes relay data toward the sink."
+      },
+      {
+        "key": "b",
+        "text": "Every sensor node must communicate directly with the Internet."
+      },
+      {
+        "key": "c",
+        "text": "Multi-hop communication eliminates the need for a sink node."
+      },
+      {
+        "key": "d",
+        "text": "Only mobile sensor nodes are permitted to transmit data."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Sensor nodes have low power and short radio reach; multi-hop forwarding uses intermediate peers to relay packets across wide geographic fields toward the centralized base station/sink.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W3.pdf"
+  },
+  {
+    "id": "2026-w3-q11",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 11,
+    "question": "Which of the following is described as an optional unit of a sensor node?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Sensing unit"
+      },
+      {
+        "key": "b",
+        "text": "Processing unit"
+      },
+      {
+        "key": "c",
+        "text": "Power unit"
+      },
+      {
+        "key": "d",
+        "text": "Location-finding system such as GPS"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "While power, processing, sensing, and transceiver units are mandatory baseline components of every sensor node, a location-finding system (such as GPS) or mobilizer is an application-specific optional component.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W3.pdf"
+  },
+  {
+    "id": "2026-w3-q12",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 12,
+    "question": "If n denotes the number of nodes in a sensor network, the lecture states that the throughput decreases approximately at what rate as the network scales?",
+    "options": [
+      {
+        "key": "a",
+        "text": "1/n"
+      },
+      {
+        "key": "b",
+        "text": "n"
+      },
+      {
+        "key": "c",
+        "text": "sqrt(n)"
+      },
+      {
+        "key": "d",
+        "text": "1/sqrt(n)"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "According to the classic Gupta and Kumar scaling law presented in the lecture, per-node throughput in a multihop wireless sensor network scales as Θ(1/√n) due to interference and packet forwarding overhead.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W3.pdf"
+  },
+  {
+    "id": "2026-w3-q13",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 13,
+    "question": "Which types of sensor-node misbehavior are classified as intentional?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Malicious behavior"
+      },
+      {
+        "key": "b",
+        "text": "Selfish behavior"
+      },
+      {
+        "key": "c",
+        "text": "Failed-node behavior"
+      },
+      {
+        "key": "d",
+        "text": "Badly failed-node behavior"
+      }
+    ],
+    "type": "mcq-multi",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a",
+      "b"
+    ],
+    "sourceAnswer": "a, b",
+    "explanation": "Intentional misbehavior stems from purposeful actions: malicious behavior (adversarial attacks/tampering) and selfish behavior (refusing to forward others' packets to preserve battery). Hardware faults/failures are unintentional.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W3.pdf"
+  },
+  {
+    "id": "2026-w3-q14",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 14,
+    "question": "What distinguishes a badly failed sensor node from an ordinarily failed sensor node?",
+    "options": [
+      {
+        "key": "a",
+        "text": "It additionally sends false routing messages."
+      },
+      {
+        "key": "b",
+        "text": "It always increases the network throughput."
+      },
+      {
+        "key": "c",
+        "text": "It changes from a mobile node into a stationary node."
+      },
+      {
+        "key": "d",
+        "text": "It communicates normally but consumes no power."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "An ordinarily failed node simply stops operating or dropping packets, whereas a badly failed node continues broadcasting corrupt, deceptive, or false routing messages that actively mislead peers.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W3.pdf"
+  },
+  {
+    "id": "2026-w3-q15",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 15,
+    "question": "Which consequence may arise when a selfish sensor node refuses to cooperate because forwarding involves a personal cost?",
+    "options": [
+      {
+        "key": "a",
+        "text": "It forwards every received packet twice."
+      },
+      {
+        "key": "b",
+        "text": "It drops a received packet instead of forwarding it."
+      },
+      {
+        "key": "c",
+        "text": "It automatically becomes the sink node."
+      },
+      {
+        "key": "d",
+        "text": "It increases the communication range of neighboring nodes."
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "A selfish node seeks to conserve its limited energy battery for its own sensor readings; therefore, it silently drops packets intended for multihop routing rather than burning energy to forward them.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W3.pdf"
+  },
+  {
+    "id": "2026-w3-q16",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 16,
+    "question": "State whether the following statement is true or false. Statement: There is no network layer in Wired HART",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "type": "true-false",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "There is no network layer in Wired HART. See lecture 11 @ 05:22",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment 3 Solution.pdf"
+  },
+  {
+    "id": "2026-w3-q17",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 17,
+    "question": "Zwave operates at ________ MHz in the US and ________ MHz in Europe.",
+    "options": [
+      {
+        "key": "a",
+        "text": "1008,989"
+      },
+      {
+        "key": "b",
+        "text": "908.42, 868.42"
+      },
+      {
+        "key": "c",
+        "text": "767.56,855.28"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "Zwave operates at 908.42 MHz in the US and 868.42 MHz in Europe. See lecture 13 @ 3:40 NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment 3 Solution.pdf"
+  },
+  {
+    "id": "2026-w3-q18",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 18,
+    "question": "Dumb behavior of sensor nodes is _______________ in nature (as it is dependent on the effects of the environmental conditions).",
+    "options": [
+      {
+        "key": "a",
+        "text": "Temporal"
+      },
+      {
+        "key": "b",
+        "text": "Spatial"
+      },
+      {
+        "key": "c",
+        "text": "Both (a) and (b)"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Dumb behavior of sensor nodes is Temporal in nature (as it is dependent on the effects of the environmental conditions). See lecture 15 @ 05:40",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment 3 Solution.pdf"
+  },
+  {
+    "id": "2026-w3-q19",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 19,
+    "question": "The process of identifying channels consistently affected by interference and removing them from use is known as _________________.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Channel Trimming"
+      },
+      {
+        "key": "b",
+        "text": "Channel Flushing"
+      },
+      {
+        "key": "c",
+        "text": "Both (a) and (b)"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "Channel Blacklisting identifies channels consistently affected by interference and removes them from use. See lecture 11 @ 07:30 NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment 3 Solution.pdf"
+  },
+  {
+    "id": "2026-w3-q20",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 20,
+    "question": "The full form of NFC is",
+    "options": [
+      {
+        "key": "a",
+        "text": "Near Field Contact"
+      },
+      {
+        "key": "b",
+        "text": "Near Field Communication"
+      },
+      {
+        "key": "c",
+        "text": "Both (a) and (b)"
+      },
+      {
+        "key": "d",
+        "text": "Neither (a) nor (b)"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "The full form of NFC is Near Field Communication. See lecture 11 @ 17:44",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment 3 Solution.pdf"
+  },
+  {
+    "id": "2026-w3-q21",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 21,
+    "question": "State true or false. NFC works on the principle of magnetic induction.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "type": "true-false",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "NFC works on the principle of magnetic induction. See lecture 11 @ 21:00",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment 3 Solution.pdf"
+  },
+  {
+    "id": "2026-w3-q22",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 22,
+    "question": "State whether the following statement is true or false. Statement: NFC tags found in supermarket products are examples of active NFC.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "type": "true-false",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "Passive NFC tags found in supermarket products are examples of passive NFC. See lecture 11 @ 18:47",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment 3 Solution.pdf"
+  },
+  {
+    "id": "2026-w3-q23",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 23,
+    "question": "Bluetooth is based on ___________.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Nanonets"
+      },
+      {
+        "key": "b",
+        "text": "Binarynets"
+      },
+      {
+        "key": "c",
+        "text": "Both (a) and (b)"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "Bluetooth is based on Piconets. See lecture 12 @ 01:55",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment 3 Solution.pdf"
+  },
+  {
+    "id": "2026-w3-q24",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 24,
+    "question": "A __________ in NFC emits a small electric current which creates a magnetic field that in turn bridges the physical space between the devices.",
+    "options": [
+      {
+        "key": "a",
+        "text": "reader"
+      },
+      {
+        "key": "b",
+        "text": "writer"
+      },
+      {
+        "key": "c",
+        "text": "destroyer"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "A reader in NFC emits a small electric current which creates a magnetic field that in turn bridges the physical space between the devices NPTEL Online Certification Courses Indian Institute of Technology Kharagpur See lecture 11 @ 20:31",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment 3 Solution.pdf"
+  },
+  {
+    "id": "2026-w3-q25",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 25,
+    "question": "State true of false. Bluetooth technology is based on Ad-hoc network technology.",
+    "options": [
+      {
+        "key": "a",
+        "text": "False"
+      },
+      {
+        "key": "b",
+        "text": "True"
+      }
+    ],
+    "type": "true-false",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "Bluetooth technology is based on Ad-hoc network technology. See lecture 12 @ 02:30",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment 3 Solution.pdf"
+  },
+  {
+    "id": "2026-w3-q26",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 26,
+    "question": "State true or false. Zwave utilizes GFSK modulation and Hongkong channel encoding.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "type": "true-false",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "Zwave utilizes GFSK modulation and Manchester channel encoding. See lecture 13 @ 07:36 NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment 3 Solution.pdf"
+  },
+  {
+    "id": "2026-w3-q27",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 27,
+    "question": "The process of bypassing radio dead-spots is done using a message called ________ in Zwave.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ping"
+      },
+      {
+        "key": "b",
+        "text": "Healing"
+      },
+      {
+        "key": "c",
+        "text": "Frame"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "The process of bypassing radio dead-spots is done using a message called Healing in Zwave. See lecture 13 @ 11:34",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment 3 Solution.pdf"
+  },
+  {
+    "id": "2026-w3-q28",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 28,
+    "question": "State whether the following statement is true or false. Statement: Sensor nodes have unlimited battery life.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "type": "true-false",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "Sensors nodes have limited battery life. See lecture 14 @ 13:15 NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment 3 Solution.pdf"
+  },
+  {
+    "id": "2026-w3-q29",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 29,
+    "question": "State whether the following statement is true or false. Statement: The Link Manager Protocol in Bluetooth manages the establishment, authentication, link configuration.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "type": "true-false",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "The Link Manager Protocol in Bluetooth manages the establishment, authentication, link configuration. See Page number : 157, Chapter - 7, Book - Introduction to IoT, Authors : Sudip Misra, Anandarup Mukherjee, and Arijit Roy, Publisher : Cambridge University Press, Edition : 1 (2021)",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment 3 Solution.pdf"
+  },
+  {
+    "id": "2026-w3-q30",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 3",
+    "weekNum": 3,
+    "questionNum": 30,
+    "question": "Zigbee commonly uses __________data rate.",
+    "options": [
+      {
+        "key": "a",
+        "text": "250 kbps"
+      },
+      {
+        "key": "b",
+        "text": "250 Mbps"
+      },
+      {
+        "key": "c",
+        "text": "260 kbps"
+      },
+      {
+        "key": "d",
+        "text": "260 Mbps"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Zigbee commonly uses 250 kbps data rate. See Page number : 131, Chapter - 7, Book - Introduction to IoT, Authors : Sudip Misra, Anandarup Mukherjee, and Arijit Roy, Publisher : Cambridge University Press, Edition : 1 NPTEL Online Certification Courses Indian Institute of Technology Kharagpur (2021) ************END***********",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment 3 Solution.pdf"
+  }
+]

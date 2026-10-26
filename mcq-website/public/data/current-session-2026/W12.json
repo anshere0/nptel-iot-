@@ -1,0 +1,938 @@
+[
+  {
+    "id": "2026-w12-q1",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 1,
+    "question": "Which type of data analysis is used for data that is categorical in nature?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Qualitative analysis"
+      },
+      {
+        "key": "b",
+        "text": "Quantitative analysis"
+      },
+      {
+        "key": "c",
+        "text": "Regression analysis"
+      },
+      {
+        "key": "d",
+        "text": "Analysis of variance"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Qualitative analysis analyzes non-numerical, nominal, or categorical variables (labels, attributes, descriptions), whereas quantitative analysis applies mathematical models to numerical metrics.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W12.pdf"
+  },
+  {
+    "id": "2026-w12-q2",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 2,
+    "question": "According to the lecture, when is a statistical model classified as a complete model?",
+    "options": [
+      {
+        "key": "a",
+        "text": "When the number of variables equals the number of equations"
+      },
+      {
+        "key": "b",
+        "text": "When the model contains no variables"
+      },
+      {
+        "key": "c",
+        "text": "When the number of variables is always greater than the number of equations"
+      },
+      {
+        "key": "d",
+        "text": "When only categorical data are used"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "A mathematical/statistical model is defined as complete when the number of endogenous variables equals the number of independent equations, allowing an exact solution.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W12.pdf"
+  },
+  {
+    "id": "2026-w12-q3",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 3,
+    "question": "Analysis of Variance (ANOVA) is best applied when which of the following are to be compared?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Only a single observation"
+      },
+      {
+        "key": "b",
+        "text": "More than two populations or samples"
+      },
+      {
+        "key": "c",
+        "text": "Only non-numerical labels without any response variable"
+      },
+      {
+        "key": "d",
+        "text": "Only identical copies of the same observation"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "The three principles of Qualitative analysis are: Notice things, think about things and collect things. (Please refer Lecture 56@4:12) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W12.pdf"
+  },
+  {
+    "id": "2026-w12-q4",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 4,
+    "question": "What does Pearson's correlation coefficient (r) measure?",
+    "options": [
+      {
+        "key": "a",
+        "text": "The number of equations in a statistical model"
+      },
+      {
+        "key": "b",
+        "text": "The maximum value in a dataset"
+      },
+      {
+        "key": "c",
+        "text": "The strength of association between two variables"
+      },
+      {
+        "key": "d",
+        "text": "The sample size of an experiment"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "Pearson's r measures the linear correlation strength and direction between two continuous variables on a scale from -1.0 to +1.0.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W12.pdf"
+  },
+  {
+    "id": "2026-w12-q5",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 5,
+    "question": "What is a primary objective of the AgriSens smart water management system?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Restricting irrigation control to manual operation only"
+      },
+      {
+        "key": "b",
+        "text": "Increasing irrigation water use regardless of soil condition"
+      },
+      {
+        "key": "c",
+        "text": "Removing all sensors from agricultural fields"
+      },
+      {
+        "key": "d",
+        "text": "Achieving more crop yield with less water"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "AgriSens is designed for precision agricultural water management: optimizing irrigation schedules to achieve higher crop yields while conserving scarce water resources.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W12.pdf"
+  },
+  {
+    "id": "2026-w12-q6",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 6,
+    "question": "Which set correctly represents the three layers of the proposed AgriSens architecture?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Physical layer; transport layer; presentation layer"
+      },
+      {
+        "key": "b",
+        "text": "Sensing and actuating layer; processing, storage and service layer; application layer"
+      },
+      {
+        "key": "c",
+        "text": "User layer; billing layer; routing layer"
+      },
+      {
+        "key": "d",
+        "text": "Sensor layer; firewall layer; operating-system layer"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "The AgriSens system architecture is divided into three tiers: Sensing and Actuation Layer (field nodes), Processing, Storage and Service Layer (servers/database), and Application Layer (farmer UI/SMS interface).",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W12.pdf"
+  },
+  {
+    "id": "2026-w12-q7",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 7,
+    "question": "Which component is included in the integrated design of an AgriSens sensor node?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Meter data management system for smart grids"
+      },
+      {
+        "key": "b",
+        "text": "Power management unit"
+      },
+      {
+        "key": "c",
+        "text": "Phasor measurement unit"
+      },
+      {
+        "key": "d",
+        "text": "Hadoop Namenode"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "Field agricultural nodes must operate autonomously off-grid for seasons; an integrated Power Management Unit (solar cell + battery controller) is an essential hardware block.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W12.pdf"
+  },
+  {
+    "id": "2026-w12-q8",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 8,
+    "question": "What is the function of the multi-user server in the AgriSens remote-server design?",
+    "options": [
+      {
+        "key": "a",
+        "text": "It supplies electrical power to the sensor nodes"
+      },
+      {
+        "key": "b",
+        "text": "It measures soil moisture directly in the field"
+      },
+      {
+        "key": "c",
+        "text": "It sends field information to the farmer's mobile phone using SMS and executes farmer queries and control messages"
+      },
+      {
+        "key": "d",
+        "text": "It replaces all gateways with wired links"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "The multi-user server provides the mobile cellular SMS gateway that alerts registered farmers about soil water deficits and processes incoming SMS commands to trigger water pumps.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W12.pdf"
+  },
+  {
+    "id": "2026-w12-q9",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 9,
+    "question": "In the IoT healthcare architecture discussed in the lecture, which layer contains smartphones and tablets used as data aggregators?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Physical power layer"
+      },
+      {
+        "key": "b",
+        "text": "Sensing layer"
+      },
+      {
+        "key": "c",
+        "text": "Cloud platform"
+      },
+      {
+        "key": "d",
+        "text": "Aggregated layer"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "In mobile health (mHealth) IoT architectures, wearable biosensors transmit readings via Bluetooth to the Aggregated Layer (smartphones or home hubs) before forwarding to medical clouds.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W12.pdf"
+  },
+  {
+    "id": "2026-w12-q10",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 10,
+    "question": "Which of the following is an example of preventive care enabled by IoT healthcare?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Fall detection for senior citizens"
+      },
+      {
+        "key": "b",
+        "text": "Disabling emergency alerts"
+      },
+      {
+        "key": "c",
+        "text": "Removing physiological sensors from patients"
+      },
+      {
+        "key": "d",
+        "text": "Storing only paper-based medical records"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Automated irrigation system, Automated weeding system and Water level monitoring are all applications of IoT in agriculture. (Please refer Lecture 57@2:05) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W12.pdf"
+  },
+  {
+    "id": "2026-w12-q11",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 11,
+    "question": "What is an advantage of continuous activity monitoring?",
+    "options": [
+      {
+        "key": "a",
+        "text": "It requires all sensor data to be discarded immediately"
+      },
+      {
+        "key": "b",
+        "text": "It prevents any long-term observation"
+      },
+      {
+        "key": "c",
+        "text": "It enables daily observation of human behavior and repetitive activity patterns"
+      },
+      {
+        "key": "d",
+        "text": "It can operate only with cameras"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "Daily observation of behavior and Long term monitoring are two advantages of continuous activity monitoring. (Please refer Lecture 59@16:15) ___________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W12.pdf"
+  },
+  {
+    "id": "2026-w12-q12",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 12,
+    "question": "Which type of data can be analyzed using the deep-learning-based approach described in the lecture?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Sensor data, images, and videos"
+      },
+      {
+        "key": "b",
+        "text": "Images only"
+      },
+      {
+        "key": "c",
+        "text": "Text labels only"
+      },
+      {
+        "key": "d",
+        "text": "Sensor data only and never images or videos"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Range and average absolute deviation are the type of data dispersions. (Please refer Lecture 56@13:43) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W12.pdf"
+  },
+  {
+    "id": "2026-w12-q13",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 13,
+    "question": "Processing activity-monitoring sensor data directly on the device is referred to as which approach?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Data-aggregator selection approach"
+      },
+      {
+        "key": "b",
+        "text": "Network-only approach"
+      },
+      {
+        "key": "c",
+        "text": "Cloud replication approach"
+      },
+      {
+        "key": "d",
+        "text": "In-place approach"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "Long term monitoring is one of the advantages of Activity monitoring. (Please refer Lecture 59@16:17) ____________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W12.pdf"
+  },
+  {
+    "id": "2026-w12-q14",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 14,
+    "question": "What are the three basic elements used in the smartphone-based activity-monitoring demonstration?",
+    "options": [
+      {
+        "key": "a",
+        "text": "A soil-moisture sensor, a pump, and a paddy field"
+      },
+      {
+        "key": "b",
+        "text": "A smart meter, a PMU, and a power plant"
+      },
+      {
+        "key": "c",
+        "text": "A smartphone, a network, and a remote server"
+      },
+      {
+        "key": "d",
+        "text": "A Hadoop Namenode, Datanode, and Job Tracker"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "The live lab demonstration employs an Android smartphone running a sensing app, wireless network connectivity (Wi-Fi/cellular), and a remote server running MATLAB analytics.",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W12.pdf"
+  },
+  {
+    "id": "2026-w12-q15",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 15,
+    "question": "Which sensor values are specifically logged in the activity-monitoring demonstration described in the lecture?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Accelerometer values"
+      },
+      {
+        "key": "b",
+        "text": "Soil-moisture values"
+      },
+      {
+        "key": "c",
+        "text": "Smart-grid voltage phasors"
+      },
+      {
+        "key": "d",
+        "text": "Water-level values"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Long term monitoring is one of the advantages of Activity monitoring. (Please refer Lecture 59@16:17) ____________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/NPTEL-Assignment_W12.pdf"
+  },
+  {
+    "id": "2026-w12-q16",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 16,
+    "question": "The two types of data analysis are _____________.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Qualitative and Quantitative"
+      },
+      {
+        "key": "b",
+        "text": "Repetitive and Quantitative"
+      },
+      {
+        "key": "c",
+        "text": "Neither a nor b"
+      },
+      {
+        "key": "d",
+        "text": "Both a and b"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Qualitative and Quantitative are the two types of data analysis. (Please refer Lecture 56@2:33) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_12.pdf"
+  },
+  {
+    "id": "2026-w12-q17",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 17,
+    "question": "Select the statement(s) that is involved with quantitative analysis. Statement I: Data dispersion Statement II: Contingence Statement III: Correlation",
+    "options": [
+      {
+        "key": "a",
+        "text": "Statement I"
+      },
+      {
+        "key": "b",
+        "text": "Statement II"
+      },
+      {
+        "key": "c",
+        "text": "Statements I, II, and III"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "Data dispersion, Contingence and Correlation are involved with quantitative analysis. (Please refer Lecture 56@4:46) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_12.pdf"
+  },
+  {
+    "id": "2026-w12-q18",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 18,
+    "question": "In ANOVA, if the distribution of each group is normal, it is known as __________.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Homogeneity"
+      },
+      {
+        "key": "b",
+        "text": "Normality"
+      },
+      {
+        "key": "c",
+        "text": "Neither a nor b"
+      },
+      {
+        "key": "d",
+        "text": "Both a and b"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "In ANOVA, if the distribution of each group is normal, it is known as normality. (Please refer Lecture 56@11:01) ______________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_12.pdf"
+  },
+  {
+    "id": "2026-w12-q19",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 19,
+    "question": "The expectation of the squared deviation of a random variable from its mean is known as __________.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Absolute deviation"
+      },
+      {
+        "key": "b",
+        "text": "Range"
+      },
+      {
+        "key": "c",
+        "text": "Standard deviation"
+      },
+      {
+        "key": "d",
+        "text": "Variance"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "The expectation of the squared deviation of a random variable from its mean is known as Variance. (Please refer Lecture 56@14:04) ______________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_12.pdf"
+  },
+  {
+    "id": "2026-w12-q20",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 20,
+    "question": "What are the two types of statistical models?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Regression and dispersion"
+      },
+      {
+        "key": "b",
+        "text": "Complete and incomplete"
+      },
+      {
+        "key": "c",
+        "text": "Both a and b"
+      },
+      {
+        "key": "d",
+        "text": "Neither a nor b"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "Complete and incomplete are two types of statistical models (Please refer Lecture 56@8:11) ____________________________________________________________________ _____",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_12.pdf"
+  },
+  {
+    "id": "2026-w12-q21",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 21,
+    "question": "Which of the following is a type of table that displays the frequency distribution of the variables?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Cross tabulation"
+      },
+      {
+        "key": "b",
+        "text": "Contingency table"
+      },
+      {
+        "key": "c",
+        "text": "Both a and b"
+      },
+      {
+        "key": "d",
+        "text": "Neither a nor b"
+      }
+    ],
+    "type": "mcq-multi",
+    "correctAnswer": "c, a, b",
+    "correctKeys": [
+      "c",
+      "a",
+      "b"
+    ],
+    "sourceAnswer": "c, a, b",
+    "explanation": "Contingency table is a type of table that displays the frequency distribution of the variables. It is also known as Cross tabulation and Cross tab. (Please refer Lecture 56@14:29) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_12.pdf"
+  },
+  {
+    "id": "2026-w12-q22",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 22,
+    "question": "Advances in sensor and connectivity have enabled preventive care in IoT Healthcare.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "type": "true-false",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Advances in sensor and connectivity have enabled preventive care in IoT Healthcare. (Please refer Lecture 58@4:22) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_12.pdf"
+  },
+  {
+    "id": "2026-w12-q23",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 23,
+    "question": "Which of the following is a property of in-place data analysis?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Power intensive"
+      },
+      {
+        "key": "b",
+        "text": "On the device"
+      },
+      {
+        "key": "c",
+        "text": "No need of network"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "In-place data analysis is power intensive, can be done on the device and needs no network connection. (Please refer Lecture 59@20:24) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_12.pdf"
+  },
+  {
+    "id": "2026-w12-q24",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 24,
+    "question": "Deep learning based data analysis cannot be performed on sensor data.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "type": "true-false",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "Deep learning based data analysis can be done on sensor data, images and videos. (Please refer Lecture 59@19:34) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_12.pdf"
+  },
+  {
+    "id": "2026-w12-q25",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 25,
+    "question": "Which of the following is true for network-based data analysis?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Low power"
+      },
+      {
+        "key": "b",
+        "text": "Good network connection required"
+      },
+      {
+        "key": "c",
+        "text": "Group-based analytics"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "Network-based data analysis uses low power, good network connection and can perform group-based analytics (Please refer Lecture 59@20:10) _________________________________________________________________________",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Assignment_12.pdf"
+  }
+]

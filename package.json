@@ -1,0 +1,11 @@
+{
+  "name": "nptel-iot-mastery-root",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npm --prefix mcq-website run dev",
+    "build": "npm --prefix mcq-website run build",
+    "preview": "npm --prefix mcq-website run preview",
+    "test": "npm --prefix mcq-website test"
+  }
+}

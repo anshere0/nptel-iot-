@@ -1,0 +1,557 @@
+[
+  {
+    "id": "2026-w4-q1",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 4",
+    "weekNum": 4,
+    "questionNum": 1,
+    "question": "What does the ultrasonic sensor measure generally in the AID system?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Humidity"
+      },
+      {
+        "key": "b",
+        "text": "Distance of the object"
+      },
+      {
+        "key": "c",
+        "text": "Soil pH"
+      },
+      {
+        "key": "d",
+        "text": "Light intensity"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "In the Agricultural Intrusion Detection system, the ultrasonic sensor measures the distance at which the detected object is located. See Lecture 16: Sensor Networks : Part III @ 13:22",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_4.pdf"
+  },
+  {
+    "id": "2026-w4-q2",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 4",
+    "weekNum": 4,
+    "questionNum": 2,
+    "question": "Which component processes the data received from the sensors in the AID system?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Camera"
+      },
+      {
+        "key": "b",
+        "text": "NFC tag"
+      },
+      {
+        "key": "c",
+        "text": "Microcontroller"
+      },
+      {
+        "key": "d",
+        "text": "Ultrasonic sensor"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "The microcontroller processes the data received from the sensors in the AID system. See Lecture 16: Sensor Networks - Part III @ 17:07 NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_4.pdf"
+  },
+  {
+    "id": "2026-w4-q3",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 4",
+    "weekNum": 4,
+    "questionNum": 3,
+    "question": "How can standard nanodevices communicate?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Electromagnetic communication"
+      },
+      {
+        "key": "b",
+        "text": "Molecular communication"
+      },
+      {
+        "key": "c",
+        "text": "Wired Ethernet"
+      },
+      {
+        "key": "d",
+        "text": "ZigBee communication"
+      }
+    ],
+    "type": "mcq-multi",
+    "correctAnswer": "a, b",
+    "correctKeys": [
+      "a",
+      "b"
+    ],
+    "sourceAnswer": "a, b",
+    "explanation": "The lecture discusses electromagnetic and molecular communication for nanodevices. See Lecture 16: Sensor Networks - Part III @ 25:11",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_4.pdf"
+  },
+  {
+    "id": "2026-w4-q4",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 4",
+    "weekNum": 4,
+    "questionNum": 4,
+    "question": "When does sensing coverage guarantee network connectivity?",
+    "options": [
+      {
+        "key": "a",
+        "text": "When the transmission range is at least twice the sensing range"
+      },
+      {
+        "key": "b",
+        "text": "When the sensing range is at least twice the transmission range"
+      },
+      {
+        "key": "c",
+        "text": "When the transmission and sensing ranges are equal"
+      },
+      {
+        "key": "d",
+        "text": "When the transmission range is smaller than the sensing range"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Sensing coverage guarantees connectivity when the transmission range is at least twice the sensing range. See Lecture 17: Sensor Networks - Part IV @ 04:14 NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_4.pdf"
+  },
+  {
+    "id": "2026-w4-q5",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 4",
+    "weekNum": 4,
+    "questionNum": 5,
+    "question": "Which of the following is a coverage problem in a static WSN?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Area coverage"
+      },
+      {
+        "key": "b",
+        "text": "Data compression"
+      },
+      {
+        "key": "c",
+        "text": "Route encryption"
+      },
+      {
+        "key": "d",
+        "text": "Clock synchronization"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Area coverage is a standard coverage problem in a static wireless sensor network. The other options are networking tasks, not coverage categories. See Lecture 17: Sensor Networks - Part IV @ 11:30",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_4.pdf"
+  },
+  {
+    "id": "2026-w4-q6",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 4",
+    "weekNum": 4,
+    "questionNum": 6,
+    "question": "Which reporting method is used for forest-fire monitoring in a WSN?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Event-driven reporting"
+      },
+      {
+        "key": "b",
+        "text": "On-demand reporting"
+      },
+      {
+        "key": "c",
+        "text": "Manual reporting"
+      },
+      {
+        "key": "d",
+        "text": "Location-based reporting"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Forest-fire monitoring uses event-driven reporting because sensor nodes report data when a fire-related event is detected. The lecture contrasts this with on-demand reporting, such as an inventory- control system. See Lecture 17: Sensor Networks : Part IV @ 01:44. NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_4.pdf"
+  },
+  {
+    "id": "2026-w4-q7",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 4",
+    "weekNum": 4,
+    "questionNum": 7,
+    "question": "What does a data mule do?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Replaces all sensor nodes"
+      },
+      {
+        "key": "b",
+        "text": "Measures only temperature"
+      },
+      {
+        "key": "c",
+        "text": "Collects data and carries it to the sink"
+      },
+      {
+        "key": "d",
+        "text": "Repairs damaged hardware"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "sourceAnswer": "c",
+    "explanation": "A data mule visits sensor nodes, collects their data, and delivers it to the sink. See Lecture 18: Sensor Networks - Part V @ 07:15",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_4.pdf"
+  },
+  {
+    "id": "2026-w4-q8",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 4",
+    "weekNum": 4,
+    "questionNum": 8,
+    "question": "What may happen if a critical stationary sensor node fails?",
+    "options": [
+      {
+        "key": "a",
+        "text": "The network may be partitioned"
+      },
+      {
+        "key": "b",
+        "text": "All nodes become mobile"
+      },
+      {
+        "key": "c",
+        "text": "The sensing range doubles"
+      },
+      {
+        "key": "d",
+        "text": "The network repairs itself by movement"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "Failure of a critical stationary node may divide the network into disconnected parts. See Lecture 18: Sensor Networks - Part V @ 00:43 NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_4.pdf"
+  },
+  {
+    "id": "2026-w4-q9",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 4",
+    "weekNum": 4,
+    "questionNum": 9,
+    "question": "A person who provides sensing information acts as a:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Router"
+      },
+      {
+        "key": "b",
+        "text": "Radio channel"
+      },
+      {
+        "key": "c",
+        "text": "Actuator"
+      },
+      {
+        "key": "d",
+        "text": "Data source"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "In human-centric sensing, a person may act as a data source by providing or collecting information. See Lecture 18: Sensor Networks - Part V @ 12:35",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_4.pdf"
+  },
+  {
+    "id": "2026-w4-q10",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 4",
+    "weekNum": 4,
+    "questionNum": 10,
+    "question": "Which is an advantage of a stationary wireless sensor network?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Easy topology maintenance"
+      },
+      {
+        "key": "b",
+        "text": "Automatic movement after node failure"
+      },
+      {
+        "key": "c",
+        "text": "Continuously changing topology"
+      },
+      {
+        "key": "d",
+        "text": "Unpredictable sensor locations"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "In a stationary wireless sensor network, sensor nodes remain fixed. Therefore, deployment and topology maintenance are comparatively easier. See Lecture 18: Sensor Networks : Part V @ 00:43 NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_4.pdf"
+  },
+  {
+    "id": "2026-w4-q11",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 4",
+    "weekNum": 4,
+    "questionNum": 11,
+    "question": "State whether the following statement is True or False. Statement: In a UAV network, the network topology may change frequently because the UAVs are mobile.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "type": "true-false",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "UAVs move from one location to another, causing frequent changes in their relative positions and communication links. Therefore, the network topology may change frequently. See Lecture 19: UAV Networks @ 05:23",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_4.pdf"
+  },
+  {
+    "id": "2026-w4-q12",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 4",
+    "weekNum": 4,
+    "questionNum": 12,
+    "question": "Which is a common issue in UAV networks?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Frequent topology changes"
+      },
+      {
+        "key": "b",
+        "text": "Fixed relative positions"
+      },
+      {
+        "key": "c",
+        "text": "Permanent communication links"
+      },
+      {
+        "key": "d",
+        "text": "No possibility of UAV failure"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "UAV movement causes frequent changes in network topology and communication links. See Lecture 19: UAV Networks @ 05:23 NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_4.pdf"
+  },
+  {
+    "id": "2026-w4-q13",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 4",
+    "weekNum": 4,
+    "questionNum": 13,
+    "question": "Compared with traditional SCADA, M2M supports:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Only isolated systems"
+      },
+      {
+        "key": "b",
+        "text": "No device communication"
+      },
+      {
+        "key": "c",
+        "text": "Continuous human control"
+      },
+      {
+        "key": "d",
+        "text": "Cross-platform integration"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "sourceAnswer": "d",
+    "explanation": "Traditional SCADA commonly uses isolated proprietary systems, w hile M2M supports cross-platform integration. See Lecture 20: Machine to Machine Communication @ 04:28",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_4.pdf"
+  },
+  {
+    "id": "2026-w4-q14",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 4",
+    "weekNum": 4,
+    "questionNum": 14,
+    "question": "State whether the following statement is True or False. Statement: In a stationary wireless sensor network, sensor nodes can automatically move to restore connectivity after a node failure.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "type": "true-false",
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "sourceAnswer": "b",
+    "explanation": "In a stationary wireless sensor network, sensor nodes remain fixed. Therefore, they cannot move automatically to repair connectivity after a node failure. See Lecture 18: Sensor Networks : Part V @ 00:43 NPTEL Online Certification Courses Indian Institute of Technology Kharagpur",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_4.pdf"
+  },
+  {
+    "id": "2026-w4-q15",
+    "bank": "current-session-2026",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 4",
+    "weekNum": 4,
+    "questionNum": 15,
+    "question": "Which statement best describes M2M communication?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Devices can exchange data without direct human control"
+      },
+      {
+        "key": "b",
+        "text": "Every data exchange must be performed manually"
+      },
+      {
+        "key": "c",
+        "text": "Only one device can communicate at a time"
+      },
+      {
+        "key": "d",
+        "text": "Devices cannot communicate through a network"
+      }
+    ],
+    "type": "mcq-single",
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "sourceAnswer": "a",
+    "explanation": "M2M communication allows machines or devices to exchange data automatically. Human intervention may still be required for maintenance and operational stability. See Lecture 20: Machine to Machine Communication @ 09:24. ************END************",
+    "verificationStatus": "Verified",
+    "sourceLocation": "/assignments/Week_4.pdf"
+  }
+]
