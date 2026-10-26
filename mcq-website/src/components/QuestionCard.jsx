@@ -150,7 +150,12 @@ export default function QuestionCard({
 
       {/* Options List */}
       <div className="options-list">
-        {(question.options || []).map((opt) => (
+        {(Array.isArray(question.options)
+          ? question.options
+          : (question.options && typeof question.options === 'object')
+            ? Object.entries(question.options).map(([k, t]) => ({ key: k, text: t }))
+            : []
+        ).map((opt) => (
           <div
             key={opt.key}
             className={getOptionClasses(opt.key)}

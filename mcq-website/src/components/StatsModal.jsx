@@ -16,6 +16,7 @@ export default function StatsModal({
   const isAI = currentBank === 'ai-generated-bank';
   const isAIPractice = currentBank === 'ai-practice-bank';
   const isFlashcards = currentBank === 'flashcards';
+  const isMockExams = currentBank === 'mock-exams-bank';
 
   let bankData = manifest?.practiceBank;
   let bankName = 'Historical Practice Bank';
@@ -28,13 +29,16 @@ export default function StatsModal({
   } else if (isFlashcards) {
     bankData = manifest?.flashcards;
     bankName = 'Official NPTEL AI Flashcards Deck (1,800 Cards)';
+  } else if (isMockExams) {
+    bankData = manifest?.mockExamsBank;
+    bankName = 'Official Mock Exam Papers (Mocks 1–5, 150 Qs)';
   } else if (isAI) {
     bankData = manifest?.aiGenerated;
     bankName = 'AI Generated Scenario MCQs';
   }
 
   const totalQuestions = bankData?.total || 0;
-  const weeksData = bankData?.weeks || {};
+  const weeksData = isMockExams ? (bankData?.mocks || {}) : (bankData?.weeks || {});
 
   // Compute stats from userHistory
   let attempted = 0;
@@ -89,15 +93,15 @@ export default function StatsModal({
           </div>
         </div>
 
-        {/* Week-by-Week Breakdown */}
+        {/* Week-by-Week / Paper Breakdown */}
         <h3 style={{ fontSize: '1.125rem', marginBottom: '0.75rem', marginTop: '1.5rem' }}>
-          Weekly Breakdown (Weeks 1 to 12)
+          {isMockExams ? 'Mock Exam Papers Breakdown (Mocks 1 to 5)' : 'Weekly Breakdown (Weeks 1 to 12)'}
         </h3>
         <div style={{ maxHeight: '240px', overflowY: 'auto', border: '1px solid var(--border-light)', borderRadius: 'var(--radius-md)' }}>
           <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.875rem' }}>
             <thead>
               <tr style={{ background: 'var(--bg-secondary)', textAlign: 'left', borderBottom: '1px solid var(--border-light)' }}>
-                <th style={{ padding: '0.625rem 1rem' }}>Week</th>
+                <th style={{ padding: '0.625rem 1rem' }}>{isMockExams ? 'Paper' : 'Week'}</th>
                 <th style={{ padding: '0.625rem 1rem' }}>Available</th>
                 <th style={{ padding: '0.625rem 1rem' }}>Completed</th>
                 <th style={{ padding: '0.625rem 1rem' }}>Progress</th>
@@ -106,9 +110,10 @@ export default function StatsModal({
             <tbody>
               {Object.keys(weeksData).map(wKey => {
                 const count = typeof weeksData[wKey] === 'number' ? weeksData[wKey] : weeksData[wKey]?.count || 0;
+                const label = weeksData[wKey]?.title || wKey;
                 return (
                   <tr key={wKey} style={{ borderBottom: '1px solid var(--border-light)' }}>
-                    <td style={{ padding: '0.5rem 1rem', fontWeight: 600 }}>{wKey}</td>
+                    <td style={{ padding: '0.5rem 1rem', fontWeight: 600 }}>{label}</td>
                     <td style={{ padding: '0.5rem 1rem' }}>{count}</td>
                     <td style={{ padding: '0.5rem 1rem' }}>-</td>
                     <td style={{ padding: '0.5rem 1rem' }}>

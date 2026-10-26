@@ -16,48 +16,57 @@ export default function FilterBar({
   const is2026 = currentBank === 'current-session-2026';
   const isAI = currentBank === 'ai-generated-bank';
   const isAIPractice = currentBank === 'ai-practice-bank';
+  const isMockExams = currentBank === 'mock-exams-bank';
   
-  const weeksList = (is2026 || isAI || isAIPractice)
-    ? [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] 
-    : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+  const weeksList = isMockExams
+    ? [1, 2, 3, 4, 5]
+    : (is2026 || isAI || isAIPractice)
+      ? [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] 
+      : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
   let sectionTitle = 'Select Week (Historical Practice Bank)';
+  let sectionIcon = '📅';
   if (is2026) sectionTitle = 'Select Course Week (2026 Current Session — 15 Qs/Week)';
   else if (isAI) sectionTitle = 'Select Course Week (AI Generated Scenario MCQs)';
   else if (isAIPractice) sectionTitle = 'Select Course Week (Official NPTEL AI Practice Questions — 250 Qs/Week)';
+  else if (isMockExams) {
+    sectionTitle = 'Select Mock Exam Paper (5 Full Papers — 30 Questions Each)';
+    sectionIcon = '📑';
+  }
 
   return (
     <div className="filter-bar">
-      {/* Week Selector */}
+      {/* Week / Mock Exam Selector */}
       <div>
         <div className="filter-section-title">
-          <span>📅</span>
+          <span>{sectionIcon}</span>
           <span>{sectionTitle}</span>
         </div>
         <div className="weeks-grid">
-          {(!is2026 || isAI || isAIPractice) && (
+          {(!is2026 || isAI || isAIPractice || isMockExams) && (
             <button
               className={`week-btn ${selectedWeek === 'ALL' ? 'active' : ''}`}
               onClick={() => onSelectWeek('ALL')}
             >
-              <span className="week-label">All Weeks</span>
+              <span className="week-label">{isMockExams ? 'All Mock Exams' : 'All Weeks'}</span>
+              {isMockExams && <span className="week-badge">150</span>}
             </button>
           )}
 
           {weeksList.map(w => {
-            const wKey = `W${w}`;
+            const wKey = isMockExams ? `M${w}` : `W${w}`;
             const st = weekStats[wKey];
             const attempted = st?.attempted || 0;
-            const total = st?.count || (isAIPractice ? 250 : (isAI ? (w === 1 ? 6 : 2) : 15));
+            const total = st?.count || (isMockExams ? 30 : (isAIPractice ? 250 : (isAI ? (w === 1 ? 6 : 2) : 15)));
 
             return (
               <button
                 key={w}
                 className={`week-btn ${selectedWeek === w ? 'active' : ''}`}
                 onClick={() => onSelectWeek(w)}
-                title={`View Week ${w} MCQs (${total} questions)`}
+                title={isMockExams ? `View Mock Exam ${w} (${total} questions)` : `View Week ${w} MCQs (${total} questions)`}
               >
-                <span className="week-label">Week {w}</span>
+                <span className="week-label">{isMockExams ? `Mock ${w}` : `Week ${w}`}</span>
                 <span className="week-badge">{attempted}/{total}</span>
               </button>
             );
@@ -124,7 +133,7 @@ export default function FilterBar({
         </div>
 
         {/* Term Filter (for Historical Practice Bank only) */}
-        {!is2026 && !isAI && !isAIPractice && availableTerms.length > 0 && (
+        {!is2026 && !isAI && !isAIPractice && !isMockExams && availableTerms.length > 0 && (
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
             <span style={{ fontSize: '0.8125rem', color: 'var(--text-muted)', fontWeight: 600 }}>
               Term:

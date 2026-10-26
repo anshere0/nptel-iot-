@@ -9,6 +9,7 @@ export default function BankSelector({
   userStatsFlashcards = { mastered: 0 },
   userStatsPractice = { attempted: 0, correct: 0 },
   userStatsAI = { attempted: 0, correct: 0 },
+  userStatsMockExams = { attempted: 0, correct: 0 },
   onOpenMockTest
 }) {
   const total2026 = manifest?.currentSession?.total || 253;
@@ -16,6 +17,7 @@ export default function BankSelector({
   const totalFlashcards = manifest?.flashcards?.total || 1800;
   const totalAI = manifest?.aiGenerated?.total || 28;
   const totalPractice = manifest?.practiceBank?.total || 724;
+  const totalMockExams = manifest?.mockExamsBank?.total || 150;
 
   return (
     <div className="bank-selector bank-switcher-container">
@@ -172,6 +174,33 @@ export default function BankSelector({
             {userStatsPractice.attempted > 0 && (
               <span className="tag tag-verified">
                 Accuracy: {Math.round((userStatsPractice.correct / userStatsPractice.attempted) * 100)}%
+              </span>
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* 6. Official Mock Exam Papers (Mocks 1–5) */}
+      <div 
+        className={`bank-card ${currentBank === 'mock-exams-bank' ? 'active' : ''}`}
+        onClick={() => onSelectBank('mock-exams-bank')}
+        role="button"
+        tabIndex={0}
+      >
+        <div className="bank-badge-icon">📑</div>
+        <div className="bank-info">
+          <h3>Official Mock Exam Papers (Mocks 1–5)</h3>
+          <p>
+            Complete 150-question collection from the 5 official mock exam papers (30 questions each). Includes full answer keys, difficulty tags, and lecture citations.
+          </p>
+          <div className="bank-meta">
+            <span className="tag tag-primary">{totalMockExams} Questions (5 Papers)</span>
+            <span className="tag">
+              Attempted: {userStatsMockExams.attempted}/{totalMockExams}
+            </span>
+            {userStatsMockExams.attempted > 0 && (
+              <span className="tag tag-verified">
+                Accuracy: {Math.round((userStatsMockExams.correct / userStatsMockExams.attempted) * 100)}%
               </span>
             )}
           </div>

@@ -36,6 +36,7 @@ export default function App() {
   const [allFlashcards, setAllFlashcards] = useState([]);
   const [allQuestionsPractice, setAllQuestionsPractice] = useState([]);
   const [allQuestionsAI, setAllQuestionsAI] = useState([]);
+  const [allQuestionsMockExams, setAllQuestionsMockExams] = useState([]);
   const [loading, setLoading] = useState(true);
 
   // User Progress Storage in LocalStorage (Decoupled per bank)
@@ -88,6 +89,17 @@ export default function App() {
     try { return JSON.parse(localStorage.getItem('nptel_iot_bookmarks_practice')) || []; } catch { return []; }
   });
 
+  // 6. Official Mock Exam Papers (Mocks 1–5)
+  const [userAnswersMockExams, setUserAnswersMockExams] = useState(() => {
+    try { return JSON.parse(localStorage.getItem('nptel_iot_answers_mock_exams')) || {}; } catch { return {}; }
+  });
+  const [userHistoryMockExams, setUserHistoryMockExams] = useState(() => {
+    try { return JSON.parse(localStorage.getItem('nptel_iot_history_mock_exams')) || {}; } catch { return {}; }
+  });
+  const [bookmarksMockExams, setBookmarksMockExams] = useState(() => {
+    try { return JSON.parse(localStorage.getItem('nptel_iot_bookmarks_mock_exams')) || []; } catch { return []; }
+  });
+
   // Persist progress to LocalStorage
   useEffect(() => { localStorage.setItem('nptel_iot_answers_2026', JSON.stringify(userAnswers2026)); }, [userAnswers2026]);
   useEffect(() => { localStorage.setItem('nptel_iot_history_2026', JSON.stringify(userHistory2026)); }, [userHistory2026]);
@@ -106,6 +118,10 @@ export default function App() {
   useEffect(() => { localStorage.setItem('nptel_iot_answers_practice', JSON.stringify(userAnswersPractice)); }, [userAnswersPractice]);
   useEffect(() => { localStorage.setItem('nptel_iot_history_practice', JSON.stringify(userHistoryPractice)); }, [userHistoryPractice]);
   useEffect(() => { localStorage.setItem('nptel_iot_bookmarks_practice', JSON.stringify(bookmarksPractice)); }, [bookmarksPractice]);
+
+  useEffect(() => { localStorage.setItem('nptel_iot_answers_mock_exams', JSON.stringify(userAnswersMockExams)); }, [userAnswersMockExams]);
+  useEffect(() => { localStorage.setItem('nptel_iot_history_mock_exams', JSON.stringify(userHistoryMockExams)); }, [userHistoryMockExams]);
+  useEffect(() => { localStorage.setItem('nptel_iot_bookmarks_mock_exams', JSON.stringify(bookmarksMockExams)); }, [bookmarksMockExams]);
 
   // Load all datasets on mount
   useEffect(() => {
@@ -150,6 +166,12 @@ export default function App() {
         if (fcRes.ok) {
           setAllFlashcards(await fcRes.json());
         }
+
+        // 7. Fetch Official Mock Exam Papers (Mocks 1 to 5)
+        const mockRes = await fetch('/data/mock-exams-bank/questions.json');
+        if (mockRes.ok) {
+          setAllQuestionsMockExams(await mockRes.json());
+        }
       } catch (err) {
         console.error('Error loading question datasets:', err);
       } finally {
@@ -174,7 +196,7 @@ export default function App() {
   // Switch banks helper
   const handleBankChange = (bankId) => {
     setCurrentBank(bankId);
-    if (bankId === 'current-session-2026' || bankId === 'ai-practice-bank') {
+    if (bankId === 'current-session-2026' || bankId === 'ai-practice-bank' || bankId === 'mock-exams-bank') {
       setSelectedWeek(1);
     } else {
       setSelectedWeek('ALL');
@@ -198,67 +220,81 @@ export default function App() {
   // Active data references based on current bank
   const is2026 = currentBank === 'current-session-2026';
   const isAIPractice = currentBank === 'ai-practice-bank';
+  const isMockExams = currentBank === 'mock-exams-bank';
   const isAI = currentBank === 'ai-generated-bank';
   const isFlashcards = currentBank === 'flashcards';
 
   const rawQuestions = useMemo(() => {
     if (is2026) return allQuestions2026;
     if (isAIPractice) return allQuestionsAIPractice;
+    if (isMockExams) return allQuestionsMockExams;
     if (isAI) return allQuestionsAI;
     return allQuestionsPractice;
-  }, [is2026, isAIPractice, isAI, allQuestions2026, allQuestionsAIPractice, allQuestionsAI, allQuestionsPractice]);
+  }, [is2026, isAIPractice, isMockExams, isAI, allQuestions2026, allQuestionsAIPractice, allQuestionsMockExams, allQuestionsAI, allQuestionsPractice]);
 
   const activeAnswers = is2026 
     ? userAnswers2026 
     : isAIPractice
       ? userAnswersAIPractice
-      : isAI 
-        ? userAnswersAI 
-        : userAnswersPractice;
+      : isMockExams
+        ? userAnswersMockExams
+        : isAI 
+          ? userAnswersAI 
+          : userAnswersPractice;
 
   const activeHistory = is2026 
     ? userHistory2026 
     : isAIPractice
       ? userHistoryAIPractice
-      : isAI 
-        ? userHistoryAI 
-        : userHistoryPractice;
+      : isMockExams
+        ? userHistoryMockExams
+        : isAI 
+          ? userHistoryAI 
+          : userHistoryPractice;
 
   const activeBookmarks = is2026 
     ? bookmarks2026 
     : isAIPractice
       ? bookmarksAIPractice
-      : isAI 
-        ? bookmarksAI 
-        : bookmarksPractice;
+      : isMockExams
+        ? bookmarksMockExams
+        : isAI 
+          ? bookmarksAI 
+          : bookmarksPractice;
 
   const setActiveAnswers = is2026 
     ? setUserAnswers2026 
     : isAIPractice
       ? setUserAnswersAIPractice
-      : isAI 
-        ? setUserAnswersAI 
-        : setUserAnswersPractice;
+      : isMockExams
+        ? setUserAnswersMockExams
+        : isAI 
+          ? setUserAnswersAI 
+          : setUserAnswersPractice;
 
   const setActiveHistory = is2026 
     ? setUserHistory2026 
     : isAIPractice
       ? setUserHistoryAIPractice
-      : isAI 
-        ? setUserHistoryAI 
-        : setUserHistoryPractice;
+      : isMockExams
+        ? setUserHistoryMockExams
+        : isAI 
+          ? setUserHistoryAI 
+          : setUserHistoryPractice;
 
   const setActiveBookmarks = is2026 
     ? setBookmarks2026 
     : isAIPractice
       ? setBookmarksAIPractice
-      : isAI 
-        ? setBookmarksAI 
-        : setBookmarksPractice;
+      : isMockExams
+        ? setBookmarksMockExams
+        : isAI 
+          ? setBookmarksAI 
+          : setBookmarksPractice;
 
   // Available Terms in Practice Bank
   const availableTerms = useMemo(() => {
-    if (is2026 || isAI || isAIPractice || isFlashcards) return [];
+    if (is2026 || isAI || isAIPractice || isMockExams || isFlashcards) return [];
     const termMap = {};
     allQuestionsPractice.forEach(q => {
       const termId = q.setId;
@@ -268,38 +304,42 @@ export default function App() {
       termMap[termId].count++;
     });
     return Object.values(termMap);
-  }, [is2026, isAI, isAIPractice, isFlashcards, allQuestionsPractice]);
+  }, [is2026, isAI, isAIPractice, isMockExams, isFlashcards, allQuestionsPractice]);
 
   // Compute Week Progress Stats for FilterBar badges
   const weekStats = useMemo(() => {
     const stats = {};
     rawQuestions.forEach(q => {
-      const wKey = `W${q.weekNum}`;
-      if (!stats[wKey]) {
-        stats[wKey] = { count: 0, attempted: 0, correct: 0 };
+      const key = isMockExams ? `M${q.mockExamNum}` : `W${q.weekNum}`;
+      if (!stats[key]) {
+        stats[key] = { count: 0, attempted: 0, correct: 0 };
       }
-      stats[wKey].count++;
+      stats[key].count++;
       if (activeHistory[q.id]) {
-        stats[wKey].attempted++;
+        stats[key].attempted++;
         if (activeHistory[q.id].isCorrect) {
-          stats[wKey].correct++;
+          stats[key].correct++;
         }
       }
     });
     return stats;
-  }, [rawQuestions, activeHistory]);
+  }, [rawQuestions, activeHistory, isMockExams]);
 
   // Filtered Questions Pipeline
   const filteredQuestions = useMemo(() => {
     if (isFlashcards) return [];
     return rawQuestions.filter(q => {
-      // 1. Week Filter
-      if (selectedWeek !== 'ALL' && q.weekNum !== Number(selectedWeek)) {
-        return false;
+      // 1. Week / Mock Exam Filter
+      if (selectedWeek !== 'ALL') {
+        if (isMockExams) {
+          if (q.mockExamNum !== Number(selectedWeek)) return false;
+        } else {
+          if (q.weekNum !== Number(selectedWeek)) return false;
+        }
       }
 
       // 2. Term Filter (for historical practice bank only)
-      if (!is2026 && !isAI && !isAIPractice && selectedTerm !== 'ALL' && q.setId !== selectedTerm) {
+      if (!is2026 && !isAI && !isAIPractice && !isMockExams && selectedTerm !== 'ALL' && q.setId !== selectedTerm) {
         return false;
       }
 
@@ -320,7 +360,7 @@ export default function App() {
 
       return true;
     });
-  }, [isFlashcards, rawQuestions, selectedWeek, selectedTerm, selectedType, selectedMode, is2026, isAI, isAIPractice, activeHistory, activeBookmarks]);
+  }, [isFlashcards, rawQuestions, selectedWeek, selectedTerm, selectedType, selectedMode, is2026, isAI, isAIPractice, isMockExams, activeHistory, activeBookmarks]);
 
   // Answer Evaluation Handler
   const handleAnswer = useCallback((questionId, selectedOptions) => {
@@ -439,6 +479,13 @@ export default function App() {
     return { attempted, correct };
   }, [userHistoryPractice]);
 
+  const statsMockExams = useMemo(() => {
+    const attempted = Object.keys(userHistoryMockExams).length;
+    let correct = 0;
+    Object.values(userHistoryMockExams).forEach(h => { if (h.isCorrect) correct++; });
+    return { attempted, correct };
+  }, [userHistoryMockExams]);
+
   if (loading) {
     return (
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', flexDirection: 'column', gap: '1rem' }}>
@@ -497,6 +544,7 @@ export default function App() {
             userStatsFlashcards={statsFlashcards}
             userStatsAI={statsAI}
             userStatsPractice={statsPractice}
+            userStatsMockExams={statsMockExams}
             onOpenMockTest={() => setIsMockModalOpen(true)}
           />
 

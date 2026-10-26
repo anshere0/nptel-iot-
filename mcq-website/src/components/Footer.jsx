@@ -6,6 +6,7 @@ export default function Footer({ onOpenCurator, onOpenStats, currentBank, onSele
       'current-session-2026',
       'ai-practice-bank',
       'flashcards',
+      'mock-exams-bank',
       'ai-generated-bank',
       'practice-bank-904'
     ];

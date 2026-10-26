@@ -1,0 +1,1142 @@
+[
+  {
+    "id": "mock-3-q1",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 1,
+    "question": "According to the lecture on sensing, what is the primary function of a sensor?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To perform a physical action based on a command."
+      },
+      {
+        "key": "b",
+        "text": "To convert electrical energy into mechanical motion."
+      },
+      {
+        "key": "c",
+        "text": "To detect changes in ambient conditions and convert them into measurable signals."
+      },
+      {
+        "key": "d",
+        "text": "To store and process data from the cloud."
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) To detect changes in ambient conditions and convert them into measurable signals.. As covered in Week 1, Lecture 3: Sensing, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Easy",
+    "sourceVideoId": "jbMWEEdq3Kg",
+    "weekNum": 1,
+    "week": "Week 1",
+    "lectureNum": 3,
+    "lectureTitle": "Lecture 3: Sensing",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q2",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 2,
+    "question": "What is the fundamental role of an actuator in an IoT system?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To gather data about the physical environment."
+      },
+      {
+        "key": "b",
+        "text": "To convert physical properties into electrical signals."
+      },
+      {
+        "key": "c",
+        "text": "To convert energy into mechanical motion in response to a control signal."
+      },
+      {
+        "key": "d",
+        "text": "To provide network connectivity to other devices."
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) To convert energy into mechanical motion in response to a control signal.. As covered in Week 1, Lecture 4: Actuation, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Easy",
+    "sourceVideoId": "SXz0XR68dwE",
+    "weekNum": 1,
+    "week": "Week 1",
+    "lectureNum": 4,
+    "lectureTitle": "Lecture 4: Actuation",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q3",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 3,
+    "question": "An Arduino program, or \"sketch,\" is primarily composed of which two fundamental functions?",
+    "options": [
+      {
+        "key": "a",
+        "text": "main() and run()"
+      },
+      {
+        "key": "b",
+        "text": "start() and execute()"
+      },
+      {
+        "key": "c",
+        "text": "setup() and loop()"
+      },
+      {
+        "key": "d",
+        "text": "initialize() and process()"
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) setup() and loop(). As covered in Week 5, Lecture 22 : Introduction to Arduino- I, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Easy",
+    "sourceVideoId": "H9OEAn3Uc2w",
+    "weekNum": 5,
+    "week": "Week 5",
+    "lectureNum": 22,
+    "lectureTitle": "Lecture 22 : Introduction to Arduino- I",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q4",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 4,
+    "question": "What is the purpose of the `pinMode()` function in the Arduino IDE?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To read an analog value from a pin."
+      },
+      {
+        "key": "b",
+        "text": "To write a HIGH or LOW value to a digital pin."
+      },
+      {
+        "key": "c",
+        "text": "To configure a specified pin to behave as either an input or an output."
+      },
+      {
+        "key": "d",
+        "text": "To pause the program for a specific duration."
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) To configure a specified pin to behave as either an input or an output.. As covered in Week 5, Lecture 22 : Introduction to Arduino- I, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Easy",
+    "sourceVideoId": "H9OEAn3Uc2w",
+    "weekNum": 5,
+    "week": "Week 5",
+    "lectureNum": 22,
+    "lectureTitle": "Lecture 22 : Introduction to Arduino- I",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q5",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 5,
+    "question": "In Bluetooth technology, what is a \"piconet\"?",
+    "options": [
+      {
+        "key": "a",
+        "text": "A large network formed by interconnecting multiple scatternets."
+      },
+      {
+        "key": "b",
+        "text": "A small, ad-hoc network consisting of one master and up to seven active slave devices."
+      },
+      {
+        "key": "c",
+        "text": "A protocol for emulating RS-232 serial ports."
+      },
+      {
+        "key": "d",
+        "text": "A power-saving mode where a device sleeps for a defined period."
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) A small, ad-hoc network consisting of one master and up to seven active slave devices.. As covered in Week 3, Lecture 12: Connectivity Technologies- Part- IV, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Easy",
+    "sourceVideoId": "1zQ8wbBozqI",
+    "weekNum": 3,
+    "week": "Week 3",
+    "lectureNum": 12,
+    "lectureTitle": "Lecture 12: Connectivity Technologies- Part- IV",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q6",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 6,
+    "question": "What does the acronym MQTT stand for?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Machine Quality Telemetry Transfer"
+      },
+      {
+        "key": "b",
+        "text": "Message Queuing Telemetry Transport"
+      },
+      {
+        "key": "c",
+        "text": "Mobile Query Telemetry Transport"
+      },
+      {
+        "key": "d",
+        "text": "Main Queuing Telemetry Transfer"
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) Message Queuing Telemetry Transport. As covered in Week 2, Lecture 6: Basics of IoT Networking-Part II, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Easy",
+    "sourceVideoId": "qko-f1VDhCM",
+    "weekNum": 2,
+    "week": "Week 2",
+    "lectureNum": 6,
+    "lectureTitle": "Lecture 6: Basics of IoT Networking-Part II",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q7",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 7,
+    "question": "What is the primary function of the 6LoWPAN protocol?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To provide long-range communication for industrial devices."
+      },
+      {
+        "key": "b",
+        "text": "To enable IPv6 packets to be transmitted over low-power, low-bandwidth wireless links."
+      },
+      {
+        "key": "c",
+        "text": "To replace Bluetooth for high-data-rate audio streaming."
+      },
+      {
+        "key": "d",
+        "text": "To manage security keys in a Zigbee network."
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) To enable IPv6 packets to be transmitted over low-power, low-bandwidth wireless links.. As covered in Week 2, Lecture 10: Connectivity Technologies- Part-II, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Easy",
+    "sourceVideoId": "-VMjl_lJwUM",
+    "weekNum": 2,
+    "week": "Week 2",
+    "lectureNum": 10,
+    "lectureTitle": "Lecture 10: Connectivity Technologies- Part-II",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q8",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 8,
+    "question": "What is the primary goal of implementing a \"smart grid\"?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To exclusively use non-renewable energy sources."
+      },
+      {
+        "key": "b",
+        "text": "To transform the traditional grid into a more intelligent, responsive, and sustainable system using ICT."
+      },
+      {
+        "key": "c",
+        "text": "To increase the cost of electricity for all consumers."
+      },
+      {
+        "key": "d",
+        "text": "To maintain a strictly unidirectional flow of energy and information."
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) To transform the traditional grid into a more intelligent, responsive, and sustainable system using ICT.. As covered in Week 11, Lecture 51: Smart Grid- I, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Easy",
+    "sourceVideoId": "g4dW1cVsaq8",
+    "weekNum": 11,
+    "week": "Week 11",
+    "lectureNum": 51,
+    "lectureTitle": "Lecture 51: Smart Grid- I",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q9",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 9,
+    "question": "What is the main advantage of fog computing over traditional cloud computing for time-sensitive IoT applications?",
+    "options": [
+      {
+        "key": "a",
+        "text": "It offers unlimited permanent storage at the network edge."
+      },
+      {
+        "key": "b",
+        "text": "It reduces latency by processing data closer to the source."
+      },
+      {
+        "key": "c",
+        "text": "It is always cheaper to deploy than a cloud solution."
+      },
+      {
+        "key": "d",
+        "text": "It eliminates the need for any centralized data processing."
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) It reduces latency by processing data closer to the source.. As covered in Week 9, Lecture 44 : Fog Computing- I, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Easy",
+    "sourceVideoId": "hDWvk_6gmmQ",
+    "weekNum": 9,
+    "week": "Week 9",
+    "lectureNum": 44,
+    "lectureTitle": "Lecture 44 : Fog Computing- I",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q10",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 10,
+    "question": "What is the primary role of a sensor network in the context of IoT?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To perform physical actions and control the environment."
+      },
+      {
+        "key": "b",
+        "text": "To provide a user interface for managing IoT applications."
+      },
+      {
+        "key": "c",
+        "text": "To collaboratively monitor physical or environmental conditions on a large scale."
+      },
+      {
+        "key": "d",
+        "text": "To exclusively manage billing and user subscriptions."
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) To collaboratively monitor physical or environmental conditions on a large scale.. As covered in Week 3, Lecture 14: Sensor Networks- Part- I, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Easy",
+    "sourceVideoId": "0KtGwhwImOM",
+    "weekNum": 3,
+    "week": "Week 3",
+    "lectureNum": 14,
+    "lectureTitle": "Lecture 14: Sensor Networks- Part- I",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q11",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 11,
+    "question": "According to the lecture, how does Z-Wave generally compare to Zigbee in terms of user-friendliness and power consumption?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Z-Wave is more user-friendly, while Zigbee has lower power consumption."
+      },
+      {
+        "key": "b",
+        "text": "Zigbee is more user-friendly, while Z-Wave has lower power consumption."
+      },
+      {
+        "key": "c",
+        "text": "Both are equally user-friendly and have similar power consumption."
+      },
+      {
+        "key": "d",
+        "text": "Z-Wave is less user-friendly and has higher power consumption."
+      }
+    ],
+    "correctKeys": [
+      "a"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (A) Z-Wave is more user-friendly, while Zigbee has lower power consumption.. As covered in Week 3, Lecture 13: Connectivity Technologies- Part- V, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Medium",
+    "sourceVideoId": "TvzgzO6xKrY",
+    "weekNum": 3,
+    "week": "Week 3",
+    "lectureNum": 13,
+    "lectureTitle": "Lecture 13: Connectivity Technologies- Part- V",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q12",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 12,
+    "question": "In the Universal Middleware Bridge (UMB) architecture for IoT interoperability, what is the primary responsibility of the UMB Core?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To convert physical devices into virtual abstractions using Universal Device Templates (UDT)."
+      },
+      {
+        "key": "b",
+        "text": "To provide a user interface for controlling IoT devices."
+      },
+      {
+        "key": "c",
+        "text": "To define the physical layer communication protocol for all connected devices."
+      },
+      {
+        "key": "d",
+        "text": "To route messages and disseminate data between different UMB adaptors."
+      }
+    ],
+    "correctKeys": [
+      "d"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (D) To route messages and disseminate data between different UMB adaptors.. As covered in Week 5, Lecture 21 : Interoperability in Internet of Things, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Medium",
+    "sourceVideoId": "Am9SW1T_Qvs",
+    "weekNum": 5,
+    "week": "Week 5",
+    "lectureNum": 21,
+    "lectureTitle": "Lecture 21 : Interoperability in Internet of Things",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q13",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 13,
+    "question": "What is the function of the Mesh Addressing Header in the 6LoWPAN protocol?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To identify the dispatch type and the next header type in the packet."
+      },
+      {
+        "key": "b",
+        "text": "To break down large IPv6 packets into smaller fragments for transmission."
+      },
+      {
+        "key": "c",
+        "text": "To manage routing within a mesh network, including a \"hops left\" field."
+      },
+      {
+        "key": "d",
+        "text": "To provide encryption for the entire IPv6 packet."
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) To manage routing within a mesh network, including a \"hops left\" field.. As covered in Week 2, Lecture 10: Connectivity Technologies- Part-II, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Medium",
+    "sourceVideoId": "-VMjl_lJwUM",
+    "weekNum": 2,
+    "week": "Week 2",
+    "lectureNum": 10,
+    "lectureTitle": "Lecture 10: Connectivity Technologies- Part-II",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q14",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 14,
+    "question": "How does a passive RFID tag receive the power needed to transmit its data?",
+    "options": [
+      {
+        "key": "a",
+        "text": "It has a small, long-lasting internal battery."
+      },
+      {
+        "key": "b",
+        "text": "It harvests energy from ambient light using a tiny solar cell."
+      },
+      {
+        "key": "c",
+        "text": "It draws power inductively from the electromagnetic field emitted by the RFID reader."
+      },
+      {
+        "key": "d",
+        "text": "It is only activated when physically connected to a power source."
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) It draws power inductively from the electromagnetic field emitted by the RFID reader.. As covered in Week 2, Lecture 10: Connectivity Technologies- Part-II, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Medium",
+    "sourceVideoId": "-VMjl_lJwUM",
+    "weekNum": 2,
+    "week": "Week 2",
+    "lectureNum": 10,
+    "lectureTitle": "Lecture 10: Connectivity Technologies- Part-II",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q15",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 15,
+    "question": "In Arduino programming, what is a key difference between a `for` loop and a `while` loop?",
+    "options": [
+      {
+        "key": "a",
+        "text": "A `for` loop cannot be nested, while a `while` loop can."
+      },
+      {
+        "key": "b",
+        "text": "A `for` loop is ideal for iterating a known number of times, while a `while` loop repeats as long as a condition is true."
+      },
+      {
+        "key": "c",
+        "text": "A `while` loop always executes at least once, while a `for` loop may not."
+      },
+      {
+        "key": "d",
+        "text": "A `for` loop is used for conditional statements, while a `while` loop is for data structures."
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) A `for` loop is ideal for iterating a known number of times, while a `while` loop repeats as long as a condition is true.. As covered in Week 5, Lecture 23 : Introduction to Arduino- II, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Medium",
+    "sourceVideoId": "Ab9U7NQB1kA",
+    "weekNum": 5,
+    "week": "Week 5",
+    "lectureNum": 23,
+    "lectureTitle": "Lecture 23 : Introduction to Arduino- II",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q16",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 16,
+    "question": "In an SDN architecture, what is the purpose of a \"packet-in\" message?",
+    "options": [
+      {
+        "key": "a",
+        "text": "It is a message sent from the controller to a switch to install a new flow rule."
+      },
+      {
+        "key": "b",
+        "text": "It is a message sent by a switch to the controller when it receives a packet with no matching flow rule."
+      },
+      {
+        "key": "c",
+        "text": "It is a data packet being forwarded through the data plane."
+      },
+      {
+        "key": "d",
+        "text": "It is an error message indicating that the switch's TCAM memory is full."
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) It is a message sent by a switch to the controller when it receives a packet with no matching flow rule.. As covered in Week 7, Lecture 33 : Software Defined Networking- Part- I, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Medium",
+    "sourceVideoId": "WdTHHXOl8kg",
+    "weekNum": 7,
+    "week": "Week 7",
+    "lectureNum": 33,
+    "lectureTitle": "Lecture 33 : Software Defined Networking- Part- I",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q17",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 17,
+    "question": "What are the three primary components within an AMQP broker that manage message flow?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Producer, Consumer, and Server"
+      },
+      {
+        "key": "b",
+        "text": "Frame, Session, and Link"
+      },
+      {
+        "key": "c",
+        "text": "Exchange, Queue, and Binding"
+      },
+      {
+        "key": "d",
+        "text": "TCP, UDP, and IP"
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) Exchange, Queue, and Binding. As covered in Week 2, Lecture 8: Basics of IoT Networking- Part-IV, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Medium",
+    "sourceVideoId": "TGqVdWPQRxE",
+    "weekNum": 2,
+    "week": "Week 2",
+    "lectureNum": 8,
+    "lectureTitle": "Lecture 8: Basics of IoT Networking- Part-IV",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q18",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 18,
+    "question": "In the Agrisens smart irrigation case study, what communication technologies were used for intra-cluster (node-to-head) and inter-cluster (head-to-server) communication, respectively?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Wi-Fi and Bluetooth"
+      },
+      {
+        "key": "b",
+        "text": "GPRS and Zigbee"
+      },
+      {
+        "key": "c",
+        "text": "Zigbee and GPRS"
+      },
+      {
+        "key": "d",
+        "text": "Bluetooth and Cellular"
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) Zigbee and GPRS. As covered in Week 12, Lecture 57: Case Study: Agriculture, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Medium",
+    "sourceVideoId": "Bq4_mvxcP68",
+    "weekNum": 12,
+    "week": "Week 12",
+    "lectureNum": 57,
+    "lectureTitle": "Lecture 57: Case Study: Agriculture",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q19",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 19,
+    "question": "What is the primary distinction between Infrastructure as a Service (IaaS) and Platform as a Service (PaaS) in cloud computing?",
+    "options": [
+      {
+        "key": "a",
+        "text": "IaaS provides ready-to-use applications, while PaaS provides virtual machines."
+      },
+      {
+        "key": "b",
+        "text": "In IaaS, the user manages the OS and applications, while in PaaS, the provider manages the OS and runtime, leaving only the application for the user to manage."
+      },
+      {
+        "key": "c",
+        "text": "IaaS is always deployed as a private cloud, while PaaS is always a public cloud."
+      },
+      {
+        "key": "d",
+        "text": "PaaS offers more control over the underlying hardware than IaaS."
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) In IaaS, the user manages the OS and applications, while in PaaS, the provider manages the OS and runtime, leaving only the application for the user to manage.. As covered in Week 8, Lecture 38 : Cloud Computing-Service Model, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Medium",
+    "sourceVideoId": "bF1hXxpsXyw",
+    "weekNum": 8,
+    "week": "Week 8",
+    "lectureNum": 38,
+    "lectureTitle": "Lecture 38 : Cloud Computing-Service Model",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q20",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 20,
+    "question": "What is the main purpose of the `RPI.GPIO` library when programming a Raspberry Pi?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To manage network connections over Wi-Fi."
+      },
+      {
+        "key": "b",
+        "text": "To provide a Python interface for controlling the General Purpose Input/Output (GPIO) pins."
+      },
+      {
+        "key": "c",
+        "text": "To capture images and video from the Pi Camera module."
+      },
+      {
+        "key": "d",
+        "text": "To install and manage operating system updates."
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) To provide a Python interface for controlling the General Purpose Input/Output (GPIO) pins.. As covered in Week 6, Lecture 29: Introduction to Raspberry Pi- II, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Medium",
+    "sourceVideoId": "mBf9nolBueA",
+    "weekNum": 6,
+    "week": "Week 6",
+    "lectureNum": 29,
+    "lectureTitle": "Lecture 29: Introduction to Raspberry Pi- II",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q21",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 21,
+    "question": "The \"Body and Brain\" architecture for connected vehicles is composed of which three layers, inspired by the human body?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Sensor Layer, Actuator Layer, and Communication Layer"
+      },
+      {
+        "key": "b",
+        "text": "Hardware Layer, Software Layer, and Network Layer"
+      },
+      {
+        "key": "c",
+        "text": "Sense & Execution Layer, Network & Transmission Layer, and Decision Layer"
+      },
+      {
+        "key": "d",
+        "text": "Physical Layer, Data Link Layer, and Application Layer"
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) Sense & Execution Layer, Network & Transmission Layer, and Decision Layer. As covered in Week 10, Lecture 49 : Connected Vehicles- I, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Medium",
+    "sourceVideoId": "n8Knn8Htsbk",
+    "weekNum": 10,
+    "week": "Week 10",
+    "lectureNum": 49,
+    "lectureTitle": "Lecture 49 : Connected Vehicles- I",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q22",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 22,
+    "question": "What is the key difference between participatory sensing and opportunistic sensing in human-centric sensor networks?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Participatory sensing is involuntary, while opportunistic sensing is voluntary."
+      },
+      {
+        "key": "b",
+        "text": "Participatory sensing involves a crowd actively contributing data, while opportunistic sensing involves devices transmitting data only when a connection opportunity arises."
+      },
+      {
+        "key": "c",
+        "text": "Participatory sensing uses dedicated hardware, while opportunistic sensing uses only smartphones."
+      },
+      {
+        "key": "d",
+        "text": "Opportunistic sensing is for real-time data, while participatory sensing is for delay-tolerant applications."
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) Participatory sensing involves a crowd actively contributing data, while opportunistic sensing involves devices transmitting data only when a connection opportunity arises.. As covered in Week 4, Lecture 18: Sensor Networks- Part- V, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Medium",
+    "sourceVideoId": "UZhbJXWkdGM",
+    "weekNum": 4,
+    "week": "Week 4",
+    "lectureNum": 18,
+    "lectureTitle": "Lecture 18: Sensor Networks- Part- V",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q23",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 23,
+    "question": "According to the lecture on sensor network coverage, under what specific condition does achieving full area coverage automatically imply that the network is also fully connected?",
+    "options": [
+      {
+        "key": "a",
+        "text": "When the sensing range (Rs) is equal to the transmission range (Rc)."
+      },
+      {
+        "key": "b",
+        "text": "When the transmission range (Rc) is greater than or equal to twice the sensing range (Rs)."
+      },
+      {
+        "key": "c",
+        "text": "When the sensing range (Rs) is greater than the transmission range (Rc)."
+      },
+      {
+        "key": "d",
+        "text": "When the network is deployed in a deterministic grid pattern."
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) When the transmission range (Rc) is greater than or equal to twice the sensing range (Rs).. As covered in Week 4, Lecture 17: Sensor Networks- Part- IV, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Hard",
+    "sourceVideoId": "cLgtmc3q36k",
+    "weekNum": 4,
+    "week": "Week 4",
+    "lectureNum": 17,
+    "lectureTitle": "Lecture 17: Sensor Networks- Part- IV",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q24",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 24,
+    "question": "How does the MobiFlow protocol attempt to reduce control message overhead and energy consumption in a mobile SDN environment?",
+    "options": [
+      {
+        "key": "a",
+        "text": "By using a reactive approach where rules are placed only after a packet-in message is received."
+      },
+      {
+        "key": "b",
+        "text": "By increasing the size of the flow tables in all access points."
+      },
+      {
+        "key": "c",
+        "text": "By proactively placing flow rules based on predicting user movement with an order-k Markov predictor."
+      },
+      {
+        "key": "d",
+        "text": "By forcing all mobile devices to connect to a single, centralized controller."
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) By proactively placing flow rules based on predicting user movement with an order-k Markov predictor.. As covered in Week 8, Lecture 36 : Software Defined IoT Networking- II, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Hard",
+    "sourceVideoId": "95pe4l1PwHo",
+    "weekNum": 8,
+    "week": "Week 8",
+    "lectureNum": 36,
+    "lectureTitle": "Lecture 36 : Software Defined IoT Networking- II",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q25",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 25,
+    "question": "In the Ambisens healthcare case study, what is the primary function of the \"identity masking module\" within its privacy-aware framework?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To encrypt all patient data before it is stored in the cloud."
+      },
+      {
+        "key": "b",
+        "text": "To replace patient names with a unique numerical ID for billing purposes."
+      },
+      {
+        "key": "c",
+        "text": "To suppress parts of a patient's identity before data is sent to the cloud, allowing for analytics on an anonymized dataset."
+      },
+      {
+        "key": "d",
+        "text": "To verify the identity of doctors accessing the patient data through two-factor authentication."
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) To suppress parts of a patient's identity before data is sent to the cloud, allowing for analytics on an anonymized dataset.. As covered in Week 12, Lecture 58: Case Study: Healthcare, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Hard",
+    "sourceVideoId": "VeMDQHyBSaA",
+    "weekNum": 12,
+    "week": "Week 12",
+    "lectureNum": 58,
+    "lectureTitle": "Lecture 58: Case Study: Healthcare",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q26",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 26,
+    "question": "Based on the lecture on sensor network node behaviors, what is the critical distinction between a node exhibiting \"dumb behavior\" and one exhibiting \"selfish behavior\"?",
+    "options": [
+      {
+        "key": "a",
+        "text": "A dumb node intentionally drops packets to save energy, while a selfish node has a hardware failure."
+      },
+      {
+        "key": "b",
+        "text": "A dumb node is a malicious attacker, while a selfish node is simply malfunctioning."
+      },
+      {
+        "key": "c",
+        "text": "Dumb behavior is an unintentional inability to transmit data due to environmental factors, while selfish behavior is an intentional refusal to relay packets to conserve resources."
+      },
+      {
+        "key": "d",
+        "text": "Dumb behavior affects only communication range, while selfish behavior affects only sensing accuracy."
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) Dumb behavior is an unintentional inability to transmit data due to environmental factors, while selfish behavior is an intentional refusal to relay packets to conserve resources.. As covered in Week 3, Lecture 15: Sensor Networks- Part- II, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Hard",
+    "sourceVideoId": "BYtbc4tDwLo",
+    "weekNum": 3,
+    "week": "Week 3",
+    "lectureNum": 15,
+    "lectureTitle": "Lecture 15: Sensor Networks- Part- II",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q27",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 27,
+    "question": "The OGDC algorithm for area coverage aims to optimize sensor placement. For sensors with a uniform sensing range (Rs), what is the ideal distance between adjacent active nodes to minimize overlap, and what geometric principle does this follow?",
+    "options": [
+      {
+        "key": "a",
+        "text": "2 * Rs, based on placing nodes at the edges of sensing circles."
+      },
+      {
+        "key": "b",
+        "text": "Rs, based on creating a chain of tangent circles."
+      },
+      {
+        "key": "c",
+        "text": "sqrt(3) * Rs, based on efficiently covering the intersection points of three sensing circles in a triangular pattern."
+      },
+      {
+        "key": "d",
+        "text": "Rs / 2, based on maximizing the density of sensor nodes."
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) sqrt(3) * Rs, based on efficiently covering the intersection points of three sensing circles in a triangular pattern.. As covered in Week 4, Lecture 17: Sensor Networks- Part- IV, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Hard",
+    "sourceVideoId": "cLgtmc3q36k",
+    "weekNum": 4,
+    "week": "Week 4",
+    "lectureNum": 17,
+    "lectureTitle": "Lecture 17: Sensor Networks- Part- IV",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q28",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 28,
+    "question": "Why is Content Centric Networking (CCN) presented as a more suitable alternative to TCP/IP for Vehicular Ad Hoc Networks (VANETs)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "CCN has lower security overhead compared to the heavily encrypted TCP/IP."
+      },
+      {
+        "key": "b",
+        "text": "CCN is location-dependent, which is ideal for fixed roadside infrastructure."
+      },
+      {
+        "key": "c",
+        "text": "CCN focuses on content names rather than host locations, enabling efficient data dissemination and caching in highly mobile, many-to-many environments."
+      },
+      {
+        "key": "d",
+        "text": "CCN uses a centralized server model, which simplifies routing in dynamic VANETs."
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) CCN focuses on content names rather than host locations, enabling efficient data dissemination and caching in highly mobile, many-to-many environments.. As covered in Week 10, Lecture 49 : Connected Vehicles- I, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Hard",
+    "sourceVideoId": "n8Knn8Htsbk",
+    "weekNum": 10,
+    "week": "Week 10",
+    "lectureNum": 49,
+    "lectureTitle": "Lecture 49 : Connected Vehicles- I",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q29",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 29,
+    "question": "The ISA100.11a industrial protocol implements a two-step data security mechanism. How does this mechanism secure data at both the data link and transport layers?",
+    "options": [
+      {
+        "key": "a",
+        "text": "It uses a single encryption key for the entire network, applied at both layers."
+      },
+      {
+        "key": "b",
+        "text": "The data link layer encrypts each hop, while the transport layer secures the end-to-end peer-to-peer communication."
+      },
+      {
+        "key": "c",
+        "text": "The transport layer handles authentication, while the data link layer handles encryption."
+      },
+      {
+        "key": "d",
+        "text": "Security is only applied at the network gateway, not at individual layers."
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) The data link layer encrypts each hop, while the transport layer secures the end-to-end peer-to-peer communication.. As covered in Week 3, Lecture 13: Connectivity Technologies- Part- V, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Hard",
+    "sourceVideoId": "TvzgzO6xKrY",
+    "weekNum": 3,
+    "week": "Week 3",
+    "lectureNum": 13,
+    "lectureTitle": "Lecture 13: Connectivity Technologies- Part- V",
+    "term": "Mock Exam 3"
+  },
+  {
+    "id": "mock-3-q30",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 3,
+    "mockExamTitle": "Mock Exam 3",
+    "questionNum": 30,
+    "question": "In the proposed pricing model for Sensor Cloud, what is the fundamental difference between \"Pricing attributed to Hardware (PH)\" and \"Pricing attributed to Infrastructure (PI)\"?",
+    "options": [
+      {
+        "key": "a",
+        "text": "PH is a one-time cost, while PI is a recurring subscription fee."
+      },
+      {
+        "key": "b",
+        "text": "PH covers the cost of using the physical sensor nodes, while PI covers the cost of the underlying cloud infrastructure like servers and switches."
+      },
+      {
+        "key": "c",
+        "text": "PH is paid by the sensor owner, while PI is paid by the end-user."
+      },
+      {
+        "key": "d",
+        "text": "PH applies only to homogeneous sensors, while PI applies to heterogeneous sensors."
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) PH covers the cost of using the physical sensor nodes, while PI covers the cost of the underlying cloud infrastructure like servers and switches.. As covered in Week 9, Lecture 43 : Sensor-Cloud- II, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Hard",
+    "sourceVideoId": "mkcn_L6upZ0",
+    "weekNum": 9,
+    "week": "Week 9",
+    "lectureNum": 43,
+    "lectureTitle": "Lecture 43 : Sensor-Cloud- II",
+    "term": "Mock Exam 3"
+  }
+]

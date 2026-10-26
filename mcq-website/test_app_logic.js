@@ -170,6 +170,32 @@ for (let w = 1; w <= 12; w++) {
 }
 assert(totalWeeklyCards === 1800, `Weekly flashcard sets sum to exactly 1,800 (actual: ${totalWeeklyCards})`);
 
+// TEST 9: Official Mock Exam Papers (150 Questions across Mocks 1 to 5)
+console.log('\n[Suite 9: Official Mock Exam Papers Bank (Mocks 1 to 5)]');
+const mockAllPath = path.join(__dirname, 'public', 'data', 'mock-exams-bank', 'questions.json');
+assert(fs.existsSync(mockAllPath), 'mock-exams-bank/questions.json exists');
+const allMockQuestions = JSON.parse(fs.readFileSync(mockAllPath, 'utf8'));
+assert(allMockQuestions.length === 150, `mock-exams-bank contains exactly 150 questions (actual: ${allMockQuestions.length})`);
+
+let totalMockSum = 0;
+for (let m = 1; m <= 5; m++) {
+  const mPath = path.join(__dirname, 'public', 'data', 'mock-exams-bank', `mock_${m}.json`);
+  assert(fs.existsSync(mPath), `mock_${m}.json exists`);
+  const mQuestions = JSON.parse(fs.readFileSync(mPath, 'utf8'));
+  assert(mQuestions.length === 30, `Mock Exam ${m} contains exactly 30 questions (actual: ${mQuestions.length})`);
+  totalMockSum += mQuestions.length;
+
+  let allValid = true;
+  for (const q of mQuestions) {
+    if (!q.id || !q.question || !q.options || Object.keys(q.options).length !== 4 || !q.correctKeys || q.correctKeys.length === 0 || !q.explanation || q.mockExamNum !== m) {
+      allValid = false;
+      break;
+    }
+  }
+  assert(allValid, `Mock Exam ${m} all 30 questions have complete 4 options, verified correctKeys, and explanations`);
+}
+assert(totalMockSum === 150, `All 5 mock exams sum to exactly 150 questions (actual: ${totalMockSum})`);
+
 console.log('\n=====================================================');
 console.log(`   TEST RESULTS: ${testsPassed} PASSED, ${testsFailed} FAILED`);
 console.log('=====================================================');

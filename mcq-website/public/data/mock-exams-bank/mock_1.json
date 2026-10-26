@@ -1,0 +1,1142 @@
+[
+  {
+    "id": "mock-1-q1",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 1,
+    "question": "According to the lecture, what is the core vision of the Internet of Things (IoT)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To replace the existing internet with a more secure version."
+      },
+      {
+        "key": "b",
+        "text": "To expand the existing internet to encompass and interconnect physical objects."
+      },
+      {
+        "key": "c",
+        "text": "To create a new internet exclusively for machine-to-machine communication."
+      },
+      {
+        "key": "d",
+        "text": "To focus solely on developing smart home and smart city applications."
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) To expand the existing internet to encompass and interconnect physical objects.. As covered in Week 1, Lecture 1: Introduction to IoT- Part-I, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Easy",
+    "sourceVideoId": "WUYAjxnwjU4",
+    "weekNum": 1,
+    "week": "Week 1",
+    "lectureNum": 1,
+    "lectureTitle": "Lecture 1: Introduction to IoT- Part-I",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q2",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 2,
+    "question": "What is the primary function of a sensor in an IoT system as described in the lecture?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To perform physical actions based on commands."
+      },
+      {
+        "key": "b",
+        "text": "To process and analyze large volumes of data."
+      },
+      {
+        "key": "c",
+        "text": "To detect physical phenomena and convert them into measurable signals."
+      },
+      {
+        "key": "d",
+        "text": "To provide network connectivity to other devices."
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) To detect physical phenomena and convert them into measurable signals.. As covered in Week 1, Lecture 3: Sensing, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Easy",
+    "sourceVideoId": "jbMWEEdq3Kg",
+    "weekNum": 1,
+    "week": "Week 1",
+    "lectureNum": 3,
+    "lectureTitle": "Lecture 3: Sensing",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q3",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 3,
+    "question": "What is the fundamental function of an actuator in an IoT system?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To convert physical properties into electrical signals for data collection."
+      },
+      {
+        "key": "b",
+        "text": "To store and process data received from the network."
+      },
+      {
+        "key": "c",
+        "text": "To translate digital commands or sensor data into physical actions."
+      },
+      {
+        "key": "d",
+        "text": "To provide a user interface for controlling the system."
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) To translate digital commands or sensor data into physical actions.. As covered in Week 1, General IoT, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Easy",
+    "sourceVideoId": "SXzgzO6xKrY",
+    "weekNum": 1,
+    "week": "Week 1",
+    "lectureNum": 1,
+    "lectureTitle": "General IoT",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q4",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 4,
+    "question": "In MQTT, what is a 'topic' used for?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To uniquely identify each client device."
+      },
+      {
+        "key": "b",
+        "text": "To encrypt the message payload for security."
+      },
+      {
+        "key": "c",
+        "text": "To categorize messages so the broker can route them to interested subscribers."
+      },
+      {
+        "key": "d",
+        "text": "To define the Quality of Service level for a message."
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) To categorize messages so the broker can route them to interested subscribers.. As covered in Week 2, Lecture 6: Basics of IoT Networking-Part II, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Easy",
+    "sourceVideoId": "qko-f1VDhCM",
+    "weekNum": 2,
+    "week": "Week 2",
+    "lectureNum": 6,
+    "lectureTitle": "Lecture 6: Basics of IoT Networking-Part II",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q5",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 5,
+    "question": "What is the primary purpose of the IEEE 802.15.4 standard in the context of IoT?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To provide high-speed Wi-Fi connectivity for multimedia streaming."
+      },
+      {
+        "key": "b",
+        "text": "To define the physical and MAC layers for low-rate, low-power wireless personal area networks (LR-WPANs)."
+      },
+      {
+        "key": "c",
+        "text": "To standardize long-range cellular communication for IoT devices."
+      },
+      {
+        "key": "d",
+        "text": "To enable wired Ethernet connections for industrial sensors."
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) To define the physical and MAC layers for low-rate, low-power wireless personal area networks (LR-WPANs).. As covered in Week 2, Lecture 9: Connectivity Technologies- Part-I, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Easy",
+    "sourceVideoId": "GHUR_GfQQsQ",
+    "weekNum": 2,
+    "week": "Week 2",
+    "lectureNum": 9,
+    "lectureTitle": "Lecture 9: Connectivity Technologies- Part-I",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q6",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 6,
+    "question": "What is a piconet in the context of Bluetooth technology?",
+    "options": [
+      {
+        "key": "a",
+        "text": "A large-scale network connecting multiple buildings."
+      },
+      {
+        "key": "b",
+        "text": "A network formed by interconnecting multiple scatternets."
+      },
+      {
+        "key": "c",
+        "text": "A small, ad-hoc network consisting of one master and up to seven active slave devices."
+      },
+      {
+        "key": "d",
+        "text": "A protocol for emulating serial ports over a wireless link."
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) A small, ad-hoc network consisting of one master and up to seven active slave devices.. As covered in Week 3, Lecture 12: Connectivity Technologies- Part- IV, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Easy",
+    "sourceVideoId": "1zQ8wbBozqI",
+    "weekNum": 3,
+    "week": "Week 3",
+    "lectureNum": 12,
+    "lectureTitle": "Lecture 12: Connectivity Technologies- Part- IV",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q7",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 7,
+    "question": "In an Arduino sketch, what is the fundamental difference between the `setup()` function and the `loop()` function?",
+    "options": [
+      {
+        "key": "a",
+        "text": "`setup()` runs repeatedly, while `loop()` runs only once."
+      },
+      {
+        "key": "b",
+        "text": "`setup()` is for declaring variables, while `loop()` is for defining functions."
+      },
+      {
+        "key": "c",
+        "text": "`setup()` runs only once at startup for initialization, while `loop()` executes repeatedly."
+      },
+      {
+        "key": "d",
+        "text": "`setup()` is for analog operations, while `loop()` is for digital operations."
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) `setup()` runs only once at startup for initialization, while `loop()` executes repeatedly.. As covered in Week 5, Lecture 22 : Introduction to Arduino- I, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Easy",
+    "sourceVideoId": "H9OEAn3Uc2w",
+    "weekNum": 5,
+    "week": "Week 5",
+    "lectureNum": 22,
+    "lectureTitle": "Lecture 22 : Introduction to Arduino- I",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q8",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 8,
+    "question": "What is the key difference between a Python list and a Python tuple?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Lists are ordered and tuples are unordered."
+      },
+      {
+        "key": "b",
+        "text": "Lists can only hold numbers, while tuples can hold any data type."
+      },
+      {
+        "key": "c",
+        "text": "Lists are mutable (can be changed), while tuples are immutable (cannot be changed)."
+      },
+      {
+        "key": "d",
+        "text": "Lists use parentheses `()` while tuples use square brackets `[]`."
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) Lists are mutable (can be changed), while tuples are immutable (cannot be changed).. As covered in Week 6, Lecture 26: Introduction to Python Programming- I, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Easy",
+    "sourceVideoId": "oNWnB3dZWNM",
+    "weekNum": 6,
+    "week": "Week 6",
+    "lectureNum": 26,
+    "lectureTitle": "Lecture 26: Introduction to Python Programming- I",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q9",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 9,
+    "question": "Which cloud computing service model provides users with access to ready-to-use applications over the internet, managed entirely by the service provider?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Infrastructure as a Service (IaaS)"
+      },
+      {
+        "key": "b",
+        "text": "Platform as a Service (PaaS)"
+      },
+      {
+        "key": "c",
+        "text": "Software as a Service (SaaS)"
+      },
+      {
+        "key": "d",
+        "text": "Function as a Service (FaaS)"
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) Software as a Service (SaaS). As covered in Week 8, Lecture 37 : Cloud Computing-Fundamental, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Easy",
+    "sourceVideoId": "Yh3gCFG-IRI",
+    "weekNum": 8,
+    "week": "Week 8",
+    "lectureNum": 37,
+    "lectureTitle": "Lecture 37 : Cloud Computing-Fundamental",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q10",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 10,
+    "question": "What is the fundamental enabler that transforms a conventional city into a 'smart' city, according to the lecture?",
+    "options": [
+      {
+        "key": "a",
+        "text": "The construction of more efficient buildings and roads."
+      },
+      {
+        "key": "b",
+        "text": "The integration of Information and Communication Technologies (ICT) to enhance services."
+      },
+      {
+        "key": "c",
+        "text": "A significant increase in the urban population."
+      },
+      {
+        "key": "d",
+        "text": "The exclusive use of renewable energy sources."
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) The integration of Information and Communication Technologies (ICT) to enhance services.. As covered in Week 10, Lecture 46 : Smart Cities and Smart Homes- I, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Easy",
+    "sourceVideoId": "JZiX3ou2-wo",
+    "weekNum": 10,
+    "week": "Week 10",
+    "lectureNum": 46,
+    "lectureTitle": "Lecture 46 : Smart Cities and Smart Homes- I",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q11",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 11,
+    "question": "In the context of IoT networking, what is the primary purpose of an IoT Gateway?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To generate and store sensor data locally."
+      },
+      {
+        "key": "b",
+        "text": "To act as a bridge connecting local IoT devices to the cloud, translating protocols and managing traffic."
+      },
+      {
+        "key": "c",
+        "text": "To provide processing power directly to individual sensor nodes."
+      },
+      {
+        "key": "d",
+        "text": "To function as an end-user application for visualizing data."
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) To act as a bridge connecting local IoT devices to the cloud, translating protocols and managing traffic.. As covered in Week 1, Lecture 5: Basics of IoT Networking- Part- I, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Medium",
+    "sourceVideoId": "fByKuk2VmJc",
+    "weekNum": 1,
+    "week": "Week 1",
+    "lectureNum": 5,
+    "lectureTitle": "Lecture 5: Basics of IoT Networking- Part- I",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q12",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 12,
+    "question": "In MQTT, what is the difference between the single-level wildcard `+` and the multi-level wildcard `#` when subscribing to topics?",
+    "options": [
+      {
+        "key": "a",
+        "text": "`+` matches any topic name, while `#` matches only the root level."
+      },
+      {
+        "key": "b",
+        "text": "`+` matches a single level in the topic hierarchy, while `#` matches all subsequent levels."
+      },
+      {
+        "key": "c",
+        "text": "`+` is used for publishing messages, while `#` is used for subscribing."
+      },
+      {
+        "key": "d",
+        "text": "`+` matches multiple levels, while `#` matches only a single level."
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) `+` matches a single level in the topic hierarchy, while `#` matches all subsequent levels.. As covered in Week 2, Lecture 6: Basics of IoT Networking-Part II, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Medium",
+    "sourceVideoId": "qko-f1VDhCM",
+    "weekNum": 2,
+    "week": "Week 2",
+    "lectureNum": 6,
+    "lectureTitle": "Lecture 6: Basics of IoT Networking-Part II",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q13",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 13,
+    "question": "What is the primary advantage of a mesh topology in sensor networks as described in the lecture?",
+    "options": [
+      {
+        "key": "a",
+        "text": "It is the simplest topology to deploy and requires the least power."
+      },
+      {
+        "key": "b",
+        "text": "It offers inherent reliability and fault tolerance due to multiple redundant paths."
+      },
+      {
+        "key": "c",
+        "text": "It allows for the longest communication range between any two nodes."
+      },
+      {
+        "key": "d",
+        "text": "It centralizes all data processing at a single sink node."
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) It offers inherent reliability and fault tolerance due to multiple redundant paths.. As covered in Week 1, General IoT, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Medium",
+    "sourceVideoId": "0KtGAd5yxmk",
+    "weekNum": 1,
+    "week": "Week 1",
+    "lectureNum": 1,
+    "lectureTitle": "General IoT",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q14",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 14,
+    "question": "What is the key difference between a 'selfish node' and a 'dumb node' in a sensor network?",
+    "options": [
+      {
+        "key": "a",
+        "text": "A selfish node intentionally drops packets to save energy, while a dumb node unintentionally fails to transmit due to environmental factors."
+      },
+      {
+        "key": "b",
+        "text": "A selfish node sends false routing messages, while a dumb node has a complete power failure."
+      },
+      {
+        "key": "c",
+        "text": "A selfish node is a hardware failure, while a dumb node is a software bug."
+      },
+      {
+        "key": "d",
+        "text": "A selfish node attacks the network, while a dumb node cooperates fully."
+      }
+    ],
+    "correctKeys": [
+      "a"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (A) A selfish node intentionally drops packets to save energy, while a dumb node unintentionally fails to transmit due to environmental factors.. As covered in Week 3, Lecture 15: Sensor Networks- Part- II, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Medium",
+    "sourceVideoId": "BYtbc4tDwLo",
+    "weekNum": 3,
+    "week": "Week 3",
+    "lectureNum": 15,
+    "lectureTitle": "Lecture 15: Sensor Networks- Part- II",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q15",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 15,
+    "question": "How does M2M communication conceptually differ from traditional SCADA systems according to the lecture?",
+    "options": [
+      {
+        "key": "a",
+        "text": "M2M is exclusively for industrial plants, while SCADA is for consumer devices."
+      },
+      {
+        "key": "b",
+        "text": "M2M is primarily wireless and designed for cross-platform integration, while SCADA is predominantly wired and proprietary."
+      },
+      {
+        "key": "c",
+        "text": "M2M requires human intervention, while SCADA is fully autonomous."
+      },
+      {
+        "key": "d",
+        "text": "M2M uses IP-based protocols, while SCADA does not use any networking."
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) M2M is primarily wireless and designed for cross-platform integration, while SCADA is predominantly wired and proprietary.. As covered in Week 4, Lecture 20: Machine to Machine Communication, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Medium",
+    "sourceVideoId": "OlEF6GSeaKg",
+    "weekNum": 4,
+    "week": "Week 4",
+    "lectureNum": 20,
+    "lectureTitle": "Lecture 20: Machine to Machine Communication",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q16",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 16,
+    "question": "In the context of the `Servo.h` library for Arduino, what is the purpose of the `attach()` function?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To read the current angle of the servo motor."
+      },
+      {
+        "key": "b",
+        "text": "To command the servo to move to a specific angle."
+      },
+      {
+        "key": "c",
+        "text": "To associate a Servo object in the code with a specific physical GPIO pin."
+      },
+      {
+        "key": "d",
+        "text": "To provide power to the servo motor."
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) To associate a Servo object in the code with a specific physical GPIO pin.. As covered in Week 5, Lecture 25 : Integration of Sensors and Actuators with Arduino- II, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Medium",
+    "sourceVideoId": "6saGAd5yxmk",
+    "weekNum": 5,
+    "week": "Week 5",
+    "lectureNum": 25,
+    "lectureTitle": "Lecture 25 : Integration of Sensors and Actuators with Arduino- II",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q17",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 17,
+    "question": "What happens when an SDN-enabled switch receives a packet for which no matching flow rule exists in its flow table?",
+    "options": [
+      {
+        "key": "a",
+        "text": "The packet is immediately dropped and an error is logged."
+      },
+      {
+        "key": "b",
+        "text": "The switch broadcasts the packet to all other switches in the network."
+      },
+      {
+        "key": "c",
+        "text": "The switch sends a 'packet-in' message to the centralized controller to request a new rule."
+      },
+      {
+        "key": "d",
+        "text": "The switch uses a default routing protocol like OSPF to forward the packet."
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) The switch sends a 'packet-in' message to the centralized controller to request a new rule.. As covered in Week 7, Lecture 33 : Software Defined Networking- Part- I, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Medium",
+    "sourceVideoId": "WdTHHXOl8kg",
+    "weekNum": 7,
+    "week": "Week 7",
+    "lectureNum": 33,
+    "lectureTitle": "Lecture 33 : Software Defined Networking- Part- I",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q18",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 18,
+    "question": "In the IaaS cloud service model, which components of the IT stack are typically managed by the user?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Only the applications and data."
+      },
+      {
+        "key": "b",
+        "text": "Virtualization, servers, storage, and networking."
+      },
+      {
+        "key": "c",
+        "text": "The entire stack, including the physical hardware."
+      },
+      {
+        "key": "d",
+        "text": "Applications, data, runtime, middleware, and the operating system."
+      }
+    ],
+    "correctKeys": [
+      "d"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (D) Applications, data, runtime, middleware, and the operating system.. As covered in Week 8, Lecture 38 : Cloud Computing-Service Model, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Medium",
+    "sourceVideoId": "bF1hXxpsXyw",
+    "weekNum": 8,
+    "week": "Week 8",
+    "lectureNum": 38,
+    "lectureTitle": "Lecture 38 : Cloud Computing-Service Model",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q19",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 19,
+    "question": "Why is the traditional cloud-centric model often unsuitable for time-sensitive IoT applications?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Cloud servers lack the processing power for complex analytics."
+      },
+      {
+        "key": "b",
+        "text": "The high latency introduced by sending data to a distant cloud for processing can cause critical delays."
+      },
+      {
+        "key": "c",
+        "text": "Cloud storage is not secure enough for any type of IoT data."
+      },
+      {
+        "key": "d",
+        "text": "Cloud platforms do not support the communication protocols used by IoT devices."
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) The high latency introduced by sending data to a distant cloud for processing can cause critical delays.. As covered in Week 9, Lecture 44 : Fog Computing- I, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Medium",
+    "sourceVideoId": "hDWvk_6gmmQ",
+    "weekNum": 9,
+    "week": "Week 9",
+    "lectureNum": 44,
+    "lectureTitle": "Lecture 44 : Fog Computing- I",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q20",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 20,
+    "question": "Why is Content Centric Networking (CCN) considered a more suitable approach for VANETs compared to traditional TCP/IP?",
+    "options": [
+      {
+        "key": "a",
+        "text": "CCN requires a fixed infrastructure of routers, which is more stable for vehicles."
+      },
+      {
+        "key": "b",
+        "text": "CCN focuses on content names rather than host locations, enabling efficient caching and data dissemination in highly mobile environments."
+      },
+      {
+        "key": "c",
+        "text": "CCN has lower security overhead, making it faster for safety-critical messages."
+      },
+      {
+        "key": "d",
+        "text": "CCN is a wired protocol, which eliminates the interference issues of wireless communication in VANETs."
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) CCN focuses on content names rather than host locations, enabling efficient caching and data dissemination in highly mobile environments.. As covered in Week 10, Lecture 49 : Connected Vehicles- I, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Medium",
+    "sourceVideoId": "n8Knn8Htsbk",
+    "weekNum": 10,
+    "week": "Week 10",
+    "lectureNum": 49,
+    "lectureTitle": "Lecture 49 : Connected Vehicles- I",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q21",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 21,
+    "question": "In the Agrisens system architecture, what communication technologies are used for intra-cluster and inter-cluster communication, respectively?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Wi-Fi for intra-cluster and GPRS for inter-cluster."
+      },
+      {
+        "key": "b",
+        "text": "Bluetooth for intra-cluster and Wi-Fi for inter-cluster."
+      },
+      {
+        "key": "c",
+        "text": "Zigbee for intra-cluster and GPRS for inter-cluster."
+      },
+      {
+        "key": "d",
+        "text": "GPRS for intra-cluster and Zigbee for inter-cluster."
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) Zigbee for intra-cluster and GPRS for inter-cluster.. As covered in Week 12, Lecture 57: Case Study: Agriculture, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Medium",
+    "sourceVideoId": "Bq4_mvxcP68",
+    "weekNum": 12,
+    "week": "Week 12",
+    "lectureNum": 57,
+    "lectureTitle": "Lecture 57: Case Study: Agriculture",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q22",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 22,
+    "question": "What is the primary purpose of the Identity Masking Module within the Ambisens healthcare system?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To encrypt all data transmitted from the patient's sensors."
+      },
+      {
+        "key": "b",
+        "text": "To verify the identity of the doctor accessing the patient data."
+      },
+      {
+        "key": "c",
+        "text": "To anonymize patient data by suppressing parts of their identity before it is sent to the cloud."
+      },
+      {
+        "key": "d",
+        "text": "To assign a unique ID to each sensor device for tracking purposes."
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) To anonymize patient data by suppressing parts of their identity before it is sent to the cloud.. As covered in Week 12, Lecture 58: Case Study: Healthcare, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Medium",
+    "sourceVideoId": "VeMDQHyBSaA",
+    "weekNum": 12,
+    "week": "Week 12",
+    "lectureNum": 58,
+    "lectureTitle": "Lecture 58: Case Study: Healthcare",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q23",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 23,
+    "question": "According to the lecture, why is reachability verification crucial before a router is designated as a parent in RPL (Routing Protocol for Low-Power and Lossy Networks)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To ensure the router has enough battery power to handle the traffic."
+      },
+      {
+        "key": "b",
+        "text": "Because RPL only supports star topologies where parent nodes are fixed."
+      },
+      {
+        "key": "c",
+        "text": "To confirm the router can handle the high data rates of IPv6 packets."
+      },
+      {
+        "key": "d",
+        "text": "Because links in LLNs can be asymmetric, and the forward and reverse paths might differ."
+      }
+    ],
+    "correctKeys": [
+      "d"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (D) Because links in LLNs can be asymmetric, and the forward and reverse paths might differ.. As covered in Week 2, Lecture 10: Connectivity Technologies- Part-II, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Hard",
+    "sourceVideoId": "-VMjl_lJwUM",
+    "weekNum": 2,
+    "week": "Week 2",
+    "lectureNum": 10,
+    "lectureTitle": "Lecture 10: Connectivity Technologies- Part-II",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q24",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 24,
+    "question": "The OGDC algorithm for area coverage aims to optimize sensor placement by ensuring the distance between adjacent active nodes is `sqrt(3) * Rs`. What is the underlying reason for this specific distance?",
+    "options": [
+      {
+        "key": "a",
+        "text": "It is the maximum possible communication range between two nodes."
+      },
+      {
+        "key": "b",
+        "text": "It ensures that the sensing circles of three adjacent nodes intersect at a single point, minimizing overlap while covering all 'crossings'."
+      },
+      {
+        "key": "c",
+        "text": "It corresponds to the minimum energy required for transmission between nodes."
+      },
+      {
+        "key": "d",
+        "text": "It is a randomly chosen value to ensure non-deterministic deployment."
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) It ensures that the sensing circles of three adjacent nodes intersect at a single point, minimizing overlap while covering all 'crossings'.. As covered in Week 4, Lecture 17: Sensor Networks- Part- IV, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Hard",
+    "sourceVideoId": "cLgtmc3q36k",
+    "weekNum": 4,
+    "week": "Week 4",
+    "lectureNum": 17,
+    "lectureTitle": "Lecture 17: Sensor Networks- Part- IV",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q25",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 25,
+    "question": "How does the Universal Middleware Bridge (UMB) architecture achieve interoperability between heterogeneous IoT devices?",
+    "options": [
+      {
+        "key": "a",
+        "text": "By forcing all devices to use a single, standardized communication protocol."
+      },
+      {
+        "key": "b",
+        "text": "By using a UMB Adaptor to convert physical devices into virtual abstractions based on a Universal Device Template (UDT)."
+      },
+      {
+        "key": "c",
+        "text": "By physically replacing non-compliant hardware with standardized components."
+      },
+      {
+        "key": "d",
+        "text": "By relying on the end-user to manually configure each device for compatibility."
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) By using a UMB Adaptor to convert physical devices into virtual abstractions based on a Universal Device Template (UDT).. As covered in Week 5, Lecture 21 : Interoperability in Internet of Things, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Hard",
+    "sourceVideoId": "Am9SW1T_Qvs",
+    "weekNum": 5,
+    "week": "Week 5",
+    "lectureNum": 21,
+    "lectureTitle": "Lecture 21 : Interoperability in Internet of Things",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q26",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 26,
+    "question": "How does the MobiFlow protocol proactively place flow rules in a mobile IoT network to reduce control message overhead?",
+    "options": [
+      {
+        "key": "a",
+        "text": "By broadcasting flow rules to all access points in the network simultaneously."
+      },
+      {
+        "key": "b",
+        "text": "By waiting for a 'packet-in' message before calculating any route."
+      },
+      {
+        "key": "c",
+        "text": "By using an order-k Markov predictor to forecast a user's next location and placing rules at anticipated access points."
+      },
+      {
+        "key": "d",
+        "text": "By assigning static rules to each mobile device that never change."
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) By using an order-k Markov predictor to forecast a user's next location and placing rules at anticipated access points.. As covered in Week 8, Lecture 36 : Software Defined IoT Networking- II, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Hard",
+    "sourceVideoId": "95pe4l1PwHo",
+    "weekNum": 8,
+    "week": "Week 8",
+    "lectureNum": 36,
+    "lectureTitle": "Lecture 36 : Software Defined IoT Networking- II",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q27",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 27,
+    "question": "According to the lecture, what is the key distinction between 'trust' and 'reputation' when selecting a cloud service provider?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Trust is based on community belief, while reputation is a direct contract."
+      },
+      {
+        "key": "b",
+        "text": "Trust is the independent expectancy between two entities, while reputation is the community's collective belief about an entity."
+      },
+      {
+        "key": "c",
+        "text": "Trust is measured by quantitative metrics, while reputation is purely qualitative."
+      },
+      {
+        "key": "d",
+        "text": "There is no difference; the terms are used interchangeably."
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) Trust is the independent expectancy between two entities, while reputation is the community's collective belief about an entity.. As covered in Week 8, Lecture 39 : Cloud Computing-Service Management and Security, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Hard",
+    "sourceVideoId": "_7TJf_8LEN8",
+    "weekNum": 8,
+    "week": "Week 8",
+    "lectureNum": 39,
+    "lectureTitle": "Lecture 39 : Cloud Computing-Service Management and Security",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q28",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 28,
+    "question": "How does the fog computing architecture handle data with different levels of time sensitivity?",
+    "options": [
+      {
+        "key": "a",
+        "text": "All data is sent to the cloud, which prioritizes processing based on a timestamp."
+      },
+      {
+        "key": "b",
+        "text": "Very time-sensitive data is processed by the nearest fog node for immediate action, while less sensitive data is aggregated or sent to the cloud."
+      },
+      {
+        "key": "c",
+        "text": "Only non-time-sensitive data is processed; all other data is discarded to save bandwidth."
+      },
+      {
+        "key": "d",
+        "text": "Time-sensitive data is processed on the IoT device itself, and non-time-sensitive data is processed at the fog layer."
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) Very time-sensitive data is processed by the nearest fog node for immediate action, while less sensitive data is aggregated or sent to the cloud.. As covered in Week 9, Lecture 45 : Fog Computing- II, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Hard",
+    "sourceVideoId": "muhUkaa0lTI",
+    "weekNum": 9,
+    "week": "Week 9",
+    "lectureNum": 45,
+    "lectureTitle": "Lecture 45 : Fog Computing- II",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q29",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 29,
+    "question": "What is a significant privacy concern associated with V2X communication as mentioned in the lecture?",
+    "options": [
+      {
+        "key": "a",
+        "text": "The high cost of encrypting V2X messages."
+      },
+      {
+        "key": "b",
+        "text": "The possibility of tracking a vehicle's movements and location, which could be exploited."
+      },
+      {
+        "key": "c",
+        "text": "The limited bandwidth available for transmitting privacy-enhancing data."
+      },
+      {
+        "key": "d",
+        "text": "The inability of vehicles to communicate with each other anonymously."
+      }
+    ],
+    "correctKeys": [
+      "b"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (B) The possibility of tracking a vehicle's movements and location, which could be exploited.. As covered in Week 10, Lecture 50 : Connected Vehicles- II, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Hard",
+    "sourceVideoId": "WUMOSqIj8tc",
+    "weekNum": 10,
+    "week": "Week 10",
+    "lectureNum": 50,
+    "lectureTitle": "Lecture 50 : Connected Vehicles- II",
+    "term": "Mock Exam 1"
+  },
+  {
+    "id": "mock-1-q30",
+    "bank": "mock-exams-bank",
+    "mockExamNum": 1,
+    "mockExamTitle": "Mock Exam 1",
+    "questionNum": 30,
+    "question": "In the Hadoop Distributed File System (HDFS), what is the specific role of the NameNode, and how does it differ from a DataNode?",
+    "options": [
+      {
+        "key": "a",
+        "text": "The NameNode stores the actual data blocks, while DataNodes manage the file system metadata."
+      },
+      {
+        "key": "b",
+        "text": "The NameNode is a slave node that executes tasks, while DataNodes are master nodes that schedule jobs."
+      },
+      {
+        "key": "c",
+        "text": "The NameNode is the master node that manages file system metadata (like block locations), while DataNodes are slave nodes that store the actual data blocks."
+      },
+      {
+        "key": "d",
+        "text": "Both NameNode and DataNodes store metadata and data blocks equally to ensure redundancy."
+      }
+    ],
+    "correctKeys": [
+      "c"
+    ],
+    "type": "single",
+    "explanation": "Correct Answer: (C) The NameNode is the master node that manages file system metadata (like block locations), while DataNodes are slave nodes that store the actual data blocks.. As covered in Week 11, Lecture 55: Data Handling and Analytics- I, this correctly identifies the foundational concept and operation.",
+    "difficulty": "Hard",
+    "sourceVideoId": "JC3cQ2MB_34",
+    "weekNum": 11,
+    "week": "Week 11",
+    "lectureNum": 55,
+    "lectureTitle": "Lecture 55: Data Handling and Analytics- I",
+    "term": "Mock Exam 1"
+  }
+]
