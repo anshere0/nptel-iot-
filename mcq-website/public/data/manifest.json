@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-27T00:09:00.000Z",
-  "totalAllQuestions": 1005,
+  "updatedAt": "2026-10-27T01:50:00.000Z",
+  "totalAllQuestions": 4005,
   "currentSession": {
     "bankId": "current-session-2026",
     "title": "Current 2026 Exam-Session MCQs (W1–W12)",
@@ -170,18 +170,176 @@
     "title": "AI Generated MCQs (Weeks 1 to 12)",
     "total": 28,
     "weeks": {
-      "W1": { "count": 6, "single": 6, "multi": 0, "tf": 0 },
-      "W2": { "count": 2, "single": 2, "multi": 0, "tf": 0 },
-      "W3": { "count": 2, "single": 2, "multi": 0, "tf": 0 },
-      "W4": { "count": 2, "single": 2, "multi": 0, "tf": 0 },
-      "W5": { "count": 2, "single": 2, "multi": 0, "tf": 0 },
-      "W6": { "count": 2, "single": 1, "multi": 1, "tf": 0 },
-      "W7": { "count": 2, "single": 1, "multi": 1, "tf": 0 },
-      "W8": { "count": 2, "single": 2, "multi": 0, "tf": 0 },
-      "W9": { "count": 2, "single": 2, "multi": 0, "tf": 0 },
-      "W10": { "count": 2, "single": 1, "multi": 1, "tf": 0 },
-      "W11": { "count": 2, "single": 2, "multi": 0, "tf": 0 },
-      "W12": { "count": 2, "single": 2, "multi": 0, "tf": 0 }
+      "W1": {
+        "count": 6,
+        "single": 6,
+        "multi": 0,
+        "tf": 0
+      },
+      "W2": {
+        "count": 2,
+        "single": 2,
+        "multi": 0,
+        "tf": 0
+      },
+      "W3": {
+        "count": 2,
+        "single": 2,
+        "multi": 0,
+        "tf": 0
+      },
+      "W4": {
+        "count": 2,
+        "single": 2,
+        "multi": 0,
+        "tf": 0
+      },
+      "W5": {
+        "count": 2,
+        "single": 2,
+        "multi": 0,
+        "tf": 0
+      },
+      "W6": {
+        "count": 2,
+        "single": 1,
+        "multi": 1,
+        "tf": 0
+      },
+      "W7": {
+        "count": 2,
+        "single": 1,
+        "multi": 1,
+        "tf": 0
+      },
+      "W8": {
+        "count": 2,
+        "single": 2,
+        "multi": 0,
+        "tf": 0
+      },
+      "W9": {
+        "count": 2,
+        "single": 2,
+        "multi": 0,
+        "tf": 0
+      },
+      "W10": {
+        "count": 2,
+        "single": 1,
+        "multi": 1,
+        "tf": 0
+      },
+      "W11": {
+        "count": 2,
+        "single": 2,
+        "multi": 0,
+        "tf": 0
+      },
+      "W12": {
+        "count": 2,
+        "single": 2,
+        "multi": 0,
+        "tf": 0
+      }
+    }
+  },
+  "aiPracticeBank": {
+    "bankId": "ai-practice-bank",
+    "title": "Official NPTEL AI Practice Questions (3,000 Total, W1–W12)",
+    "total": 3000,
+    "weeks": {
+      "W1": {
+        "count": 250,
+        "single": 250,
+        "multi": 0,
+        "tf": 0
+      },
+      "W2": {
+        "count": 250,
+        "single": 250,
+        "multi": 0,
+        "tf": 0
+      },
+      "W3": {
+        "count": 250,
+        "single": 250,
+        "multi": 0,
+        "tf": 0
+      },
+      "W4": {
+        "count": 250,
+        "single": 250,
+        "multi": 0,
+        "tf": 0
+      },
+      "W5": {
+        "count": 250,
+        "single": 250,
+        "multi": 0,
+        "tf": 0
+      },
+      "W6": {
+        "count": 250,
+        "single": 250,
+        "multi": 0,
+        "tf": 0
+      },
+      "W7": {
+        "count": 250,
+        "single": 250,
+        "multi": 0,
+        "tf": 0
+      },
+      "W8": {
+        "count": 250,
+        "single": 250,
+        "multi": 0,
+        "tf": 0
+      },
+      "W9": {
+        "count": 250,
+        "single": 250,
+        "multi": 0,
+        "tf": 0
+      },
+      "W10": {
+        "count": 250,
+        "single": 250,
+        "multi": 0,
+        "tf": 0
+      },
+      "W11": {
+        "count": 250,
+        "single": 250,
+        "multi": 0,
+        "tf": 0
+      },
+      "W12": {
+        "count": 250,
+        "single": 250,
+        "multi": 0,
+        "tf": 0
+      }
+    }
+  },
+  "flashcards": {
+    "bankId": "ai-flashcards",
+    "title": "Official NPTEL AI Flashcards (1,800 Total, W1–W12)",
+    "total": 1800,
+    "weeks": {
+      "W1": 150,
+      "W2": 150,
+      "W3": 150,
+      "W4": 150,
+      "W5": 150,
+      "W6": 150,
+      "W7": 150,
+      "W8": 150,
+      "W9": 150,
+      "W10": 150,
+      "W11": 150,
+      "W12": 150
     }
   }
 }

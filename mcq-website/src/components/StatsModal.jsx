@@ -14,11 +14,25 @@ export default function StatsModal({
 
   const is2026 = currentBank === 'current-session-2026';
   const isAI = currentBank === 'ai-generated-bank';
-  const bankData = is2026 
-    ? manifest?.currentSession 
-    : isAI 
-      ? manifest?.aiGenerated 
-      : manifest?.practiceBank;
+  const isAIPractice = currentBank === 'ai-practice-bank';
+  const isFlashcards = currentBank === 'flashcards';
+
+  let bankData = manifest?.practiceBank;
+  let bankName = 'Historical Practice Bank';
+  if (is2026) {
+    bankData = manifest?.currentSession;
+    bankName = '2026 Exam-Session MCQs';
+  } else if (isAIPractice) {
+    bankData = manifest?.aiPracticeBank;
+    bankName = 'Official NPTEL AI Practice Questions (3,000 Qs)';
+  } else if (isFlashcards) {
+    bankData = manifest?.flashcards;
+    bankName = 'Official NPTEL AI Flashcards Deck (1,800 Cards)';
+  } else if (isAI) {
+    bankData = manifest?.aiGenerated;
+    bankName = 'AI Generated Scenario MCQs';
+  }
+
   const totalQuestions = bankData?.total || 0;
   const weeksData = bankData?.weeks || {};
 
@@ -50,80 +64,88 @@ export default function StatsModal({
         </div>
 
         <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem' }}>
-          Active Bank: <strong>{is2026 ? '2026 Exam-Session MCQs' : isAI ? 'AI Generated MCQs (Weeks 1 to 12)' : 'Historical Practice Bank'}</strong>
+          Active Bank: <strong>{bankName}</strong>
         </p>
 
         {/* Top 4 Stat Boxes */}
         <div className="stats-grid">
           <div className="stat-box">
             <div className="stat-val">{totalQuestions}</div>
-            <div className="stat-lbl">Total Questions</div>
+            <div className="stat-lbl">Total Items</div>
           </div>
           <div className="stat-box">
             <div className="stat-val" style={{ color: 'var(--accent-primary)' }}>{attempted}</div>
             <div className="stat-lbl">Attempted</div>
           </div>
           <div className="stat-box">
-            <div className="stat-val" style={{ color: 'var(--success-border)' }}>{correct}</div>
-            <div className="stat-lbl">Correct</div>
+            <div className="stat-val" style={{ color: 'var(--correct)' }}>{correct}</div>
+            <div className="stat-lbl">Correct Answers</div>
           </div>
           <div className="stat-box">
-            <div className="stat-val" style={{ color: accuracy >= 70 ? 'var(--success-border)' : 'var(--warning-border)' }}>
+            <div className="stat-val" style={{ color: accuracy >= 75 ? 'var(--correct)' : 'var(--warning)' }}>
               {accuracy}%
             </div>
-            <div className="stat-lbl">Accuracy</div>
+            <div className="stat-lbl">Accuracy Rate</div>
           </div>
         </div>
 
-        {/* Weekly Progress Breakdown Table */}
-        <h3 style={{ fontSize: '1rem', marginTop: '1.5rem', marginBottom: '0.5rem' }}>
-          Weekly Syllabus Progress
+        {/* Week-by-Week Breakdown */}
+        <h3 style={{ fontSize: '1.125rem', marginBottom: '0.75rem', marginTop: '1.5rem' }}>
+          Weekly Breakdown (Weeks 1 to 12)
         </h3>
-        <table className="stats-table">
-          <thead>
-            <tr>
-              <th>Week</th>
-              <th>Total Qs</th>
-              <th>Single</th>
-              <th>Multi-Select</th>
-              <th>True/False</th>
-            </tr>
-          </thead>
-          <tbody>
-            {Object.keys(weeksData).map(wKey => {
-              const wInfo = weeksData[wKey];
-              return (
-                <tr key={wKey}>
-                  <td style={{ fontWeight: 600 }}>{wKey}</td>
-                  <td>{wInfo.count}</td>
-                  <td>{wInfo.single}</td>
-                  <td>{wInfo.multi}</td>
-                  <td>{wInfo.tf}</td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
+        <div style={{ maxHeight: '240px', overflowY: 'auto', border: '1px solid var(--border-light)', borderRadius: 'var(--radius-md)' }}>
+          <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.875rem' }}>
+            <thead>
+              <tr style={{ background: 'var(--bg-secondary)', textAlign: 'left', borderBottom: '1px solid var(--border-light)' }}>
+                <th style={{ padding: '0.625rem 1rem' }}>Week</th>
+                <th style={{ padding: '0.625rem 1rem' }}>Available</th>
+                <th style={{ padding: '0.625rem 1rem' }}>Completed</th>
+                <th style={{ padding: '0.625rem 1rem' }}>Progress</th>
+              </tr>
+            </thead>
+            <tbody>
+              {Object.keys(weeksData).map(wKey => {
+                const count = typeof weeksData[wKey] === 'number' ? weeksData[wKey] : weeksData[wKey]?.count || 0;
+                return (
+                  <tr key={wKey} style={{ borderBottom: '1px solid var(--border-light)' }}>
+                    <td style={{ padding: '0.5rem 1rem', fontWeight: 600 }}>{wKey}</td>
+                    <td style={{ padding: '0.5rem 1rem' }}>{count}</td>
+                    <td style={{ padding: '0.5rem 1rem' }}>-</td>
+                    <td style={{ padding: '0.5rem 1rem' }}>
+                      <span className="tag tag-primary">Available</span>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
 
-        {/* Danger Zone: Reset Progress */}
-        <div style={{ marginTop: '2rem', paddingTop: '1.5rem', borderTop: '1px solid var(--border-light)' }}>
-          {!confirmReset ? (
-            <button
-              className="pill-btn"
-              style={{ color: 'var(--error-text)', borderColor: 'var(--error-border)' }}
-              onClick={() => setConfirmReset(true)}
-            >
-              ⚠️ Reset Progress For This Bank
-            </button>
-          ) : (
-            <div style={{ background: 'var(--error-bg)', padding: '1rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--error-border)' }}>
-              <p style={{ color: 'var(--error-text)', fontSize: '0.875rem', fontWeight: 600, marginBottom: '0.75rem' }}>
-                Are you sure you want to permanently clear all recorded answers and statistics for this bank?
+        {/* Reset Progress Section */}
+        <div style={{ marginTop: '2rem', paddingTop: '1.25rem', borderTop: '1px solid var(--border-light)' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
+            <div>
+              <h4 style={{ color: 'var(--danger)', fontSize: '0.9375rem', marginBottom: '0.25rem' }}>
+                Danger Zone: Reset Bank History
+              </h4>
+              <p style={{ color: 'var(--text-muted)', fontSize: '0.75rem' }}>
+                Clears all answered options and bookmarks for <strong>{bankName}</strong>.
               </p>
+            </div>
+
+            {!confirmReset ? (
+              <button
+                className="pill-btn"
+                style={{ borderColor: 'var(--danger)', color: 'var(--danger)' }}
+                onClick={() => setConfirmReset(true)}
+              >
+                🗑️ Reset Progress
+              </button>
+            ) : (
               <div style={{ display: 'flex', gap: '0.5rem' }}>
                 <button
-                  className="btn-primary"
-                  style={{ background: 'var(--error-border)' }}
+                  className="pill-btn"
+                  style={{ background: 'var(--danger)', color: '#fff', borderColor: 'var(--danger)' }}
                   onClick={() => {
                     onResetProgress();
                     setConfirmReset(false);
@@ -139,8 +161,8 @@ export default function StatsModal({
                   Cancel
                 </button>
               </div>
-            </div>
-          )}
+            )}
+          </div>
         </div>
       </div>
     </div>

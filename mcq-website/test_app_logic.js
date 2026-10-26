@@ -122,6 +122,54 @@ aiQuestions.forEach((q, idx) => {
 });
 assert(aiSchemaValid, 'All 28 AI Generated questions adhere to strict schema requirements');
 
+// TEST 7: Official AI Practice Questions (3,000 Questions across Weeks 1 to 12)
+console.log('\n[Suite 7: Official NPTEL AI Practice Bank (Weeks 1 to 12)]');
+let totalAIPractice = 0;
+for (let w = 1; w <= 12; w++) {
+  const wPath = path.join(__dirname, 'public', 'data', 'ai-practice-bank', `W${w}.json`);
+  assert(fs.existsSync(wPath), `ai-practice-bank/W${w}.json exists`);
+  const wQuestions = JSON.parse(fs.readFileSync(wPath, 'utf8'));
+  assert(wQuestions.length === 250, `Week ${w} contains exactly 250 practice questions (actual: ${wQuestions.length})`);
+  totalAIPractice += wQuestions.length;
+
+  // Verify all questions have valid options, correctKeys, and explanations
+  let allValid = true;
+  for (const q of wQuestions) {
+    if (!q.id || !q.question || !q.options || Object.keys(q.options).length < 2 || !q.correctKeys || q.correctKeys.length === 0 || !q.explanation) {
+      allValid = false;
+      break;
+    }
+  }
+  assert(allValid, `Week ${w} all 250 questions have complete options, correctKeys, and explanations`);
+}
+assert(totalAIPractice === 3000, `Official AI Practice Questions sum to exactly 3,000 (actual: ${totalAIPractice})`);
+
+// TEST 8: Official AI Flashcards (1,800 Cards across Weeks 1 to 12)
+console.log('\n[Suite 8: Official NPTEL AI Flashcards Deck (Weeks 1 to 12)]');
+const fcAllPath = path.join(__dirname, 'public', 'data', 'flashcards', 'all_flashcards.json');
+assert(fs.existsSync(fcAllPath), 'flashcards/all_flashcards.json exists');
+const allFlashcards = JSON.parse(fs.readFileSync(fcAllPath, 'utf8'));
+assert(allFlashcards.length === 1800, `all_flashcards.json contains exactly 1,800 cards (actual: ${allFlashcards.length})`);
+
+let totalWeeklyCards = 0;
+for (let w = 1; w <= 12; w++) {
+  const wPath = path.join(__dirname, 'public', 'data', 'flashcards', `W${w}.json`);
+  assert(fs.existsSync(wPath), `flashcards/W${w}.json exists`);
+  const wCards = JSON.parse(fs.readFileSync(wPath, 'utf8'));
+  assert(wCards.length === 150, `Week ${w} contains exactly 150 flashcards (actual: ${wCards.length})`);
+  totalWeeklyCards += wCards.length;
+
+  let allCardValid = true;
+  for (const c of wCards) {
+    if (!c.id || !c.front || !c.back || !c.topic || !c.difficulty || c.weekNum !== w) {
+      allCardValid = false;
+      break;
+    }
+  }
+  assert(allCardValid, `Week ${w} all 150 cards have valid front, back, topic, difficulty, and weekNum`);
+}
+assert(totalWeeklyCards === 1800, `Weekly flashcard sets sum to exactly 1,800 (actual: ${totalWeeklyCards})`);
+
 console.log('\n=====================================================');
 console.log(`   TEST RESULTS: ${testsPassed} PASSED, ${testsFailed} FAILED`);
 console.log('=====================================================');
@@ -131,3 +179,4 @@ if (testsFailed > 0) {
 } else {
   process.exit(0);
 }
+

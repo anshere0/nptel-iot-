@@ -2,13 +2,16 @@ import React from 'react';
 
 export default function Footer({ onOpenCurator, onOpenStats, currentBank, onSelectBank }) {
   const handleCycleBank = () => {
-    if (currentBank === 'current-session-2026') {
-      onSelectBank('ai-generated-bank');
-    } else if (currentBank === 'ai-generated-bank') {
-      onSelectBank('practice-bank-904');
-    } else {
-      onSelectBank('current-session-2026');
-    }
+    const bankOrder = [
+      'current-session-2026',
+      'ai-practice-bank',
+      'flashcards',
+      'ai-generated-bank',
+      'practice-bank-904'
+    ];
+    const currentIndex = bankOrder.indexOf(currentBank);
+    const nextBank = bankOrder[(currentIndex + 1) % bankOrder.length];
+    onSelectBank(nextBank);
   };
 
   return (
@@ -59,39 +62,38 @@ export default function Footer({ onOpenCurator, onOpenStats, currentBank, onSele
             onClick={onOpenCurator}
             style={{ fontWeight: 600, borderColor: 'var(--accent-primary)', color: 'var(--accent-primary)' }}
           >
-            👤 About Ansh
+            👤 Meet Ansh
           </button>
+
           <button 
             className="pill-btn"
             onClick={onOpenStats}
           >
-            📊 My Progress
+            📊 Analytics
           </button>
+
           <button 
             className="pill-btn"
             onClick={handleCycleBank}
-            title="Cycle between 2026 Session, AI Generated, and Practice banks"
+            title="Switch to next question bank or flashcards"
           >
-            🔄 Switch Bank
+            🔄 Cycle Banks
           </button>
         </div>
       </div>
 
-      {/* Fair-use disclaimer */}
       <div style={{
-        background: 'var(--bg-secondary)',
-        border: '1px solid var(--border-light)',
-        borderRadius: 'var(--radius-md)',
-        padding: '0.875rem 1.25rem',
-        lineHeight: 1.5,
-        color: 'var(--text-muted)',
-        fontSize: '0.75rem'
+        paddingTop: '1rem',
+        borderTop: '1px dashed var(--border-light)',
+        display: 'flex',
+        justifyContent: 'space-between',
+        flexWrap: 'wrap',
+        gap: '0.5rem',
+        fontSize: '0.75rem',
+        opacity: 0.85
       }}>
-        <strong>Educational Disclaimer:</strong> This portal is an independent educational practice resource developed to assist candidates preparing for the <em>NPTEL Introduction to Internet of Things</em> certification examination offered by IIT Kharagpur and taught by Prof. Sudip Misra. All lecture slide copyrights and course trademarks belong to NPTEL, Swayam, and IIT Kharagpur.
-      </div>
-
-      <div style={{ textAlign: 'center', marginTop: '1.25rem', fontSize: '0.75rem' }}>
-        © {new Date().getFullYear()} NPTEL IoT Mastery System • Built for high performance & offline resilience.
+        <span>Course: Introduction to Internet of Things (noc26_cs161) • Prof. Sudip Misra • IIT Kharagpur</span>
+        <span>4,005 Questions & 1,800 AI Flashcards across Weeks 1 to 12 • 100% Verified</span>
       </div>
     </footer>
   );

@@ -15,13 +15,16 @@ export default function FilterBar({
 }) {
   const is2026 = currentBank === 'current-session-2026';
   const isAI = currentBank === 'ai-generated-bank';
-  const weeksList = (is2026 || isAI)
+  const isAIPractice = currentBank === 'ai-practice-bank';
+  
+  const weeksList = (is2026 || isAI || isAIPractice)
     ? [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] 
     : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
-  let sectionTitle = 'Select Week (Practice Bank)';
-  if (is2026) sectionTitle = 'Select Course Week (2026 Current Session)';
-  else if (isAI) sectionTitle = 'Select Course Week (AI Generated Conceptual MCQs)';
+  let sectionTitle = 'Select Week (Historical Practice Bank)';
+  if (is2026) sectionTitle = 'Select Course Week (2026 Current Session — 15 Qs/Week)';
+  else if (isAI) sectionTitle = 'Select Course Week (AI Generated Scenario MCQs)';
+  else if (isAIPractice) sectionTitle = 'Select Course Week (Official NPTEL AI Practice Questions — 250 Qs/Week)';
 
   return (
     <div className="filter-bar">
@@ -32,7 +35,7 @@ export default function FilterBar({
           <span>{sectionTitle}</span>
         </div>
         <div className="weeks-grid">
-          {(!is2026 || isAI) && (
+          {(!is2026 || isAI || isAIPractice) && (
             <button
               className={`week-btn ${selectedWeek === 'ALL' ? 'active' : ''}`}
               onClick={() => onSelectWeek('ALL')}
@@ -45,14 +48,14 @@ export default function FilterBar({
             const wKey = `W${w}`;
             const st = weekStats[wKey];
             const attempted = st?.attempted || 0;
-            const total = st?.count || (isAI ? (w === 1 ? 6 : 2) : 15);
+            const total = st?.count || (isAIPractice ? 250 : (isAI ? (w === 1 ? 6 : 2) : 15));
 
             return (
               <button
                 key={w}
                 className={`week-btn ${selectedWeek === w ? 'active' : ''}`}
                 onClick={() => onSelectWeek(w)}
-                title={`View Week ${w} MCQs`}
+                title={`View Week ${w} MCQs (${total} questions)`}
               >
                 <span className="week-label">Week {w}</span>
                 <span className="week-badge">{attempted}/{total}</span>
@@ -121,7 +124,7 @@ export default function FilterBar({
         </div>
 
         {/* Term Filter (for Historical Practice Bank only) */}
-        {!is2026 && !isAI && availableTerms.length > 0 && (
+        {!is2026 && !isAI && !isAIPractice && availableTerms.length > 0 && (
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
             <span style={{ fontSize: '0.8125rem', color: 'var(--text-muted)', fontWeight: 600 }}>
               Term:

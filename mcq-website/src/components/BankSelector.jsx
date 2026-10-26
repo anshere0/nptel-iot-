@@ -4,18 +4,22 @@ export default function BankSelector({
   currentBank, 
   onSelectBank, 
   manifest,
-  userStats2026,
-  userStatsPractice,
+  userStats2026 = { attempted: 0, correct: 0 },
+  userStatsAIPractice = { attempted: 0, correct: 0 },
+  userStatsFlashcards = { mastered: 0 },
+  userStatsPractice = { attempted: 0, correct: 0 },
   userStatsAI = { attempted: 0, correct: 0 },
   onOpenMockTest
 }) {
   const total2026 = manifest?.currentSession?.total || 253;
-  const totalPractice = manifest?.practiceBank?.total || 724;
+  const totalAIPractice = manifest?.aiPracticeBank?.total || 3000;
+  const totalFlashcards = manifest?.flashcards?.total || 1800;
   const totalAI = manifest?.aiGenerated?.total || 28;
+  const totalPractice = manifest?.practiceBank?.total || 724;
 
   return (
     <div className="bank-selector bank-switcher-container">
-      {/* 2026 Current Session Card */}
+      {/* 1. 2026 Current Session Card */}
       <div 
         className={`bank-card ${currentBank === 'current-session-2026' ? 'active' : ''}`}
         onClick={() => onSelectBank('current-session-2026')}
@@ -26,7 +30,7 @@ export default function BankSelector({
         <div className="bank-info">
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
             <h3>2026 Exam-Session Bank</h3>
-            {onOpenMockTest && (
+            {onOpenMockTest && currentBank === 'current-session-2026' && (
               <button 
                 type="button"
                 className="btn-mock-inline"
@@ -54,7 +58,73 @@ export default function BankSelector({
         </div>
       </div>
 
-      {/* AI Generated MCQs Card */}
+      {/* 2. Official NPTEL AI Practice Bank Card */}
+      <div 
+        className={`bank-card ${currentBank === 'ai-practice-bank' ? 'active' : ''}`}
+        onClick={() => onSelectBank('ai-practice-bank')}
+        role="button"
+        tabIndex={0}
+      >
+        <div className="bank-badge-icon">⚡</div>
+        <div className="bank-info">
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
+            <h3>Official AI Practice Questions</h3>
+            {onOpenMockTest && currentBank === 'ai-practice-bank' && (
+              <button 
+                type="button"
+                className="btn-mock-inline"
+                onClick={(e) => { e.stopPropagation(); onOpenMockTest(); }}
+                title="Launch a randomized mock test across AI practice questions"
+              >
+                ⚡ Start Mock Test
+              </button>
+            )}
+          </div>
+          <p>
+            Official NPTEL AI-powered practice question pool. Organized per week from Week 1 to Week 12 (250 questions per week with lecture video transcript citations).
+          </p>
+          <div className="bank-meta">
+            <span className="tag tag-primary">{totalAIPractice} Questions (W1–W12)</span>
+            <span className="tag">
+              Attempted: {userStatsAIPractice.attempted}/{totalAIPractice}
+            </span>
+            {userStatsAIPractice.attempted > 0 && (
+              <span className="tag tag-verified">
+                Accuracy: {Math.round((userStatsAIPractice.correct / userStatsAIPractice.attempted) * 100)}%
+              </span>
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* 3. Official NPTEL AI Flashcards Card */}
+      <div 
+        className={`bank-card ${currentBank === 'flashcards' ? 'active' : ''}`}
+        onClick={() => onSelectBank('flashcards')}
+        role="button"
+        tabIndex={0}
+      >
+        <div className="bank-badge-icon">🎴</div>
+        <div className="bank-info">
+          <h3>Official AI Flashcards Deck</h3>
+          <p>
+            Interactive 3D study flashcards extracted directly from the NPTEL AI widget. Organized per week (150 cards per week, Weeks 1 to 12) with difficulty & topic filters.
+          </p>
+          <div className="bank-meta">
+            <span className="tag tag-primary">{totalFlashcards} Flashcards (W1–W12)</span>
+            <span className="tag tag-verified">
+              ⭐ Mastered: {userStatsFlashcards.mastered || 0}/{totalFlashcards}
+            </span>
+            {totalFlashcards > 0 && (
+              <span className="tag">
+                Progress: {Math.round(((userStatsFlashcards.mastered || 0) / totalFlashcards) * 100)}%
+              </span>
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* 4. AI Generated Conceptual MCQs Card */}
       <div 
         className={`bank-card ${currentBank === 'ai-generated-bank' ? 'active' : ''}`}
         onClick={() => onSelectBank('ai-generated-bank')}
@@ -63,9 +133,9 @@ export default function BankSelector({
       >
         <div className="bank-badge-icon">🤖</div>
         <div className="bank-info">
-          <h3>AI Generated MCQs</h3>
+          <h3>AI Generated Scenario MCQs</h3>
           <p>
-            Scenario-based conceptual MCQs testing deep understanding across Week 1-A, 1-B, 1-C to Week 12. Inverse scenarios, real-world context shifts, and distractor traps to test true mastery.
+            Inverse scenarios and distractor elimination traps testing deep understanding across Week 1-A to Week 12.
           </p>
           <div className="bank-meta">
             <span className="tag tag-primary">{totalAI} Questions</span>
@@ -81,7 +151,7 @@ export default function BankSelector({
         </div>
       </div>
 
-      {/* Public Practice Bank Card */}
+      {/* 5. Public Historical Practice Bank Card */}
       <div 
         className={`bank-card ${currentBank === 'practice-bank-904' ? 'active' : ''}`}
         onClick={() => onSelectBank('practice-bank-904')}
@@ -92,7 +162,7 @@ export default function BankSelector({
         <div className="bank-info">
           <h3>Historical Practice Bank</h3>
           <p>
-            Complete question collection from 4 historical NPTEL offerings (2022–2024). Includes Week 0 and all question formats.
+            Complete question collection from 4 historical NPTEL offerings (2022–2024). Includes Week 0 and historical assignment keys.
           </p>
           <div className="bank-meta">
             <span className="tag tag-primary">{totalPractice} Questions</span>
