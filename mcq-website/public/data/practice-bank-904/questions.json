@@ -1385,12 +1385,10 @@
         "text": "Both (a) and (b)"
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "d, a, b",
+    "type": "mcq-single",
+    "correctAnswer": "d",
     "correctKeys": [
-      "d",
-      "a",
-      "b"
+      "d"
     ],
     "sourceAnswer": "d, a, b",
     "explanation": "The IoT networks can be classified into two types such as i. Non-Beacon Enabled ii. Beacon Enabled See lecture 9 (Connectivity Technologies : Part-I) @ 10:19",
@@ -1743,12 +1741,10 @@
         "text": "None of these"
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "c, a, b",
+    "type": "mcq-single",
+    "correctAnswer": "c",
     "correctKeys": [
-      "c",
-      "a",
-      "b"
+      "c"
     ],
     "sourceAnswer": "c, a, b",
     "explanation": "Active NFC devices are able to collect as well as transmit information. See lecture 11 (Connectivity Technologies-III) @ 18:52",
@@ -2275,12 +2271,10 @@
         "text": "None of these"
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "c, a, b",
+    "type": "mcq-single",
+    "correctAnswer": "c",
     "correctKeys": [
-      "c",
-      "a",
-      "b"
+      "c"
     ],
     "sourceAnswer": "c, a, b",
     "explanation": "The following are the challenges in human-centric sensing - a. Energy of devices b. Participant selection c. Privacy of users See lecture 18 (Sensor Networks-V) @ 12:45",
@@ -2641,12 +2635,10 @@
         "text": "None of these"
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "c, a, b",
+    "type": "mcq-single",
+    "correctAnswer": "c",
     "correctKeys": [
-      "c",
-      "a",
-      "b"
+      "c"
     ],
     "sourceAnswer": "c, a, b",
     "explanation": "All of the options given should be addressed while solving user interoperability issues. Refer Lecture 21@15:16.",
@@ -2817,12 +2809,10 @@
         "text": "None of these"
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "c, a, b",
+    "type": "mcq-single",
+    "correctAnswer": "c",
     "correctKeys": [
-      "c",
-      "a",
-      "b"
+      "c"
     ],
     "sourceAnswer": "c, a, b",
     "explanation": "Arduino UNO board accepts analog and digital signals as input. Refer Lecture 22@05:21",
@@ -2857,12 +2847,10 @@
         "text": "None of these"
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "c, a, b",
+    "type": "mcq-single",
+    "correctAnswer": "c",
     "correctKeys": [
-      "c",
-      "a",
-      "b"
+      "c"
     ],
     "sourceAnswer": "c, a, b",
     "explanation": "Arduino board are based on the following microcontrollers : a. ATMEGA328 b. ATMEGA32u4 c. ATMEGA2560 d. AT91SAM3X8E Refer Lecture 22@06:20",
@@ -6491,12 +6479,10 @@
         "text": "Neither a nor b"
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "c, a, b",
+    "type": "mcq-single",
+    "correctAnswer": "c",
     "correctKeys": [
-      "c",
-      "a",
-      "b"
+      "c"
     ],
     "sourceAnswer": "c, a, b",
     "explanation": "Range and average absolute deviation are the type of data dispersions. (Please refer Lecture 56@13:43) _________________________________________________________________________",
@@ -6645,12 +6631,10 @@
         "text": "Neither a nor b"
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "c, a, b",
+    "type": "mcq-single",
+    "correctAnswer": "c",
     "correctKeys": [
-      "c",
-      "a",
-      "b"
+      "c"
     ],
     "sourceAnswer": "c, a, b",
     "explanation": "Contingency table is a type of table that displays the frequency distribution of the variables. It is also known as Cross tabulation and Cross tab. (Please refer Lecture 56@14:29) _________________________________________________________________________",
@@ -6897,12 +6881,10 @@
         "text": "Both a and b"
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "d, a, b",
+    "type": "mcq-single",
+    "correctAnswer": "d",
     "correctKeys": [
-      "d",
-      "a",
-      "b"
+      "d"
     ],
     "sourceAnswer": "d, a, b",
     "explanation": "Daily observation of behavior and Long term monitoring are two advantages of continuous activity monitoring. (Please refer Lecture 59@16:15) ___________________________________________________________________",
@@ -8833,12 +8815,10 @@
         "text": "None of these"
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "c, a, b",
+    "type": "mcq-single",
+    "correctAnswer": "c",
     "correctKeys": [
-      "c",
-      "a",
-      "b"
+      "c"
     ],
     "sourceAnswer": "c, a, b",
     "explanation": "Sensor nodes - a. Must consume extremely low power b. Be adaptive to the environment See lecture 14 (Sensor Networks-I) @ 14:35",
@@ -9359,12 +9339,10 @@
         "text": "None of these"
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "c, a, b",
+    "type": "mcq-single",
+    "correctAnswer": "c",
     "correctKeys": [
-      "c",
-      "a",
-      "b"
+      "c"
     ],
     "sourceAnswer": "c, a, b",
     "explanation": "Low-end sensor nodes are - a. Whose deployment has high density in order to increase network lifetime and survivability. b. Who perform basic functions such as data aggregation, auto configuration, and power saving. See lecture 20 (Machine to Machine Communication) @ 10:46",
@@ -13877,12 +13855,10 @@
         "text": "None of these"
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "c, a, b",
+    "type": "mcq-single",
+    "correctAnswer": "c",
     "correctKeys": [
-      "c",
-      "a",
-      "b"
+      "c"
     ],
     "sourceAnswer": "c, a, b",
     "explanation": "An IoT Gateway is a router connecting the IoT LAN to a WAN to the Internet, can implement several LAN and WAN, Forwards packets between LAN and WAN and on the IP layer. See lecture 2 (Introduction to IoT : Part - II) @ 04:44",
@@ -14753,12 +14729,10 @@
         "text": "Both (b) and (c)"
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "d, b, c",
+    "type": "mcq-single",
+    "correctAnswer": "d",
     "correctKeys": [
-      "d",
-      "b",
-      "c"
+      "d"
     ],
     "sourceAnswer": "d, b, c",
     "explanation": "The functions of the Queue components are to :  Separate queues for separate business process  Consumer receive messages from queues See lecture 8 (Basics of IoT Networking : Part IV) @ 08:05",
@@ -15681,12 +15655,10 @@
         "text": "None of these"
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "c, a, b",
+    "type": "mcq-single",
+    "correctAnswer": "c",
     "correctKeys": [
-      "c",
-      "a",
-      "b"
+      "c"
     ],
     "sourceAnswer": "c, a, b",
     "explanation": "Human-centric Sensing is possible because of Smartphone, PDAs, Miniaturization, and Proliferation of devices. See lecture 18 (Sensor Networks-V) @ 10:51",
@@ -15759,12 +15731,10 @@
         "text": "Both (a) and (c)"
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "d, a, c",
+    "type": "mcq-single",
+    "correctAnswer": "d",
     "correctKeys": [
-      "d",
-      "a",
-      "c"
+      "d"
     ],
     "sourceAnswer": "d, a, c",
     "explanation": "The goal of Participatory Sensing is n ot just collect data, but allow common people to access data and share knowledge. See lecture 18 (Sensor Networks-V) @ 13:00",
@@ -20433,11 +20403,10 @@
         "text": "IoT nodes can't be configured statically"
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "c, a",
+    "type": "mcq-single",
+    "correctAnswer": "c",
     "correctKeys": [
-      "c",
-      "a"
+      "c"
     ],
     "sourceAnswer": "c, a",
     "explanation": "IoT nodes can be statically configured in different ways, such as an address can be configured over a management interface, or a node may use IPv6 address based on a hardware identifier. See lecture 2 (IPv6 Addressing Strategies)",
@@ -22674,11 +22643,10 @@
         "text": "UMB-A and UMB-E"
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "a, b",
+    "type": "mcq-single",
+    "correctAnswer": "a",
     "correctKeys": [
-      "a",
-      "b"
+      "a"
     ],
     "sourceAnswer": "a, b",
     "explanation": "UMB consists of UMB -Core (UMB-C) and UMB -Adaptor (UMB-A). See lecture 21 @25:50.",
@@ -24441,11 +24409,10 @@
         "text": "A: Private Cloud, B: Private Cloud"
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "b, a",
+    "type": "mcq-single",
+    "correctAnswer": "b",
     "correctKeys": [
-      "b",
-      "a"
+      "b"
     ],
     "sourceAnswer": "b, a",
     "explanation": "Since anyone can access the cloud services of A, it is public, whereas as only employees can access the cloud of B, the latter is a private cloud. Refer Lecture 37.",
@@ -24586,12 +24553,10 @@
         "text": "Both A and B will be able to access the services"
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "d, a, b",
+    "type": "mcq-single",
+    "correctAnswer": "d",
     "correctKeys": [
-      "d",
-      "a",
-      "b"
+      "d"
     ],
     "sourceAnswer": "d, a, b",
     "explanation": "Cloud services are provided in a many to one manner by the service provider simultaneously. So both will be able to access. Refer Lecture 38@13:50",
@@ -25278,11 +25243,10 @@
         "text": "Both of these"
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "b, a",
+    "type": "mcq-single",
+    "correctAnswer": "b",
     "correctKeys": [
-      "b",
-      "a"
+      "b"
     ],
     "sourceAnswer": "b, a",
     "explanation": "Time sensitive data are processed at the fog layer while data that can tolerate processing delay are processed at the cloud layer. Refer Lecture 45, the working of Fog.",
@@ -25597,13 +25561,10 @@
         "text": "1-c, 2-a, 3-b, 4-d"
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "a, b, d, c",
+    "type": "mcq-single",
+    "correctAnswer": "a",
     "correctKeys": [
-      "a",
-      "b",
-      "d",
-      "c"
+      "a"
     ],
     "sourceAnswer": "a, b, d, c",
     "explanation": "The industrial evolution of IIoT is as follows. 1. 1st Industrial revolution- Mechanized production 2. 2nd Industrial revolution- Mass production 3. 3rd Industrial revolution- Internet evolution and automation 4. 4th Industrial revolution- Industrial Internet of Things (Please refer to lecture INDUSTRIAL INTERNET OF THINGS- I @ 10:12)",
@@ -26244,13 +26205,10 @@
         "text": "1-c, 2-a, 3-b, 4-d"
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "d, c, a, b",
+    "type": "mcq-single",
+    "correctAnswer": "d",
     "correctKeys": [
-      "d",
-      "c",
-      "a",
-      "b"
+      "d"
     ],
     "sourceAnswer": "d, c, a, b",
     "explanation": "GSR measures the intensity of stress on a human, EMG measures the health of a muscle and a nerve cell, ECG measures the electrical and muscular activity of the heart, SpO2 measures the pulse and oxygen levels in blood. (Please refer book: S. Misra, A. Mukherjee, and A. Roy, 2020. Introduction to IoT. Cambridge University Press. Chapter no.- 14, page no.-296)",

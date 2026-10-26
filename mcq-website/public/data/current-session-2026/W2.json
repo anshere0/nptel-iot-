@@ -489,11 +489,10 @@
         "text": "Both address types are used only for multicast communication."
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "b, a",
+    "type": "mcq-single",
+    "correctAnswer": "b",
     "correctKeys": [
-      "b",
-      "a"
+      "b"
     ],
     "sourceAnswer": "b, a",
     "explanation": "6LoWPAN supports 16-bit short addresses for PAN-specific communication; these are assigned by the PAN coordinator. It also supports 64-bit extended addresses, which are globally unique. Answer Location: Week 2, Module 10 (Connectivity Technologies - Part II) @ 04:58",

@@ -24,6 +24,8 @@ prompt_extracted.txt
 MASTER_PROMPT.txt
 course_syllabus_extracted.json
 normalize_data.js
+scratch/
+
 
 # OS & IDE metadata
 .DS_Store

@@ -521,11 +521,10 @@
         "text": "To provide a reliable, scalable, and repeatable environment for pre-deployment performance evaluation"
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "d, a",
+    "type": "mcq-single",
+    "correctAnswer": "d",
     "correctKeys": [
-      "d",
-      "a"
+      "d"
     ],
     "sourceAnswer": "d, a",
     "explanation": "Simulation tools provide a reliable, scalable, and repeatable environment for performance evaluation, facilitating pre-deployment tests of services at no cost and enabling repeatable evaluation. See Lecture 40 (Cloud Computing : Case Studies, slides 2: 3)",

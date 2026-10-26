@@ -143,11 +143,10 @@
         "text": "IoT does not include machine-to-machine interaction"
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "c, a",
+    "type": "mcq-single",
+    "correctAnswer": "c",
     "correctKeys": [
-      "c",
-      "a"
+      "c"
     ],
     "sourceAnswer": "c, a",
     "explanation": "M2M focuses mainly on communication among machines and devices. IoT is broader because it includes interactions between things, people, applications, and systems. See lecture 1 Introduction to IoT : Part-I @ 19:30",
@@ -291,11 +290,10 @@
         "text": "IPv6 requires broadcast addresses in the same way as IPv4"
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "c, a",
+    "type": "mcq-single",
+    "correctAnswer": "c",
     "correctKeys": [
-      "c",
-      "a"
+      "c"
     ],
     "sourceAnswer": "c, a",
     "explanation": "IPv4 uses 32-bit addresses and dotted decimal notation, whereas IPv6 uses 128- bit addresses and hexadecimal notation. This makes IPv6 more su itable for large-scale IoT addressing. See lecture 2 Introduction to IoT : Part-II @ 16:50",

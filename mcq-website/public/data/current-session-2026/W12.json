@@ -787,12 +787,10 @@
         "text": "Neither a nor b"
       }
     ],
-    "type": "mcq-multi",
-    "correctAnswer": "c, a, b",
+    "type": "mcq-single",
+    "correctAnswer": "c",
     "correctKeys": [
-      "c",
-      "a",
-      "b"
+      "c"
     ],
     "sourceAnswer": "c, a, b",
     "explanation": "Contingency table is a type of table that displays the frequency distribution of the variables. It is also known as Cross tabulation and Cross tab. (Please refer Lecture 56@14:29) _________________________________________________________________________",
