@@ -23,7 +23,8 @@ export default function FilterBar({
       {/* Week Selector */}
       <div>
         <div className="filter-section-title">
-          {is2026 ? 'Select Course Week (2026 Current Session)' : 'Select Week (Practice Bank)'}
+          <span>📅</span>
+          <span>{is2026 ? 'Select Course Week (2026 Current Session)' : 'Select Week (Practice Bank)'}</span>
         </div>
         <div className="weeks-grid">
           {!is2026 && (
@@ -31,7 +32,7 @@ export default function FilterBar({
               className={`week-btn ${selectedWeek === 'ALL' ? 'active' : ''}`}
               onClick={() => onSelectWeek('ALL')}
             >
-              All Weeks
+              <span className="week-label">All Weeks</span>
             </button>
           )}
 
@@ -46,8 +47,9 @@ export default function FilterBar({
                 key={w}
                 className={`week-btn ${selectedWeek === w ? 'active' : ''}`}
                 onClick={() => onSelectWeek(w)}
+                title={`View Week ${w} MCQs`}
               >
-                <span>Week {w}</span>
+                <span className="week-label">Week {w}</span>
                 <span className="week-badge">{attempted}/{total}</span>
               </button>
             );
