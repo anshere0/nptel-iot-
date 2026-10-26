@@ -449,7 +449,7 @@ export default function App() {
   }
 
   return (
-    <div className="app-container">
+    <div className={`app-container ${isFlashcards ? 'app-wide' : ''}`}>
       {/* Top Header */}
       <Header
         currentBank={currentBank}

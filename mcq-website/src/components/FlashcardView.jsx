@@ -8,20 +8,12 @@ export default function FlashcardView({
   const [selectedWeek, setSelectedWeek] = useState(1);
   const [selectedDifficulty, setSelectedDifficulty] = useState('ALL');
   const [selectedTopic, setSelectedTopic] = useState('ALL');
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isFlipped, setIsFlipped] = useState(false);
-  const [isShuffled, setIsShuffled] = useState(false);
-  const [shuffledIndices, setShuffledIndices] = useState([]);
-
-  // Filter cards by week, difficulty, and topic
-  const filteredCards = useMemo(() => {
-    return flashcards.filter(card => {
-      if (selectedWeek !== 'ALL' && card.weekNum !== selectedWeek) return false;
-      if (selectedDifficulty !== 'ALL' && card.difficulty.toLowerCase() !== selectedDifficulty.toLowerCase()) return false;
-      if (selectedTopic !== 'ALL' && card.topic !== selectedTopic) return false;
-      return true;
-    });
-  }, [flashcards, selectedWeek, selectedDifficulty, selectedTopic]);
+  const [selectedMastery, setSelectedMastery] = useState('ALL'); // 'ALL', 'MASTERED', 'UNMASTERED'
+  const [searchQuery, setSearchQuery] = useState('');
+  
+  // Set of card IDs that are currently flipped to reveal the answer
+  const [flippedCardIds, setFlippedCardIds] = useState(new Set());
+  const [allFlipped, setAllFlipped] = useState(false);
 
   // Extract unique topics for the selected week
   const availableTopics = useMemo(() => {
@@ -34,97 +26,79 @@ export default function FlashcardView({
     return Array.from(set).sort();
   }, [flashcards, selectedWeek]);
 
-  // Handle deck indexing (shuffled or sequential)
-  const activeCards = useMemo(() => {
-    if (!isShuffled) return filteredCards;
-    if (shuffledIndices.length !== filteredCards.length) return filteredCards;
-    return shuffledIndices.map(i => filteredCards[i]).filter(Boolean);
-  }, [filteredCards, isShuffled, shuffledIndices]);
+  // Filter cards by week, difficulty, topic, mastery, and search query
+  const filteredCards = useMemo(() => {
+    const q = searchQuery.trim().toLowerCase();
+    return flashcards.filter(card => {
+      // 1. Week filter
+      if (selectedWeek !== 'ALL' && card.weekNum !== selectedWeek) return false;
+      
+      // 2. Difficulty filter
+      if (selectedDifficulty !== 'ALL' && card.difficulty.toLowerCase() !== selectedDifficulty.toLowerCase()) return false;
+      
+      // 3. Topic filter
+      if (selectedTopic !== 'ALL' && card.topic !== selectedTopic) return false;
 
-  // Reset index when filters change
+      // 4. Mastery filter
+      const isMastered = masteredIds.includes(card.id);
+      if (selectedMastery === 'MASTERED' && !isMastered) return false;
+      if (selectedMastery === 'UNMASTERED' && isMastered) return false;
+
+      // 5. Search query
+      if (q) {
+        const matchFront = card.front && card.front.toLowerCase().includes(q);
+        const matchBack = card.back && card.back.toLowerCase().includes(q);
+        const matchTopic = card.topic && card.topic.toLowerCase().includes(q);
+        const matchLecture = card.lectureTitle && card.lectureTitle.toLowerCase().includes(q);
+        if (!matchFront && !matchBack && !matchTopic && !matchLecture) return false;
+      }
+
+      return true;
+    });
+  }, [flashcards, selectedWeek, selectedDifficulty, selectedTopic, selectedMastery, searchQuery, masteredIds]);
+
+  // Reset flips when changing week or main filters
   useEffect(() => {
-    setCurrentIndex(0);
-    setIsFlipped(false);
-    setIsShuffled(false);
-  }, [selectedWeek, selectedDifficulty, selectedTopic]);
+    setFlippedCardIds(new Set());
+    setAllFlipped(false);
+  }, [selectedWeek]);
 
-  const currentCard = activeCards[currentIndex] || null;
-  const isCurrentMastered = currentCard ? masteredIds.includes(currentCard.id) : false;
-
-  const handleNext = useCallback(() => {
-    if (currentIndex < activeCards.length - 1) {
-      setIsFlipped(false);
-      setCurrentIndex(prev => prev + 1);
-    }
-  }, [currentIndex, activeCards.length]);
-
-  const handlePrev = useCallback(() => {
-    if (currentIndex > 0) {
-      setIsFlipped(false);
-      setCurrentIndex(prev => prev - 1);
-    }
-  }, [currentIndex]);
-
-  const handleFlip = useCallback(() => {
-    setIsFlipped(prev => !prev);
+  // Toggle single card flip
+  const handleToggleCardFlip = useCallback((cardId) => {
+    setFlippedCardIds(prev => {
+      const next = new Set(prev);
+      if (next.has(cardId)) {
+        next.delete(cardId);
+      } else {
+        next.add(cardId);
+      }
+      return next;
+    });
   }, []);
 
-  const handleToggleCurrentMastered = useCallback(() => {
-    if (currentCard) {
-      onToggleMastered(currentCard.id);
-    }
-  }, [currentCard, onToggleMastered]);
-
-  const handleShuffleToggle = () => {
-    if (!isShuffled) {
-      const arr = Array.from({ length: filteredCards.length }, (_, i) => i);
-      for (let i = arr.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [arr[i], arr[j]] = [arr[j], arr[i]];
-      }
-      setShuffledIndices(arr);
-      setIsShuffled(true);
-      setCurrentIndex(0);
-      setIsFlipped(false);
+  // Global flip toggle: flip all currently filtered cards
+  const handleToggleFlipAll = () => {
+    if (allFlipped) {
+      setFlippedCardIds(new Set());
+      setAllFlipped(false);
     } else {
-      setIsShuffled(false);
-      setCurrentIndex(0);
-      setIsFlipped(false);
+      const allIds = new Set(filteredCards.map(c => c.id));
+      setFlippedCardIds(allIds);
+      setAllFlipped(true);
     }
   };
 
-  // Keyboard Navigation: Left/Right arrow, Spacebar to flip, M to master
-  useEffect(() => {
-    const handleKeyDown = (e) => {
-      // Ignore if typing inside input or textarea
-      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+  // Calculate mastery statistics for current week
+  const weekTotalCards = useMemo(() => {
+    return flashcards.filter(c => selectedWeek === 'ALL' || c.weekNum === selectedWeek).length;
+  }, [flashcards, selectedWeek]);
 
-      if (e.code === 'Space' || e.code === 'Enter') {
-        e.preventDefault();
-        handleFlip();
-      } else if (e.code === 'ArrowRight') {
-        e.preventDefault();
-        handleNext();
-      } else if (e.code === 'ArrowLeft') {
-        e.preventDefault();
-        handlePrev();
-      } else if (e.key === 'm' || e.key === 'M') {
-        e.preventDefault();
-        handleToggleCurrentMastered();
-      }
-    };
+  const weekMasteredCount = useMemo(() => {
+    return flashcards.filter(c => (selectedWeek === 'ALL' || c.weekNum === selectedWeek) && masteredIds.includes(c.id)).length;
+  }, [flashcards, selectedWeek, masteredIds]);
 
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [handleFlip, handleNext, handlePrev, handleToggleCurrentMastered]);
-
-  // Calculate mastery statistics for current filtered deck
-  const masteredCount = useMemo(() => {
-    return filteredCards.filter(c => masteredIds.includes(c.id)).length;
-  }, [filteredCards, masteredIds]);
-
-  const progressPercent = filteredCards.length > 0 
-    ? Math.round((masteredCount / filteredCards.length) * 100) 
+  const weekProgressPercent = weekTotalCards > 0 
+    ? Math.round((weekMasteredCount / weekTotalCards) * 100) 
     : 0;
 
   return (
@@ -133,12 +107,12 @@ export default function FlashcardView({
       <div className="filter-bar flashcard-filter-bar">
         <div className="filter-section-title">
           <span>🎴</span>
-          <span>Select Course Week (AI Flashcards Deck — 1,800 Total)</span>
+          <span>Select Course Week (AI Flashcards Deck — 1,800 Total Cards)</span>
         </div>
         <div className="weeks-grid">
           <button
             className={`week-btn ${selectedWeek === 'ALL' ? 'active' : ''}`}
-            onClick={() => setSelectedWeek('ALL')}
+            onClick={() => { setSelectedWeek('ALL'); setSelectedTopic('ALL'); }}
           >
             <span className="week-label">All Weeks</span>
             <span className="week-badge">{flashcards.length}</span>
@@ -150,7 +124,7 @@ export default function FlashcardView({
               <button
                 key={w}
                 className={`week-btn ${selectedWeek === w ? 'active' : ''}`}
-                onClick={() => setSelectedWeek(w)}
+                onClick={() => { setSelectedWeek(w); setSelectedTopic('ALL'); }}
                 title={`Study Week ${w} Flashcards (${count} cards)`}
               >
                 <span className="week-label">Week {w}</span>
@@ -161,8 +135,31 @@ export default function FlashcardView({
         </div>
       </div>
 
-      {/* 2. Sub-Filters & Controls */}
+      {/* 2. Controls Panel: Search, Difficulty, Topic, Mastery, Flip All */}
       <div className="flashcard-controls-panel">
+        {/* Search Input */}
+        <div className="flashcard-search-box">
+          <span className="search-icon">🔍</span>
+          <input
+            type="text"
+            className="flashcard-search-input"
+            placeholder="Search concepts, protocols, terms..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+          />
+          {searchQuery && (
+            <button 
+              type="button" 
+              className="search-clear-btn"
+              onClick={() => setSearchQuery('')}
+              title="Clear search"
+            >
+              ✕
+            </button>
+          )}
+        </div>
+
+        {/* Difficulty Filter */}
         <div className="filter-group-inline">
           <label>Difficulty:</label>
           <div className="filter-chips">
@@ -172,12 +169,38 @@ export default function FlashcardView({
                 className={`filter-chip ${selectedDifficulty === d ? 'active' : ''}`}
                 onClick={() => setSelectedDifficulty(d)}
               >
-                {d === 'ALL' ? 'All Difficulties' : d}
+                {d === 'ALL' ? 'All' : d}
               </button>
             ))}
           </div>
         </div>
 
+        {/* Mastery Filter */}
+        <div className="filter-group-inline">
+          <label>Status:</label>
+          <div className="filter-chips">
+            <button
+              className={`filter-chip ${selectedMastery === 'ALL' ? 'active' : ''}`}
+              onClick={() => setSelectedMastery('ALL')}
+            >
+              All Cards
+            </button>
+            <button
+              className={`filter-chip ${selectedMastery === 'MASTERED' ? 'active' : ''}`}
+              onClick={() => setSelectedMastery('MASTERED')}
+            >
+              ⭐ Mastered
+            </button>
+            <button
+              className={`filter-chip ${selectedMastery === 'UNMASTERED' ? 'active' : ''}`}
+              onClick={() => setSelectedMastery('UNMASTERED')}
+            >
+              ⏳ Unmastered
+            </button>
+          </div>
+        </div>
+
+        {/* Topic Dropdown */}
         {availableTopics.length > 1 && (
           <div className="filter-group-inline">
             <label>Topic:</label>
@@ -194,157 +217,156 @@ export default function FlashcardView({
           </div>
         )}
 
+        {/* Global Flip All Action */}
         <div className="deck-actions">
           <button 
             type="button" 
-            className={`btn-action-deck ${isShuffled ? 'active' : ''}`}
-            onClick={handleShuffleToggle}
-            title={isShuffled ? 'Restore original lecture order' : 'Randomize deck order'}
+            className={`btn-action-deck ${allFlipped ? 'active' : ''}`}
+            onClick={handleToggleFlipAll}
+            title={allFlipped ? 'Show all concept prompts' : 'Flip all visible cards to show answers'}
           >
-            🔀 {isShuffled ? 'Shuffled' : 'Shuffle Deck'}
-          </button>
-          <button 
-            type="button" 
-            className="btn-action-deck"
-            onClick={() => { setCurrentIndex(0); setIsFlipped(false); }}
-            title="Return to the first card"
-          >
-            ⏮ Restart Deck
+            🔄 {allFlipped ? 'Flip All to Prompts' : 'Flip All to Answers'}
           </button>
         </div>
       </div>
 
-      {/* 3. Progress Tracker */}
+      {/* 3. Progress and Info Bar */}
       <div className="flashcard-progress-bar-container">
         <div className="progress-info-row">
           <span>
-            {activeCards.length > 0 ? `Card ${currentIndex + 1} of ${activeCards.length}` : 'No cards found'}
-            {isShuffled && ' • (Shuffled Mode)'}
+            <strong>
+              {selectedWeek === 'ALL' ? 'All Weeks' : `Week ${selectedWeek}`}
+            </strong>: Showing <strong>{filteredCards.length}</strong> flashcard{filteredCards.length !== 1 ? 's' : ''} in grid formation
           </span>
           <span className="mastery-stat-tag">
-            ⭐ Mastered: {masteredCount}/{filteredCards.length} ({progressPercent}%)
+            ⭐ Mastered: {weekMasteredCount}/{weekTotalCards} ({weekProgressPercent}%)
           </span>
         </div>
         <div className="progress-track">
           <div 
             className="progress-fill" 
-            style={{ width: `${activeCards.length > 0 ? ((currentIndex + 1) / activeCards.length) * 100 : 0}%` }}
+            style={{ width: `${weekProgressPercent}%` }}
           />
         </div>
       </div>
 
-      {/* 4. The 3D Interactive Flip Card */}
-      {currentCard ? (
-        <div className="flashcard-scene" onClick={handleFlip}>
-          <div className={`flashcard-card ${isFlipped ? 'is-flipped' : ''}`}>
-            {/* Front Face */}
-            <div className="flashcard-face flashcard-front">
-              <div className="flashcard-header">
-                <span className="card-badge card-week-badge">
-                  {currentCard.week} • Lecture {currentCard.lectureNum}
-                </span>
-                <div style={{ display: 'flex', gap: '0.4rem', alignItems: 'center' }}>
-                  <span className="card-badge card-topic-badge">{currentCard.topic}</span>
-                  <span className={`card-badge card-diff-badge diff-${currentCard.difficulty.toLowerCase()}`}>
-                    {currentCard.difficulty}
-                  </span>
-                </div>
-              </div>
-
-              <div className="flashcard-body">
-                <span className="card-prompt-label">PROMPT / CONCEPT</span>
-                <h2 className="card-question-text">{currentCard.front}</h2>
-              </div>
-
-              <div className="flashcard-footer">
-                <span className="card-flip-hint">👆 Click card or press [Space] to reveal answer</span>
-                {isCurrentMastered && (
-                  <span className="mastered-badge">✅ Mastered</span>
-                )}
-              </div>
-            </div>
-
-            {/* Back Face */}
-            <div className="flashcard-face flashcard-back">
-              <div className="flashcard-header">
-                <span className="card-badge card-answer-badge">💡 Concept Answer & Definition</span>
-                <button
-                  type="button"
-                  className={`btn-master-card ${isCurrentMastered ? 'mastered' : ''}`}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    handleToggleCurrentMastered();
-                  }}
-                  title="Toggle card mastered status"
-                >
-                  {isCurrentMastered ? '⭐ Mastered' : '☆ Mark as Mastered'}
-                </button>
-              </div>
-
-              <div className="flashcard-body">
-                <p className="card-answer-text">{currentCard.back}</p>
-                <div className="card-meta-detail">
-                  <strong>Source Lecture:</strong> {currentCard.lectureTitle} ({currentCard.week})
-                </div>
-              </div>
-
-              <div className="flashcard-footer">
-                <span className="card-flip-hint">👆 Click card or press [Space] to flip back</span>
-                <span className="card-index-pill">#{currentCard.cardNum} of {currentCard.week}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      ) : (
+      {/* 4. Multi-Column Grid Formation (Side-by-Side and Below) */}
+      {filteredCards.length === 0 ? (
         <div className="empty-state-card">
-          <p>No flashcards match the selected filters.</p>
+          <div style={{ fontSize: '2.5rem', marginBottom: '0.75rem' }}>🔍</div>
+          <h3>No flashcards match your current filter criteria</h3>
+          <p style={{ color: 'var(--text-muted)', marginTop: '0.5rem' }}>
+            Try resetting the search query or difficulty/topic filters to see more cards.
+          </p>
           <button 
             type="button" 
             className="pill-btn" 
-            onClick={() => { setSelectedDifficulty('ALL'); setSelectedTopic('ALL'); }}
+            style={{ marginTop: '1rem' }}
+            onClick={() => {
+              setSearchQuery('');
+              setSelectedDifficulty('ALL');
+              setSelectedTopic('ALL');
+              setSelectedMastery('ALL');
+            }}
           >
-            Reset Filters
+            Reset All Filters
           </button>
         </div>
+      ) : (
+        <div className="flashcards-grid">
+          {filteredCards.map((card, idx) => {
+            const isFlipped = flippedCardIds.has(card.id);
+            const isMastered = masteredIds.includes(card.id);
+
+            return (
+              <div 
+                key={card.id} 
+                className="flashcard-grid-item"
+                onClick={() => handleToggleCardFlip(card.id)}
+                title="Click anywhere to flip card"
+              >
+                <div className={`flashcard-card ${isFlipped ? 'is-flipped' : ''}`}>
+                  {/* Front Face: Prompt / Concept */}
+                  <div className="flashcard-face flashcard-front">
+                    <div className="flashcard-header">
+                      <div className="flashcard-badges-left">
+                        <span className="card-badge card-week-badge">
+                          W{card.weekNum} • Lec {card.lectureNum}
+                        </span>
+                        <span className="card-badge card-topic-badge">
+                          {card.topic}
+                        </span>
+                      </div>
+                      <div className="flashcard-badges-right">
+                        <span className={`card-badge card-diff-badge diff-${card.difficulty.toLowerCase()}`}>
+                          {card.difficulty}
+                        </span>
+                        <button
+                          type="button"
+                          className={`btn-star-card ${isMastered ? 'mastered' : ''}`}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            onToggleMastered(card.id);
+                          }}
+                          title={isMastered ? 'Mastered card (click to unmark)' : 'Mark as mastered'}
+                        >
+                          {isMastered ? '★' : '☆'}
+                        </button>
+                      </div>
+                    </div>
+
+                    <div className="flashcard-body">
+                      <span className="card-prompt-label">PROMPT / CONCEPT</span>
+                      <h3 className="card-question-text">{card.front}</h3>
+                    </div>
+
+                    <div className="flashcard-footer">
+                      <span className="card-flip-hint">👆 Click to flip & view answer</span>
+                      <span className="card-index-pill">#{card.cardNum} of W{card.weekNum}</span>
+                    </div>
+                  </div>
+
+                  {/* Back Face: Answer / Explanation */}
+                  <div className="flashcard-face flashcard-back">
+                    <div className="flashcard-header">
+                      <div className="flashcard-badges-left">
+                        <span className="card-badge card-answer-badge">
+                          💡 Answer & Concept
+                        </span>
+                      </div>
+                      <div className="flashcard-badges-right">
+                        <button
+                          type="button"
+                          className={`btn-star-card ${isMastered ? 'mastered' : ''}`}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            onToggleMastered(card.id);
+                          }}
+                          title={isMastered ? 'Mastered card (click to unmark)' : 'Mark as mastered'}
+                        >
+                          {isMastered ? '★' : '☆'}
+                        </button>
+                      </div>
+                    </div>
+
+                    <div className="flashcard-body">
+                      <p className="card-answer-text">{card.back}</p>
+                      <div className="card-meta-detail">
+                        <strong>Source:</strong> {card.lectureTitle} (Week {card.weekNum})
+                      </div>
+                    </div>
+
+                    <div className="flashcard-footer">
+                      <span className="card-flip-hint">👆 Click to flip back</span>
+                      <span className="card-index-pill">#{card.cardNum} of W{card.weekNum}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
       )}
-
-      {/* 5. Navigation Controls Bar */}
-      <div className="flashcard-nav-controls">
-        <button
-          type="button"
-          className="btn-nav-card"
-          onClick={handlePrev}
-          disabled={currentIndex === 0}
-          title="Previous Card (Left Arrow)"
-        >
-          ← Previous
-        </button>
-
-        <button
-          type="button"
-          className="btn-flip-card"
-          onClick={handleFlip}
-          title="Flip Card (Spacebar)"
-        >
-          🔄 {isFlipped ? 'Show Prompt' : 'Reveal Answer'}
-        </button>
-
-        <button
-          type="button"
-          className="btn-nav-card"
-          onClick={handleNext}
-          disabled={currentIndex >= activeCards.length - 1}
-          title="Next Card (Right Arrow)"
-        >
-          Next →
-        </button>
-      </div>
-
-      {/* 6. Keyboard Shortcuts Hint */}
-      <div className="keyboard-shortcuts-bar">
-        <span>⌨️ Shortcuts:</span>
-        <kbd>[Space]</kbd> Flip Card • <kbd>[←]</kbd> Previous • <kbd>[→]</kbd> Next • <kbd>[M]</kbd> Toggle Mastered
-      </div>
     </div>
   );
 }
